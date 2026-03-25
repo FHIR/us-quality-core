@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-communication-topic",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-communication-topic",
+  "version": "0.1.0",
+  "name": "UsQualityCoreCommunicationTopic",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Communication Topic Search Parameter",
+  "code": "topic",
+  "base": [
+    "Communication"
+  ],
+  "type": "token",
+  "expression": "Communication.topic",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

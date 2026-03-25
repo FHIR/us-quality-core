@@ -1,0 +1,8 @@
+package-id: hl7.fhir.us.quality-core
+title: US Quality Core Implementation Guide
+canonical: 'http://fhir.org/guides/astp/us-quality-core'
+introduction: >-
+  The US Quality Core Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications. The profiles in this implementation guide derive from and extend the [US Core](http://hl7.org/fhir/us/core) profiles to provide a common foundation for building, sharing, and evaluating knowledge artifacts across quality improvement efforts in the US Realm
+list:
+  - version: current
+    desc: todo

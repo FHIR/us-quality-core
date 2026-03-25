@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-observation-patient",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-patient",
+  "version": "0.1.0",
+  "name": "UsQualityCoreObservationPatient",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Observation Patient Search Parameter",
+  "code": "patient",
+  "base": [
+    "Observation"
+  ],
+  "type": "reference",
+  "expression": "Observation.subject.where(resolve() is Patient)",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

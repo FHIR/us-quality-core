@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-task-status",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-task-status",
+  "version": "0.1.0",
+  "name": "UsQualityCoreTaskStatus",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Task Status Search Parameter",
+  "code": "status",
+  "base": [
+    "Task"
+  ],
+  "type": "token",
+  "expression": "Task.for.where(resolve() is Patient)",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

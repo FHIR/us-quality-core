@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-nutritionorder-type",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-nutritionorder-type",
+  "version": "0.1.0",
+  "name": "UsQualityCoreNutritionorderType",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core NutritionOrder Type Search Parameter",
+  "code": "type",
+  "base": [
+    "NutritionOrder"
+  ],
+  "type": "token",
+  "expression": "NutritionOrder.type",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

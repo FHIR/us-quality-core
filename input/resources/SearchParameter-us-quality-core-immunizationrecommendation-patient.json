@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-immunizationrecommendation-patient",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-immunizationrecommendation-patient",
+  "version": "0.1.0",
+  "name": "UsQualityCoreImmunizationrecommendationPatient",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core ImmunizationRecommendation Patient Search Parameter",
+  "code": "patient",
+  "base": [
+    "ImmunizationRecommendation"
+  ],
+  "type": "reference",
+  "expression": "ImmunizationRecommendation.patient",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

@@ -1,0 +1,167 @@
+{
+  "id": "us-quality-core-condition-encounter-diagnosis",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+  "version": "0.1.0",
+  "name": "USQualityCoreConditionEncounterDiagnosis",
+  "title": "US Quality Core Condition Encounter Diagnosis",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-04-20",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "The US Quality Core Condition Encounter Diagnosis Profile is based upon the US Core Condition Encounter Diagnosis Profile.   In version 5.0.0, The US Quality Core Condition Profile has been split into the US Quality Core Condition Encounter Diagnosis Profile and US Quality Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.code",
+        "short": "(USCDI+ Quality) (USCDI) Identification of the condition, problem or diagnosis"
+      },
+      {
+        "id": "Condition.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.subject",
+        "short": "(USCDI) Who has the condition?",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.encounter",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.encounter",
+        "short": "(USCDI+ Quality) (USCDI) Encounter created as part of",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.onset[x]",
+        "short": "(USCDI) Estimated or actual date, date-time, or age",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.abatement[x]",
+        "short": "(USCDI) When in resolution/remission",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Condition.recordedDate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.recordedDate",
+        "short": "(USCDI+ Quality) (USCDI) Date record was first recorded"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

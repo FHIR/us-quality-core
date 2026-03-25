@@ -1,0 +1,263 @@
+{
+  "id": "us-quality-core-diagnosticreport-lab",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab",
+  "version": "0.1.0",
+  "name": "USQualityCoreDiagnosticReportLab",
+  "title": "US Quality Core DiagnosticReport Profile for Laboratory Results Reporting",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-08-01",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of DiagnosticReport for laboratory results for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationrecommendation",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.status",
+        "short": "(USCDI+ Quality) (USCDI) registered | partial | preliminary | final +"
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "(USCDI+ Quality) (USCDI) Service category",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosticServiceSection"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Codes for diagnostic service sections.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category:LaboratorySlice",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.category",
+        "sliceName": "LaboratorySlice",
+        "short": "(USCDI+ Quality) (USCDI) Service category",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+              "code": "LAB"
+            }
+          ]
+        },
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosticServiceSection"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Codes for diagnostic service sections.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.code",
+        "short": "(USCDI+ Quality) (USCDI) US Core Laboratory Report Order Code"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.subject",
+        "short": "(USCDI) The subject of the report - usually, but not always, the patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.effective[x]",
+        "short": "(USCDI+ Quality) (USCDI) Diagnostically relevant time (typically the time of specimen collection)",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.performer",
+        "short": "(USCDI) Responsible Diagnostic Service",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.result",
+        "short": "(USCDI+ Quality) (USCDI) Observations",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

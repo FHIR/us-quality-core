@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-condition-category",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-category",
+  "version": "0.1.0",
+  "name": "UsQualityCoreConditionCategory",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Condition Category Search Parameter",
+  "code": "category",
+  "base": [
+    "Condition"
+  ],
+  "type": "token",
+  "expression": "Condition.category",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-substance-code",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-substance-code",
+  "version": "0.1.0",
+  "name": "UsQualityCoreSubstanceCode",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Substance Code Search Parameter",
+  "code": "code",
+  "base": [
+    "Substance"
+  ],
+  "type": "token",
+  "expression": "Substance.code",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

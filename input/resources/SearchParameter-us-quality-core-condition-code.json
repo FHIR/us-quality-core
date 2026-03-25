@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-condition-code",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-code",
+  "version": "0.1.0",
+  "name": "UsQualityCoreConditionCode",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Condition Code Search Parameter",
+  "code": "code",
+  "base": [
+    "Condition"
+  ],
+  "type": "token",
+  "expression": "Condition.code",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

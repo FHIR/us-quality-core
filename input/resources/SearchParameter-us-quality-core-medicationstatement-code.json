@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-medicationstatement-code",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationstatement-code",
+  "version": "0.1.0",
+  "name": "UsQualityCoreMedicationstatementCode",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core MedicationStatement Code Search Parameter",
+  "code": "code",
+  "base": [
+    "MedicationStatement"
+  ],
+  "type": "token",
+  "expression": "MedicationStatement.medication.as(CodeableConcept)",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-servicerequest-code",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-code",
+  "version": "0.1.0",
+  "name": "UsQualityCoreServicerequestCode",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core ServiceRequest Code Search Parameter",
+  "code": "code",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "token",
+  "expression": "ServiceRequest.code",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

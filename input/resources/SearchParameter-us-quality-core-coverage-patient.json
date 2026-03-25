@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-coverage-patient",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-coverage-patient",
+  "version": "0.1.0",
+  "name": "UsQualityCoreCoveragePatient",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Coverage Patient Search Parameter",
+  "code": "patient",
+  "base": [
+    "Coverage"
+  ],
+  "type": "reference",
+  "expression": "Coverage.beneficiary",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

@@ -1,0 +1,202 @@
+{
+  "id": "us-quality-core-allergyintolerance",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance",
+  "version": "0.1.0",
+  "name": "USQualityCoreAllergyIntolerance",
+  "title": "US Quality Core AllergyIntolerance",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-03-31",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of AllergyIntolerance for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance",
+        "path": "AllergyIntolerance",
+        "definition": "The US Quality Core AllergyIntolerance Profile is based upon the US Core AllergyIntolerance Profile which is based upon the core FHIR AllergyIntolerance Resource and created to meet the 2015 Edition Common Clinical Data Set 'Medical allergies' requirements.",
+        "mustSupport": false
+      },
+      {
+        "id": "AllergyIntolerance.extension:resolutionAge",
+        "path": "AllergyIntolerance.extension",
+        "sliceName": "resolutionAge",
+        "definition": "The estimated patient age at which the allergy or intolerance resolved. Should be specified only if the status is resolved.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/allergyintolerance-resolutionAge"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "short": "allergy | intolerance - Underlying mechanism (if known)"
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "short": "food | medication | environment | biologic"
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "short": "low | high | unable-to-assess"
+      },
+      {
+        "id": "AllergyIntolerance.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.code",
+        "short": "(USCDI+ Quality) (USCDI) Code that identifies the allergy or intolerance"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.patient",
+        "short": "(USCDI) Who the sensitivity is for",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.onset[x]",
+        "short": "(USCDI+ Quality) When allergy or intolerance was identified",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "AllergyIntolerance.recordedDate",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.recordedDate",
+        "short": "(USCDI+ Quality) Date first version of the resource instance was recorded",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.lastOccurrence",
+        "short": "(USCDI+ Quality) Date(/time) of last known occurrence of a reaction"
+      },
+      {
+        "id": "AllergyIntolerance.reaction",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.reaction",
+        "short": "(USCDI+ Quality) (USCDI) Adverse Reaction Events linked to exposure to substance"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.reaction.manifestation",
+        "short": "(USCDI) Clinical symptoms/signs associated with the Event"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.severity",
+        "path": "AllergyIntolerance.reaction.severity",
+        "short": "mild | moderate | severe (of event as a whole)"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

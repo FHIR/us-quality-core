@@ -1,0 +1,289 @@
+{
+  "id": "us-quality-core-claim",
+  "text": {
+    "status": "extensions"
+  },
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim",
+  "version": "0.1.0",
+  "name": "USQualityCoreClaim",
+  "title": "US Quality Core Claim",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-03-31",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of Claim for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Claim",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Claim",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Claim",
+        "path": "Claim",
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.patient",
+        "path": "Claim.patient",
+        "short": "The recipient of the products and services",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.billablePeriod",
+        "path": "Claim.billablePeriod",
+        "short": "Relevant time frame for the claim"
+      },
+      {
+        "id": "Claim.created",
+        "path": "Claim.created",
+        "short": "Resource creation date"
+      },
+      {
+        "id": "Claim.provider",
+        "path": "Claim.provider",
+        "short": "Party responsible for the claim",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.prescription",
+        "path": "Claim.prescription",
+        "short": "Prescription authorizing services and products",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
+              "http://hl7.org/fhir/StructureDefinition/VisionPrescription"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.payee",
+        "path": "Claim.payee",
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.payee.party",
+        "path": "Claim.payee.party",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.referral",
+        "path": "Claim.referral",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.facility",
+        "path": "Claim.facility",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.careTeam",
+        "path": "Claim.careTeam",
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.careTeam.provider",
+        "path": "Claim.careTeam.provider",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Claim.diagnosis.sequence",
+        "path": "Claim.diagnosis.sequence",
+        "short": "Diagnosis instance identifier",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Claim.diagnosis.diagnosis[x]",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Claim.diagnosis.diagnosis[x]",
+        "short": "(USCDI+ Quality) Nature of illness or problem",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
+            ]
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ICD10"
+            }
+          ],
+          "strength": "example",
+          "description": "Example ICD10 Diagnostic codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10"
+        }
+      },
+      {
+        "id": "Claim.diagnosis.onAdmission",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Claim.diagnosis.onAdmission",
+        "short": "(USCDI+ Quality) Present on admission",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Present on admission.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/POAIndicators"
+        }
+      },
+      {
+        "id": "Claim.procedure.sequence",
+        "path": "Claim.procedure.sequence",
+        "short": "Procedure instance identifier",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Claim.procedure.procedure[x]",
+        "path": "Claim.procedure.procedure[x]",
+        "short": "Specific clinical procedure",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure"
+            ]
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ICD10_Procedures"
+            }
+          ],
+          "strength": "example",
+          "description": "Example ICD10 Procedure codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10-procedures"
+        }
+      },
+      {
+        "id": "Claim.item.encounter",
+        "path": "Claim.item.encounter",
+        "short": "Encounters related to this billed item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

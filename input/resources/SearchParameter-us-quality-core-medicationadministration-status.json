@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-medicationadministration-status",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-status",
+  "version": "0.1.0",
+  "name": "UsQualityCoreMedicationadministrationStatus",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core MedicationAdministration Status Search Parameter",
+  "code": "status",
+  "base": [
+    "MedicationAdministration"
+  ],
+  "type": "token",
+  "expression": "MedicationAdministration.status",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

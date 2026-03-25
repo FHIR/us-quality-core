@@ -1,0 +1,15 @@
+{
+  "package-id" : "hl7.fhir.us.quality-core",
+  "version" : "0.1.0",
+  "path" : "http://fhir.org/guides/astp/us-quality-core",
+  "mode": "milestone",
+  "status" : "release",
+  "sequence" : "0.1.0",
+  "desc" : "US Quality Core",
+ 	"title": "US Quality Core",
+  "descmd" : "This version establishes the US Quality Core Implementation Guide",
+ 	"introduction": "The United States Core Data for Interoperability (USCDI) Plus Quality (USCDI+ Quality)",
+ 	"ci-build": " http://build.fhir.org/guides/astp/us-quality-core",
+  "first" : true,
+	"category": "Quality Improvement"
+}

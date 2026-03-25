@@ -1,0 +1,74 @@
+{
+  "id": "us-quality-core-nutritionorder",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder",
+  "version": "0.1.0",
+  "name": "USQualityCoreNutritionOrder",
+  "title": "US Quality Core NutritionOrder",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-12-20",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Defines constraints and extensions on the NutritionOrder resource for the minimal set of data to query and retrieve a patient's Nutrition Order.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "NutritionOrder",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "NutritionOrder.identifier",
+        "path": "NutritionOrder.identifier",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "NutritionOrder.intent",
+        "path": "NutritionOrder.intent",
+        "short": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
+      },
+      {
+        "id": "NutritionOrder.patient",
+        "path": "NutritionOrder.patient",
+        "short": "The person who requires the diet, formula or nutritional supplement",
+        "definition": "The person (patient) who needs the nutrition order for an oral diet, nutritional supplement and/or enteral or formula feeding.",
+        "requirements": "The person who requires the diet, formula or nutritional supplement.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

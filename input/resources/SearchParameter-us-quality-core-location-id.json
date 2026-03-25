@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-location-id",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-location-id",
+  "version": "0.1.0",
+  "name": "UsQualityCoreLocation",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Location Id Search Parameter",
+  "code": "_id",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "Resource.id",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

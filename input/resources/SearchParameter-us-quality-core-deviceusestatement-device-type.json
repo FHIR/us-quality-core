@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-deviceusestatement-device-type",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-deviceusestatement-device-type",
+  "version": "0.1.0",
+  "name": "UsQualityCoreDeviceusestatementDeviceType",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core DeviceUseStatement Device Type Search Parameter",
+  "code": "device-type",
+  "base": [
+    "DeviceUseStatement"
+  ],
+  "type": "token",
+  "expression": "DeviceUseStatement.device.type",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

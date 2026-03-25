@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+  <id value="negation-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"/>
+  </meta>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+      <code value="community"/>
+    </coding>
+  </category>
+  <doNotPerform value="true"/>
+  <medicationCodeableConcept>
+    <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet">
+      <valueCanonical value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.39"/>
+    </extension>
+    <text value="Not Done Value Set: Low Dose Unfractionated Heparin for VTE Prophylaxis"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <authoredOn value="2015-03-25T19:32:52-05:00"/>
+  <requester>
+    <reference value="Practitioner/example"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="183966005"/>
+      <display value="Drug treatment not indicated (situation)"/>
+    </coding>
+  </reasonCode>
+</MedicationRequest>

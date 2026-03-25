@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-careteam-status",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careteam-status",
+  "version": "0.1.0",
+  "name": "UsQualityCoreCareteamStatus",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core CareTeam Status Search Parameter",
+  "code": "status",
+  "base": [
+    "CareTeam"
+  ],
+  "type": "token",
+  "expression": "CareTeam.status",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

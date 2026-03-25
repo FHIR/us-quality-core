@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-careplan-patient",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careplan-patient",
+  "version": "0.1.0",
+  "name": "UsQualityCoreCareplanPatient",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core CarePlan Patient Search Parameter",
+  "code": "patient",
+  "base": [
+    "CarePlan"
+  ],
+  "type": "reference",
+  "expression": "CarePlan.subject.where(resolve() is Patient)",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

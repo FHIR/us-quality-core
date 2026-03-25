@@ -1,0 +1,180 @@
+{
+  "id": "us-quality-core-medicationadministration",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
+  "version": "0.1.0",
+  "name": "USQualityCoreMedicationAdministration",
+  "title": "US Quality Core MedicationAdministration",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-03-31",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of MedicationAdministration for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.status",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.status",
+        "short": "(USCDI+ Quality) in-progress | on-hold | completed | entered-in-error | stopped | unknown",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status"
+        }
+      },
+      {
+        "id": "MedicationAdministration.statusReason",
+        "path": "MedicationAdministration.statusReason",
+        "short": "Reason administration not performed"
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.medication[x]",
+        "short": "(USCDI+ Quality) What was administered",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication"
+            ]
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The set of RxNorm codes to represent medications",
+          "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4"
+        }
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "short": "Who received medication",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "short": "Encounter or Episode of Care administered as part of",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter",
+              "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.effective[x]",
+        "short": "(USCDI+ Quality) Start and end time of administration"
+      },
+      {
+        "id": "MedicationAdministration.request",
+        "path": "MedicationAdministration.request",
+        "short": "Request administration performed against",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.dosage",
+        "short": "(USCDI+ Quality)",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationAdministration.dosage.route",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.dosage.route",
+        "short": "(USCDI+ Quality) Path of substance into body",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/route-codes"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.dosage.dose",
+        "short": "(USCDI+ Quality) Amount of medication per dose"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

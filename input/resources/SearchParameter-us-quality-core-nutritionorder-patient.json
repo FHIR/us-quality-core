@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-nutritionorder-patient",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-nutritionorder-patient",
+  "version": "0.1.0",
+  "name": "UsQualityCoreNutritionorderPatient",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core NutritionOrder Patient Search Parameter",
+  "code": "patient",
+  "base": [
+    "NutritionOrder"
+  ],
+  "type": "reference",
+  "expression": "NutritionOrder.patient",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

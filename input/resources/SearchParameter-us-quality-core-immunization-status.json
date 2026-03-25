@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-immunization-status",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-immunization-status",
+  "version": "0.1.0",
+  "name": "UsQualityCoreImmunizationStatus",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Immunization Status Search Parameter",
+  "code": "status",
+  "base": [
+    "Immunization"
+  ],
+  "type": "token",
+  "expression": "Immunization.status",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

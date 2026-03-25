@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-questionnaireresponse-questionnaire",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-questionnaireresponse-questionnaire",
+  "version": "0.1.0",
+  "name": "UsQualityCoreQuestionnaireresponseQuestionnaire",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core QuestionnaireResponse Questionnaire Search Parameter",
+  "code": "questionnaire",
+  "base": [
+    "QuestionnaireResponse"
+  ],
+  "type": "token",
+  "expression": "QuestionnaireResponse.questionnaire",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

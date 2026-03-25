@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-medicationrequest-intent",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationrequest-intent",
+  "version": "0.1.0",
+  "name": "UsQualityCoreMedicationrequestIntent",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core MedicationRequest Intent Search Parameter",
+  "code": "intent",
+  "base": [
+    "MedicationRequest"
+  ],
+  "type": "token",
+  "expression": "MedicationRequest.intent",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-imagingstudy-procedure-code",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-imagingstudy-procedure-code",
+  "version": "0.1.0",
+  "name": "UsQualityCoreImagingstudyProcedureCode",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core ImagingStudy Procedure Code Search Parameter",
+  "code": "procedure-code",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "token",
+  "expression": "ImagingStudy.procedureReference.resolve().code",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}

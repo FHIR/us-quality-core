@@ -1,0 +1,183 @@
+{
+  "id": "us-quality-core-immunization",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization",
+  "version": "0.1.0",
+  "name": "USQualityCoreImmunization",
+  "title": "US Quality Core Immunization",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-03-31",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of Immunization for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Immunization.id",
+        "path": "Immunization.id",
+        "mustSupport": false
+      },
+      {
+        "id": "Immunization.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.status",
+        "short": "(USCDI+ Quality) (USCDI) completed | entered-in-error",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-immunization-status"
+        }
+      },
+      {
+        "id": "Immunization.statusReason",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.statusReason",
+        "short": "(USCDI+ Quality) (USCDI) Reason not done",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-status-reason"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.vaccineCode",
+        "short": "(USCDI) Vaccine Product Type (bind to CVX)"
+      },
+      {
+        "id": "Immunization.patient",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.patient",
+        "short": "(USCDI) Who was immunized",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Immunization.occurrence[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.occurrence[x]",
+        "short": "(USCDI+ Quality) (USCDI) Vaccine administration date"
+      },
+      {
+        "id": "Immunization.recorded",
+        "path": "Immunization.recorded",
+        "short": "When the immunization was first captured in the subject's record",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Immunization.primarySource",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Immunization.primarySource",
+        "short": "(USCDI+ Quality) (USCDI) Indicates context the data was recorded in"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

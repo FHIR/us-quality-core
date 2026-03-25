@@ -1,0 +1,148 @@
+{
+  "id": "us-quality-core-questionnaireresponse",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
+  "version": "0.1.0",
+  "name": "USQualityCoreQuestionnaireResponse",
+  "title": "US Quality Core QuestionnaireResponse",
+  "status": "active",
+  "date": "2023-08-01",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "The US Quality Core QuestionnaireResponse Profile is based upon the US Core QuestionnaireResponse Profile and sets minimum expectations for the QuestionnaireResponse resource to record, search, and fetch retrieve captures the responses to form/survey and defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "QuestionnaireResponse.subject",
+        "short": "(USCDI) The subject of the questions",
+        "comment": "-",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "QuestionnaireResponse.author",
+        "short": "(USCDI) Person who received and recorded the answers",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.item",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "QuestionnaireResponse.item",
+        "short": "(USCDI) Groups and questions"
+      },
+      {
+        "id": "QuestionnaireResponse.item.linkId",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "QuestionnaireResponse.item.linkId",
+        "short": "(USCDI) Pointer to specific item from Questionnaire"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "QuestionnaireResponse.item.answer.value[x]",
+        "short": "(USCDI) Single-valued answer to the question",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "us-quality-core-condition-problems-health-concerns",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
+  "version": "0.1.0",
+  "name": "USQualityCoreConditionProblemsHealthConcerns",
+  "title": "US Quality Core Condition Problems Health Concerns",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-04-20",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of Condition for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "definition": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
+        "mustSupport": false
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.clinicalStatus",
+        "short": "(USCDI+ Quality) (USCDI) active | recurrence | relapse | inactive | remission | resolved"
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.verificationStatus",
+        "short": "(USCDI+ Quality) (USCDI) unconfirmed | provisional | differential | confirmed | refuted | entered-in-error"
+      },
+      {
+        "id": "Condition.category:us-core",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.category",
+        "sliceName": "us-core",
+        "short": "(USCDI+ Quality) (USCDI) problem-list-item | health-concern"
+      },
+      {
+        "id": "Condition.severity",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.severity",
+        "short": "(USCDI+ Quality) Subjective severity of condition"
+      },
+      {
+        "id": "Condition.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.code",
+        "short": "(USCDI+ Quality) (USCDI) Identification of the condition, problem or diagnosis"
+      },
+      {
+        "id": "Condition.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.subject",
+        "short": "(USCDI) Who has the condition?",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.onset[x]",
+        "short": "(USCDI) Estimated or actual date, date-time, or age",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.abatement[x]",
+        "short": "(USCDI+ Quality) (USCDI) When in resolution/remission",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Condition.recordedDate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Condition.recordedDate",
+        "short": "(USCDI+ Quality) (USCDI) Date record was first recorded"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

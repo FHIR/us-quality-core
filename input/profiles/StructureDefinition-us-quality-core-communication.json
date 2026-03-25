@@ -1,0 +1,128 @@
+{
+  "id": "us-quality-core-communication",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communication",
+  "version": "0.1.0",
+  "name": "USQualityCoreCommunication",
+  "title": "US Quality Core Communication",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-08-01",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of Communication for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication",
+        "path": "Communication",
+        "mustSupport": false
+      },
+      {
+        "id": "Communication.status",
+        "path": "Communication.status",
+        "short": "preparation | in-progress | on-hold | stopped | completed | entered-in-error | unknown",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-event-status"
+        }
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "short": "Focus of message",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Communication.topic",
+        "path": "Communication.topic",
+        "short": "Description of the purpose/content",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://terminology.hl7.org/ValueSet/communication-topic"
+        }
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
+        "short": "When sent"
+      },
+      {
+        "id": "Communication.received",
+        "path": "Communication.received",
+        "short": "When received"
+      },
+      {
+        "id": "Communication.recipient",
+        "path": "Communication.recipient",
+        "short": "Message recipient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "short": "Message sender",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

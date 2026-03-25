@@ -1,0 +1,221 @@
+{
+  "id": "us-quality-core-taskrejected",
+  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-taskrejected",
+  "version": "0.1.0",
+  "name": "USQualityCoreTaskRejected",
+  "title": "US Quality Core Task Rejected",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-06-23",
+  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact": [
+    {
+      "name": "Clinical Quality Information WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Profile of TaskRejected for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task",
+        "path": "Task",
+        "constraint": [
+          {
+            "key": "tnd-1",
+            "severity": "error",
+            "human": "to indicate what task was not performed, either at least one coding in the code or a notDoneValueSet extension shall be provided",
+            "expression": "code.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor  code.coding.exists()",
+            "xpath": "exists(f:extension)"
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Task.basedOn",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.basedOn",
+        "short": "(USCDI+ Quality) Request fulfilled by this task"
+      },
+      {
+        "id": "Task.status",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.status",
+        "short": "(USCDI+ Quality) The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "rejected"
+      },
+      {
+        "id": "Task.statusReason",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.statusReason",
+        "short": "(USCDI+ Quality)",
+        "min": 1,
+        "max": "1",
+        "mustSupport": false,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+        }
+      },
+      {
+        "id": "Task.code",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.code",
+        "short": "(USCDI+ Quality) Task Type",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "condition": [
+          "tnd-1"
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Codes to identify what the task involves. These will typically be specific to a particular workflow.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/task-code"
+        }
+      },
+      {
+        "id": "Task.code.extension:notDoneValueSet",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.code.extension",
+        "sliceName": "notDoneValueSet",
+        "short": "(USCDI+ Quality) Url of a value set of activities not requested or performed",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+            ]
+          }
+        ],
+        "condition": [
+          "tnd-1"
+        ]
+      },
+      {
+        "id": "Task.focus",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.focus",
+        "short": "(USCDI+ Quality)",
+        "min": 1,
+        "max": "1",
+        "mustSupport": false
+      },
+      {
+        "id": "Task.for",
+        "path": "Task.for",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Task.encounter",
+        "path": "Task.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+            ]
+          }
+        ],
+        "mustSupport": false
+      },
+      {
+        "id": "Task.executionPeriod",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.executionPeriod",
+        "short": "(USCDI+ Quality) The timing the task was rejected and the reason.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Task.reasonCode",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "Task.reasonCode",
+        "short": "(USCDI+ Quality) Why task is needed"
+      }
+    ]
+  },
+  "resourceType": "StructureDefinition"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-adverseevent-event",
+  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-adverseevent-event",
+  "version": "0.1.0",
+  "name": "UsQualityCoreAdverseeventEvent",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core AdverseEvent Event Search Parameter",
+  "code": "event",
+  "base": [
+    "AdverseEvent"
+  ],
+  "type": "token",
+  "expression": "AdverseEvent.event",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}
