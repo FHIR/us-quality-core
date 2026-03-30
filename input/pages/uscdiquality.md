@@ -18,7 +18,7 @@ USCDI+ Quality comprises of [two data element lists](https://uscdiplus.healthit.
 
 **USCDI+ Quality V1** defines high-level data requirements, and the **US Quality Core Implementation Guide** provides detailed FHIR-based profiles to meet those requirements. This guidance is necessary to achieve interoperability and consistency in quality-related healthcare data exchange in the United States, given the flexibility of the FHIR standard in representing this data.
 
-The US Quality Core Implementation Guide V1 is derived from the [QI-Core 6.0.0](https://hl7.org/fhir/us/qicore/STU6/), adopting its profiles and annotating them with specific requirements for USCDI+ Quality V1. It also defines specific expectations through [CapabilityStatements](capability-statements.html) for accessing the data over a standard FHIR RESTful API.
+The US Quality Core Implementation Guide v0.1.0 is derived from the [QI-Core 6.0.0](https://hl7.org/fhir/us/qicore/STU6/), adopting its profiles and annotating them with specific requirements for USCDI+ Quality V1. It also defines specific expectations through [CapabilityStatements](capability-statements.html) for accessing the data over a standard FHIR RESTful API.
 
 Note that:
 
