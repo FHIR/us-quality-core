@@ -5,7 +5,7 @@ This page documents requirements common to all US Quality Core actors in this gu
 
 In addition to adherence to core FHIR requirements, conformance to this US Quality Core Implementation Guide also requires the following:
 
-- Implementations **SHALL** support all profile types that contain at least one USCDI+ Quality data element, as described in the [USCDI+ Quality](uscdiquality.html) page.
+- Implementations **SHALL** support all profile types that contain at least one USCDI+ Quality flagged data element, as described in the [USCDI+ Quality](uscdiquality.html) page.
 - Implementations **SHALL** support all USCDI+ Quality flagged data elements, and those flagged as MustSupport from underlying US Core profiles.
 - Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](capabilityStatement-us-quality-core-server.html).
 - Server implementations **SHALL** declare their support of the US Quality Core profiles in a FHIR CapabilityStatement.
