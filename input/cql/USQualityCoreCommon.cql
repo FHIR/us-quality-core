@@ -13,12 +13,32 @@ using USQualityCore version '0.1.0-cibuild'
 include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1'
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0'
 
+codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "TaskCodeSystem": 'http://hl7.org/fhir/CodeSystem/task-code' 
+
+// Encounter Class Codes
+code "ambulatory": 'AMB' from ActCode display 'ambulatory'
+code "emergency": 'EMER' from ActCode display 'emergency'
+code "field": 'FLD' from ActCode display 'field'
+code "home health": 'HH' from ActCode display 'home health'
+code "inpatient encounter": 'IMP' from ActCode display 'inpatient encounter'
+code "inpatient acute": 'ACUTE' from ActCode display 'inpatient acute'
+code "inpatient non-acute": 'NONAC' from ActCode display 'inpatient non-acute'
+code "observation encounter": 'OBSENC' from ActCode display 'observation encounter'
+code "pre-admission": 'PRENC' from ActCode display 'pre-admission'
+code "short stay": 'SS' from ActCode display 'short stay'
+code "virtual": 'VR' from ActCode display 'Virtual'
 
 //Task codes
 code "Fulfill": 'fulfill' from "TaskCodeSystem" display 'Fulfill'
 
 context Patient
+
+/*
+@description: Returns the id of the given uri (i.e. everything after the last slash)
+*/
+define fluent function getId(uri String):
+  Last(Split(uri, '/'))
 
 /*
 @description: Returns the System.ValueSet instance with the url and version (if present) of the given canonical reference
@@ -33,11 +53,12 @@ define fluent function toValueSet(canonical FHIR.canonical):
 @description: Converts the activity extent pattern used to represent negated activities to either a codeableConcept or a value set
 @seealso: [Negation In US Quality Core](negation.html)
 */
-define fluent function toActivityExtent(codeable Choice<FHIR.CodeableConcept, FHIR.canonical>):
-  case
-    when codeable is FHIR.canonical then codeable.toValueSet()
-    else codeable as FHIR.CodeableConcept
-  end
+define fluent function toActivityExtent(codeableConcept FHIR.CodeableConcept):
+  (codeableConcept.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value) X
+    return
+      if X is not null 
+        then X.toValueSet()
+        else codeableConcept
 
 /*
 @description: Returns the value of the recorded extension for a Communication Not Done
@@ -50,7 +71,7 @@ define fluent function recorded(communicationNotDone CommunicationNotDone):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function topic(communicationNotDone CommunicationNotDone):
-  communicationNotDone.topic.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  communicationNotDone.topic.toActivityExtent()
 
 /*
 @description: Returns the value of the doNotPerformReason extension for a Device Not Requested
@@ -69,7 +90,7 @@ define fluent function doNotPerform(deviceNotRequested DeviceNotRequested):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function code(deviceNotRequested DeviceNotRequested):
-  deviceNotRequested.code.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  deviceNotRequested.code.toActivityExtent()
 
 /*
 @description: Returns the value of the abatement extension for a FamilyMemberHistory
@@ -88,7 +109,7 @@ define fluent function severity(familyMemberHistory FamilyMemberHistory):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function vaccineCode(immunizationNotDone ImmunizationNotDone):
-  immunizationNotDone.vaccineCode.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  immunizationNotDone.vaccineCode.toActivityExtent()
 
 /*
 @description: Returns the value of the recorded extension for a Medication Administration Not Done
@@ -101,7 +122,7 @@ define fluent function recorded(medicationAdministrationNotDone MedicationAdmini
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function medication(medicationAdministrationNotDone MedicationAdministrationNotDone):
-  medicationAdministrationNotDone.medication.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  medicationAdministrationNotDone.medication.toActivityExtent()
 
 /*
 @description: Returns the value of the recorded extension for a Medication Dispense Declined
@@ -114,14 +135,14 @@ define fluent function recorded(medicationDispenseDeclined MedicationDispenseDec
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function medication(medicationDispenseDeclined MedicationDispenseDeclined):
-  (medicationDispenseDeclined.medication as FHIR.CodeableConcept).ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  (medicationDispenseDeclined.medication as FHIR.CodeableConcept).toActivityExtent()
 
 /*
 @description: Returns the negated activity extent for a Medication Not Requested
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function medication(medicationNotRequested MedicationNotRequested):
-  medicationNotRequested.medication.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  medicationNotRequested.medication.toActivityExtent()
 
 /*
 @description: Returns the notDoneReason for an ObservationCancelled
@@ -134,7 +155,7 @@ define fluent function notDoneReason(observationCancelled ObservationCancelled):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function code(observationCancelled ObservationCancelled):
-  observationCancelled.code.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  observationCancelled.code.toActivityExtent()
 
 /*
 @description: Returns the value of the recorded extension for a Procedure
@@ -153,7 +174,7 @@ define fluent function recorded(procedureNotDone ProcedureNotDone):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function code(procedureNotDone ProcedureNotDone):
-  procedureNotDone.code.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  procedureNotDone.code.toActivityExtent()
 
 /*
 @description: Returns the value of the recorded extension for a Medication Administration Not Done
@@ -166,14 +187,14 @@ define fluent function reasonRefused(serviceNotRequested ServiceNotRequested):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function code(serviceNotRequested ServiceNotRequested):
-  serviceNotRequested.code.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  serviceNotRequested.code.toActivityExtent()
 
 /*
 @description: Returns the negated activity extent for a Task Rejected
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function code(taskRejected TaskRejected):
-  taskRejected.code.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value.toActivityExtent()
+  taskRejected.code.toActivityExtent()
 
 /*
 @description: Creates a list of integers from 1 to how many days are in the interval. Note, this wont create an index for

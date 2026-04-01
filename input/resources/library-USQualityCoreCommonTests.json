@@ -17,7 +17,6 @@
     } ]
   },
   "date": "2025-10-02T13:51:38+00:00",
-  "publisher": "ICF",
   "description": "Tests for the US Quality Core Common library",
   "topic": [ {
     "text": "FHIR"

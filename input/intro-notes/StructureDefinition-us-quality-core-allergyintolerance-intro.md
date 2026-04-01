@@ -1,6 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <a name="usage"><b>Usage</b></a>
-  <p>
 <tr>
     <td>See the <a href="patterns.html">patterns</a> page for implementation and usage patterns.</td>
 </tr>
@@ -8,11 +7,11 @@
 <pre>
 <code>define "Statin Allergy Intolerance":
   ["AllergyIntolerance": "Statin Allergen"] StatinAllergyIntolerance
-    where (StatinAllergyIntolerance.clinicalStatus is null or StatinAllergyIntolerance.clinicalStatus ~ Global."allergy-active")
+    where StatinAllergyIntolerance.clinicalStatus ~ "allergy-active"
 </code>
-<p>This example represents a situation where the subject is currently experiencing, or is at risk of, a reaction to the identified substance.</p>
 </pre>
-</p>
+
+<p>This example represents a situation where the subject is currently experiencing, or is at risk of, a reaction to the identified substance.</p>
 <a name="examples"> </a>
 <h3>Examples</h3>
 <p>

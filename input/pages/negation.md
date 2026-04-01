@@ -93,12 +93,7 @@ See the <a href="MedicationAdministration-negation-with-code-example.html">Medic
         }]
     },
     "subject" : ...,
-    "context" : ...,
-    "supportingInformation" : ...,
-    "effectivePeriod" : ...,
-    "request" : ...,
-    "note" : ...,
-    "dosage" : ...
+    "effectivePeriod" : ...
 }
 ```
 
@@ -139,16 +134,13 @@ See the <a href="MedicationAdministration-negation-example.html">MedicationAdmin
         "text" : "Not Done Value Set: Antithrombotic Therapy for Ischemic Stroke"
     },
     "subject" : ...,
-    "context" : ...,
-    "supportingInformation" : ...,
-    "effectivePeriod" : ...,
-    "request" : ...,
-    "note" : ...,
-    "dosage" : ...
+    "effectivePeriod" : ...
 }
 ```
 
-When using a retrieve to access negated information, whether the activity extent is recorded as a CodeableConcept or a ValueSet is handled by the CQL. If the terminology filtering for a negation activity needs to be performed outside of a retrieve, use the appropriate extension to access the negated element. For example, for CommunicationNotDone, the topic element has the notDoneValueSet extension defined, so the negation can be accessed using the `topic()` fluent function:
+When using a retrieve to access negated information, whether the activity extent is recorded as a CodeableConcept or a ValueSet is handled by the CQL. In most cases, the terminology can be provided as part of the retrieve directly. However, there are situations where authors may want to perform the terminology filtering for a negation activity outside of a retrieve. In these cases, authors can use the appropriate extension to access the negated element. For example, for MedicationAdministrationNotDone, the medication element has the notDoneValueSet extension defined, so the negation can be accessed using the `medication()` fluent function.
+
+The first case is when the negation is for a specific activity, so the terminology is provided as a direct-reference code. This case cannot be handled in the retrieve directly due to a known issue. CQL R2 introduces a terminology contains operator to support this, and until that operator is available, the filtering needs to be handled outside the retrieve, as illustrated by the following example.
 
 Indication that a specific medication was not administered (using a direct-reference code):
 
@@ -159,11 +151,13 @@ define TestSpecificMedicationAdministrationNotDoneExplicit:
       or MedicationCode in I.medication()
 ```
 
+The second case is when an alternative filter is being used in the retrieve, so the negated value set is provided in an addition filtering clause.
+
 Indication that a class of medications were not administered (using a value set):
 
 ```cql
 define TestGeneralMedicationAdministrationNotDoneExplicit:
-  ["MedicationAdministrationNotDone"] I
+  ["MedicationAdministrationNotDone": status in "MedicationAdministrationCompletedCodes"] I
     where I.medication() in MedicationCodes
       or I.medication() ~ MedicationCodes
 ```

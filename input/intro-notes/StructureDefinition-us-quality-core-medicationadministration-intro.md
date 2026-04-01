@@ -7,8 +7,7 @@ did not occur for a medical, patient or system reason, use the profile <a href="
 
 <pre><code>define "Low Dose Unfractionated Heparin Administration":
   ["MedicationAdministration": medication in "Low Dose Unfractionated Heparin for VTE Prophylaxis"] VTEMedication
-    where VTEMedication.status = 'completed'
-      and VTEMedication.category ~ USQualityCoreCommon."Inpatient"</code>
+    where VTEMedication.status = 'completed'</code>
 </pre>
 
 <p>

@@ -17,7 +17,6 @@
     } ]
   },
   "date": "2025-10-02T13:51:38+00:00",
-  "publisher": "ICF",
   "description": "Common terminologies and functions used in US Quality Core-based CQL artifacts",
   "topic": [ {
     "text": "FHIR"
