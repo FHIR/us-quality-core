@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-adverseevent",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-adverseevent",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent",
   "version": "0.1.0",
   "name": "USQualityCoreAdverseEvent",
   "title": "US Quality Core AdverseEvent",
@@ -47,7 +47,7 @@
         "id": "AdverseEvent.category",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -58,7 +58,7 @@
         "id": "AdverseEvent.event",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -82,10 +82,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
               "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
             ]
           }
         ]
@@ -98,7 +98,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
             ]
           }
         ]
@@ -107,7 +107,7 @@
         "id": "AdverseEvent.date",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -119,7 +119,7 @@
         "id": "AdverseEvent.detected",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -130,7 +130,7 @@
         "id": "AdverseEvent.recordedDate",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -145,8 +145,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
             ]
           }
         ]
@@ -158,7 +158,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"
             ]
           }
         ],
@@ -176,10 +176,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
             ]
           }
         ],
@@ -192,9 +192,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
             ]
           }
@@ -210,7 +210,7 @@
         "id": "AdverseEvent.suspectEntity.instance",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -220,13 +220,13 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-substance",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationstatement",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
             ]
           }
@@ -246,13 +246,13 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
             ]
           }
         ],

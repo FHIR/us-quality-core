@@ -3,7 +3,7 @@
   "id": "example-refuted",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"
+      "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"
     ]
   },
   "text": {

@@ -24,7 +24,7 @@ valueset "ObservationCodes": 'http://example.org/fhir/ValueSet/observation-codes
 valueset "ProcedureCodes": 'http://example.org/fhir/ValueSet/procedure-codes' // Random set of procedure codes from 'http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code'
 valueset "Application of intermittent pneumatic compression devices (IPC)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.65'
 valueset "TaskCodes": 'http://hl7.org/fhir/ValueSet/task-code'
-valueset "NegationReasonCodes": 'http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason'
+valueset "NegationReasonCodes": 'http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason'
 
 valueset "Office Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001'
 valueset "Non-Elective Inpatient Encounter": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.424'

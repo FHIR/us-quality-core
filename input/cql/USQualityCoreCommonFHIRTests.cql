@@ -21,99 +21,99 @@ code "Systolic blood pressure": '8480-6' from Common."LOINC" display 'Systolic b
 context Patient
 
 // USQualityCoreAdverseEvent
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-adverseevent
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent
 define AdverseEvent:
   [AdverseEvent]
 
 // USQualityCoreAllergyIntolerance
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance
 define AllergyIntolerance:
   [AllergyIntolerance]
 
 // USQualityCoreBodyStructure
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-bodystructure
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-bodystructure
 define BodyStructure:
   [BodyStructure]
 
 // USQualityCoreCarePlan
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan
 define CarePlan:
   [CarePlan]
 
 // USQualityCoreCareTeam
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careteam
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam
 define CareTeam:
   [CareTeam]
 
 // USQualityCoreClaim
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim
 define Claim:
   [Claim]
 
 // USQualityCoreCommunication
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communication
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communication
 define Communication:
   [Communication] C
     where C.status in { 'preparation', 'in-progress', 'on-hold', 'completed' }
 
 // USQualityCoreCommunicationNotDone
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone
 define CommunicationNotDone:
   [Communication] C
     where C.status = 'not-done'
 
 // USQualityCoreCommunicationRequest
-// @profile: 	http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationrequest
+// @profile: 	http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationrequest
 define CommunicationRequest:
   [CommunicationRequest]
 
 // USQualityCoreCondition
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition
 define Condition:
   [Condition]
 
 // USQualityCoreCoverage
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-coverage
 define Coverage:
   [Coverage]
 
 // USQualityCoreDevice
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device
 define Device:
   [Device]
 
 // USQualityCoreDeviceNotRequested
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested
 define DeviceNotRequested:
   [DeviceRequest] D
     where D.status = 'completed'
       and D.doNotPerform() is true
 
 // USQualityCoreDeviceRequest
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest
 define DeviceRequest:
   [DeviceRequest] D
     where D.status in { 'draft', 'active', 'on-hold', 'revoked', 'completed' }
       and D.doNotPerform() is not true
 
 // USQualityCoreDeviceUseStatement
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement
 define DeviceUseStatement:
   [DeviceUseStatement]
 
 // USQualityCoreDiagnosticReportLab
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab
 define DiagnosticReportLab:
   [DiagnosticReport] D
     //where D.category ~ "http://terminology.hl7.org/CodeSystem/v2-0074#LAB"
 
 // USQualityCoreDiagnosticReportNote
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note
 define DiagnosticReportNote:
   [DiagnosticReport] D
 
 // USQualityCoreEncounter
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter
 define Encounter:
   [Encounter]
 
@@ -122,44 +122,44 @@ define EncounterPerformed:
     where E.status = 'finished'
 
 // USQualityCoreFamilyMemberHistory
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory
 define FamilyMemberHistory:
   [FamilyMemberHistory]
 
 // USQualityCoreFlag
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-flag
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-flag
 define Flag:
   [Flag]
 
 // USQualityCoreGoal
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-goal
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal
 define Goal:
   [Goal]
 
 // USQualityCoreImagingStudy
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-imagingstudy
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy
 define ImagingStudy:
   [ImagingStudy]
 
 // USQualityCoreImmunization
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization
 define Immunization:
   [Immunization] I
     where I.status = 'completed'
 
 // USQualityCoreImmunizationEvaluation
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation
 define ImmunizationEvaluation:
   [ImmunizationEvaluation]
 
 // USQualityCoreImmunizationNotDone
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone
 define ImmunizationNotDone:
   [Immunization] I
     where I.status = 'not-done'
 
 // USQualityCoreImmunizationRecommendation
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationrec
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationrec
 define ImmunizationRecommendation:
   [ImmunizationRecommendation]
 
@@ -169,41 +169,41 @@ define ImplantableDevice:
   [Device]
 
 // USQualityCoreLocation
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location
 define Location:
   [Location]
 
 // USQualityCoreMedication
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication
 define Medication:
   [Medication]
 
 // USQualityCoreMedicationAdministration
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration
 define MedicationAdministration:
   [MedicationAdministration] M
     where M.status in { 'in-progress', 'on-hold', 'completed' }
 
 // USQualityCoreMedicationAdministrationNotDone
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-mednotadministered
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-mednotadministered
 define MedicationAdministrationNotDone:
   [MedicationAdministration] M
     where M.status = 'not-done'
 
 // USQualityCoreMedicationDispense
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispense
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense
 define MedicationDispense:
   [MedicationDispense] D
     where D.status in { 'preparation', 'in-progress', 'on-hold', 'completed' }
 
 // USQualityCoreMedicationDispenseDeclined
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined
 define MedicationDispenseDeclined:
   [MedicationDispense] D
     where D.status in { 'cancelled', 'declined' }
 
 // USQualityCoreMedicationNotRequested
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-mednotrequested
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-mednotrequested
 define MedicationNotRequested:
   [MedicationRequest] R
     where R.status = 'completed'
@@ -236,7 +236,7 @@ define "Antithrombotic Not Given at Discharge":
 */
 
 // USQualityCoreMedicationRequest
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest
 define MedicationRequest:
   [MedicationRequest] R
     where R.status in { 'active', 'on-hold', 'completed', 'draft' }
@@ -264,23 +264,23 @@ define "Antithrombotic Therapy at Discharge":
 */
 
 // USQualityCoreMedicationStatement
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationstatement
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement
 define MedicationStatement:
   [MedicationStatement]
 
 // USQualityCoreNutritionOrder
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nutritionorder
 define NutritionOrder:
   [NutritionOrder]
 
 // USQualityCoreObservation
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation
 define Observation:
   [Observation] O
     where O.status in { 'registered', 'preliminary', 'final', 'amended', 'corrected' }
 
 // USQualityCoreObservationCancelled
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observationcancelled
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled
 define ObservationCancelled:
   [Observation] O
     where O.status = 'cancelled'
@@ -298,27 +298,27 @@ define ObservationCancelled:
 // USCore Pulse Oximetry
 
 // USQualityCoreOrganization
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization
 define Organization:
   [Organization]
 
 // USQualityCorePatient
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient
 //define Patient:
 //  [Patient]
 
 // USQualityCorePractitioner
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner
 define Practitioner:
   [Practitioner]
 
 // USQualityCorePractitionerRole
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole
 define PractitionerRole:
   [PractitionerRole]
 
 // USQualityCoreProcedure
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure
 define Procedure:
   [Procedure] P
     where P.status in { 'preparation', 'in-progress', 'on-hold', 'completed' }
@@ -340,7 +340,7 @@ define "Flexible Sigmoidoscopy Performed":
 */
 
 // USQualityCoreProcedureNotDone
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone
 define ProcedureNotDone:
   [Procedure] P
     where P.status = 'not-done'
@@ -371,12 +371,12 @@ define "No VTE Prophylaxis Device Applied":
 */
 
 // USQualityCoreRelatedPerson
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson
 define RelatedPerson:
   [RelatedPerson]
 
 // USQualityCoreServiceNotRequested
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested
 define ServiceNotRequested:
   [ServiceRequest] SR
     where SR.status = 'completed'
@@ -399,7 +399,7 @@ define "No VTE Prophylaxis Device Order":
 */
 
 // USQualityCoreServiceRequest
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest
 define ServiceRequest:
   [ServiceRequest] SR
     where SR.status in { 'draft', 'active', 'on-hold', 'completed' }
@@ -427,23 +427,23 @@ define "Intervention Comfort Measures":
 */
 
 // USQualityCoreSpecimen
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-specimen
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-specimen
 define Specimen:
   [Specimen]
 
 // USQualityCoreSubstance
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-substance
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance
 define Substance:
   [Substance]
 
 // USQualityCoreTask
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-task
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task
 define Task:
   [Task] T
     where T.status in { 'draft', 'requested', 'received', 'accepted', 'ready', 'in-progress', 'on-hold', 'completed' }
 
 // USQualityCoreTaskRejected
-// @profile: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-taskrejected
+// @profile: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected
 // TODO: What about cancelled and failed?
 define TaskRejected:
   [Task] T

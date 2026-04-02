@@ -3,7 +3,7 @@
   "text": {
     "status": "extensions"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
   "version": "0.1.0",
   "name": "USQualityCoreNotDoneRecorded",
   "title": "US Quality Core Not Done Recorded",
@@ -69,7 +69,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded"
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded"
       },
       {
         "id": "Extension.value[x]",

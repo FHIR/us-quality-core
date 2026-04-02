@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-servicenotrequested",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested",
   "version": "0.1.0",
   "name": "USQualityCoreServiceNotRequested",
   "title": "US Quality Core Service Not Requested",
@@ -46,7 +46,7 @@
             "key": "snr-1",
             "severity": "error",
             "human": "to indicate what service was not performed, either at least one coding in the code or a notDoneValueSet extension shall be provided",
-            "expression": "code.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()"
+            "expression": "code.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()"
           }
         ],
         "mustSupport": false
@@ -62,7 +62,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason"
             ]
           }
         ]
@@ -75,7 +75,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -103,7 +103,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -121,7 +121,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
             ]
           }
         ],
@@ -143,7 +143,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -178,7 +178,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -201,12 +201,12 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
             ]
           }
@@ -220,7 +220,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -244,7 +244,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -263,8 +263,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"
             ]
           }
         ],

@@ -3,7 +3,7 @@
   "text": {
     "status": "extensions"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim",
   "version": "0.1.0",
   "name": "USQualityCoreClaim",
   "title": "US Quality Core Claim",
@@ -54,7 +54,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -77,9 +77,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ]
@@ -92,8 +92,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
               "http://hl7.org/fhir/StructureDefinition/VisionPrescription"
             ]
           }
@@ -111,11 +111,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
             ]
           }
         ],
@@ -128,7 +128,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
             ]
           }
         ],
@@ -141,7 +141,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"
             ]
           }
         ],
@@ -159,9 +159,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ],
@@ -181,7 +181,7 @@
         "id": "Claim.diagnosis.diagnosis[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -194,7 +194,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"
             ]
           }
         ],
@@ -214,7 +214,7 @@
         "id": "Claim.diagnosis.onAdmission",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -254,7 +254,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure"
             ]
           }
         ],
@@ -278,7 +278,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
             ]
           }
         ]

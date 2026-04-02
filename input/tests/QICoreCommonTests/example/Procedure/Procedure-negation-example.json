@@ -7,13 +7,13 @@
   },
   "extension": [
     {
-      "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+      "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
       "valueDateTime": "2013-04-05T10:30:00-04:00"
     }
   ],
   "modifierExtension": [
     {
-      "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDone",
+      "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDone",
       "valueBoolean": true
     }
   ],

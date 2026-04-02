@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-medicationadministration-effective-time",
-  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-effective-time",
+  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationadministration-effective-time",
   "version": "0.1.0",
   "name": "UsQualityCoreMedicationadministrationEffectiveTime",
   "status": "active",

@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-condition-encounter-diagnosis",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
   "version": "0.1.0",
   "name": "USQualityCoreConditionEncounterDiagnosis",
   "title": "US Quality Core Condition Encounter Diagnosis",
@@ -47,7 +47,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -68,7 +68,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -81,7 +81,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -91,7 +91,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
             ]
           }
         ]
@@ -154,7 +154,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],

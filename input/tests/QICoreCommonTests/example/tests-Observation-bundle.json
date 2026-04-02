@@ -401,7 +401,7 @@
       "resourceType": "Observation",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation" ]
       },
       "text": {
         "status": "generated",
@@ -875,7 +875,7 @@
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: negation-example</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Hemoglobin lab test <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'null' = 'null)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: id: example; Medical record number = 12345 (USUAL); active; Peter James Chalmers (OFFICIAL), Jim Chalmers , Peter James Windsor (MAIDEN); ph: (03) 5555 6473(WORK), ph: (03) 3410 5613(MOBILE), ph: (03) 5555 8834(OLD); gender: male; birthDate: 1974-12-25; </a></p><p><b>encounter</b>: <a href=\"Encounter-example.html\">Generated Summary: id: example; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://www.ama-assn.org/go/cpt 99223}\">Inpatient Hospital Care</span></a></p><p><b>effective</b>: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM</p><p><b>issued</b>: Apr 3, 2013 2:30:10 PM</p></div>"
       },
       "extension": [ {
-        "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason",
+        "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason",
         "valueCodeableConcept": {
           "coding": [ {
             "system": "http://snomed.info/sct",
@@ -885,7 +885,7 @@
         }
       } ],
       "modifierExtension": [ {
-        "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDone",
+        "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDone",
         "valueBoolean": true
       } ],
       "status": "final",

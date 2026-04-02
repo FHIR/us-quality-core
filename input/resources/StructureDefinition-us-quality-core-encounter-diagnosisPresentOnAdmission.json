@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-encounter-diagnosisPresentOnAdmission",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission",
   "version": "0.1.0",
   "name": "USQualityCoreDiagnosisPresentOnAdmission",
   "title": "US Quality Core Diagnosis Present on Admission",
@@ -67,7 +67,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission"
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission"
       },
       {
         "id": "Extension.value[x]",
@@ -80,7 +80,7 @@
         "binding": {
           "strength": "required",
           "description": "Indicator of whether the Encounter diagnosis was present at the time of admission",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-present-on-admission"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-present-on-admission"
         }
       }
     ]

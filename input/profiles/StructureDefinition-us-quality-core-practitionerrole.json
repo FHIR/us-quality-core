@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-practitionerrole",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
   "version": "0.1.0",
   "name": "USQualityCorePractitionerRole",
   "title": "US Quality Core PractitionerRole",
@@ -42,7 +42,7 @@
         "id": "PractitionerRole.identifier",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -67,7 +67,7 @@
         "id": "PractitionerRole.identifier.system",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -85,7 +85,7 @@
         "id": "PractitionerRole.identifier.value",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -117,7 +117,7 @@
         "id": "PractitionerRole.practitioner",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -127,7 +127,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner"
             ]
           }
         ]
@@ -140,7 +140,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ]
@@ -149,7 +149,7 @@
         "id": "PractitionerRole.code",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -165,7 +165,7 @@
         "id": "PractitionerRole.specialty",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -180,7 +180,7 @@
         "id": "PractitionerRole.location",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -190,7 +190,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"
             ]
           }
         ]
@@ -206,7 +206,7 @@
         "id": "PractitionerRole.telecom",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -220,7 +220,7 @@
         "id": "PractitionerRole.telecom.system",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -238,7 +238,7 @@
         "id": "PractitionerRole.telecom.value",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],

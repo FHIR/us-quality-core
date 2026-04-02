@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-immunizationevaluation",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation",
   "version": "0.1.0",
   "name": "USQualityCoreImmunizationEvaluation",
   "title": "US Quality Core ImmunizationEvaluation",
@@ -105,7 +105,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -124,7 +124,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ],
@@ -151,7 +151,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization"
             ]
           }
         ]

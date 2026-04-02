@@ -3,7 +3,7 @@
   "text": {
     "status": "extensions"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
   "version": "0.1.0",
   "name": "USQualityCoreDoNotPerformReason",
   "title": "US Quality Core Do Not Perform Reason",
@@ -204,7 +204,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -246,7 +246,7 @@
         "binding": {
           "strength": "extensible",
           "description": "The reason the event did not occur or was not performed",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"
         },
         "mapping": [
           {
@@ -274,7 +274,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason"
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason"
       },
       {
         "id": "Extension.value[x]",
@@ -287,7 +287,7 @@
         "binding": {
           "strength": "extensible",
           "description": "The reason the event did not occur or was not performed",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"
         }
       }
     ]

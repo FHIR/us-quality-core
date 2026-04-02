@@ -7,7 +7,7 @@
   },
   "extension": [
     {
-      "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+      "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
       "valueDateTime": "2015-01-15"
     }
   ],

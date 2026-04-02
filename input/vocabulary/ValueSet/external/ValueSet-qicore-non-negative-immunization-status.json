@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "us-quality-core-non-negative-immunization-status",
-  "url": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-immunization-status",
+  "url": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-immunization-status",
   "version": "4.0.0",
   "name": "NonNegativeImmunizationStatus",
   "title": "Non-Negative Immunization Status",

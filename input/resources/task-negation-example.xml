@@ -2,7 +2,7 @@
 <Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="negation-example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-taskrejected"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected"/>
   </meta>
   <identifier>
     <system value="http://www.acme.org/tasks"/>
@@ -18,7 +18,7 @@
   </statusReason>
   <intent value="proposal"/>
   <code>
-    <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet">
+    <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet">
       <valueCanonical value="http://cts.nlm.nih.gov/fhir/2.16.840.1.113762.1.4.1096.11"/>
     </extension>
     <text value="Interventions Related to Medication Management, Medication Reconciliation"/>

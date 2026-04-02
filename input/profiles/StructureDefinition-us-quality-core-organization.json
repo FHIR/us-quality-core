@@ -3,7 +3,7 @@
   "text": {
     "status": "extensions"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
   "version": "0.1.0",
   "name": "USQualityCoreOrganization",
   "title": "US Quality Core Organization",
@@ -45,7 +45,7 @@
         "id": "Organization.identifier",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -158,7 +158,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ]

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="0.1.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-us-quality-core" url="http://fhir.org/guides/astp/us-quality-core">
-<version code="current" url="http://fhir.org/guides/astp/us-quality-core"/>
-<version code="0.1.0" url="http://fhir.org/guides/astp/us-quality-core"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="0.1.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-us-quality-core" url="http://fhir.org/guides/onc/us-quality-core">
+<version code="current" url="http://fhir.org/guides/onc/us-quality-core"/>
+<version code="0.1.0" url="http://fhir.org/guides/onc/us-quality-core"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>

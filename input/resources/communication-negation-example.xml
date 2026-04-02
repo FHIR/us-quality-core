@@ -2,9 +2,9 @@
 <Communication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="negation-example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone"/>
   </meta>
-  <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded">
+  <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded">
     <valueDateTime value="2014-12-12T18:01:10-08:00"/>
   </extension>
   <status value="not-done"/>

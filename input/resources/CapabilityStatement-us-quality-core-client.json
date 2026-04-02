@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-client",
-  "url": "http://fhir.org/guides/astp/us-quality-core/CapabilityStatement/us-quality-core-client",
+  "url": "http://fhir.org/guides/onc/us-quality-core/CapabilityStatement/us-quality-core-client",
   "version": "0.1.0",
   "name": "USQualityCoreClientCapabilityStatement",
   "title": "US Quality Core Client CapabilityStatement",
@@ -14,7 +14,7 @@
     "json"
   ],
   "implementationGuide": [
-    "http://fhir.org/guides/astp/us-quality-core"
+    "http://fhir.org/guides/onc/us-quality-core"
   ],
   "rest": [
     {
@@ -64,7 +64,7 @@
           ],
           "type": "AdverseEvent",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-adverseevent"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent"
           ],
           "interaction": [
             {
@@ -98,7 +98,7 @@
                 }
               ],
               "name": "subject",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-adverseevent-subject",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-subject",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -110,7 +110,7 @@
                 }
               ],
               "name": "event",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-adverseevent-event",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-event",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -122,7 +122,7 @@
                 }
               ],
               "name": "recordedDate",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-adverseevent-recordedDate",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recordedDate",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -137,7 +137,7 @@
           ],
           "type": "AllergyIntolerance",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"
           ],
           "interaction": [
             {
@@ -171,7 +171,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-allergyintolerance-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-allergyintolerance-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -203,7 +203,7 @@
           ],
           "type": "CarePlan",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan"
           ],
           "interaction": [
             {
@@ -237,7 +237,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careplan-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-careplan-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -249,7 +249,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careplan-category",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-careplan-category",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             }
@@ -281,7 +281,7 @@
           ],
           "type": "CareTeam",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careteam"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam"
           ],
           "interaction": [
             {
@@ -315,7 +315,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careteam-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-careteam-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -327,7 +327,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-careteam-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-careteam-status",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             }
@@ -342,7 +342,7 @@
           ],
           "type": "Claim",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"
           ],
           "interaction": [
             {
@@ -376,7 +376,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-claim-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-claim-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -459,8 +459,8 @@
           ],
           "type": "Condition",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"
           ],
           "interaction": [
             {
@@ -494,7 +494,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-condition-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -506,7 +506,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-category",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-condition-category",
               "type": "token",
               "documentation": "The client **MAY** provide a category."
             },
@@ -518,7 +518,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-condition-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -530,7 +530,7 @@
                 }
               ],
               "name": "onset-date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-onset-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-condition-onset-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             },
@@ -542,7 +542,7 @@
                 }
               ],
               "name": "abatement-date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-condition-abatement-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-condition-abatement-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -557,7 +557,7 @@
           ],
           "type": "Coverage",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-coverage"
           ],
           "interaction": [
             {
@@ -591,7 +591,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-coverage-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-coverage-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -623,8 +623,8 @@
           ],
           "type": "DeviceRequest",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"
           ],
           "interaction": [
             {
@@ -658,7 +658,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-devicerequest-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-devicerequest-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -670,7 +670,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-devicerequest-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-devicerequest-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             }
@@ -740,8 +740,8 @@
           ],
           "type": "DiagnosticReport",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab"
           ],
           "interaction": [
             {
@@ -775,7 +775,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -787,7 +787,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-category",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-category",
               "type": "token",
               "documentation": "The client **MAY** provide a category."
             },
@@ -799,7 +799,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -811,7 +811,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-diagnosticreport-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -860,7 +860,7 @@
           ],
           "type": "Encounter",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
           ],
           "interaction": [
             {
@@ -894,7 +894,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-encounter-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-encounter-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             },
@@ -906,7 +906,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-encounter-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-encounter-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -918,7 +918,7 @@
                 }
               ],
               "name": "type",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-encounter-type",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-encounter-type",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -930,7 +930,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-encounter-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-encounter-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -945,7 +945,7 @@
           ],
           "type": "FamilyMemberHistory",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory"
           ],
           "interaction": [
             {
@@ -979,7 +979,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-familymemberhistory-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-familymemberhistory-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -994,7 +994,7 @@
           ],
           "type": "Goal",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-goal"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal"
           ],
           "interaction": [
             {
@@ -1028,7 +1028,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-goal-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-goal-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -1077,8 +1077,8 @@
           ],
           "type": "Immunization",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone"
           ],
           "interaction": [
             {
@@ -1112,7 +1112,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-immunization-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-immunization-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1124,7 +1124,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-immunization-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-immunization-status",
               "type": "token",
               "documentation": "The client **MAY** provide a status."
             },
@@ -1136,7 +1136,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-immunization-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-immunization-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -1151,7 +1151,7 @@
           ],
           "type": "Location",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"
           ],
           "interaction": [
             {
@@ -1185,7 +1185,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-location-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-location-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             }
@@ -1200,7 +1200,7 @@
           ],
           "type": "Medication",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication"
           ],
           "interaction": [
             {
@@ -1234,7 +1234,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medication-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medication-code",
               "type": "token",
               "documentation": "The client **SHALL** provide a code value."
             }
@@ -1300,8 +1300,8 @@
           ],
           "type": "MedicationAdministration",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"
           ],
           "interaction": [
             {
@@ -1335,7 +1335,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationadministration-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1347,7 +1347,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationadministration-status",
               "type": "token",
               "documentation": "The client **MAY** provide a status."
             },
@@ -1359,7 +1359,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationadministration-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -1371,7 +1371,7 @@
                 }
               ],
               "name": "effective-time",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationadministration-effective-time",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationadministration-effective-time",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -1403,8 +1403,8 @@
           ],
           "type": "MedicationDispense",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispense",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined"
           ],
           "interaction": [
             {
@@ -1438,7 +1438,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationdispense-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationdispense-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1450,7 +1450,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationdispense-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationdispense-status",
               "type": "token",
               "documentation": "The client **MAY** provide a status."
             }
@@ -1482,8 +1482,8 @@
           ],
           "type": "MedicationRequest",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"
           ],
           "interaction": [
             {
@@ -1517,7 +1517,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationrequest-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationrequest-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1529,7 +1529,7 @@
                 }
               ],
               "name": "intent",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-medicationrequest-intent",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationrequest-intent",
               "type": "token",
               "documentation": "The client **MAY** provide a token value."
             }
@@ -1599,11 +1599,11 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observationcancelled",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-lab"
           ],
           "interaction": [
             {
@@ -1637,7 +1637,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1649,7 +1649,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-category",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-category",
               "type": "token",
               "documentation": "The client **MAY** provide a category."
             },
@@ -1661,7 +1661,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -1673,7 +1673,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -1688,7 +1688,7 @@
           ],
           "type": "Organization",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
           ],
           "interaction": [
             {
@@ -1723,7 +1723,7 @@
           ],
           "type": "Patient",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
           ],
           "interaction": [
             {
@@ -1757,7 +1757,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-patient-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-patient-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             }
@@ -1772,7 +1772,7 @@
           ],
           "type": "Practitioner",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner"
           ],
           "interaction": [
             {
@@ -1806,7 +1806,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-practitioner-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-practitioner-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             }
@@ -1821,7 +1821,7 @@
           ],
           "type": "PractitionerRole",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
           ],
           "interaction": [
             {
@@ -1855,7 +1855,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-practitionerrole-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-practitionerrole-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             }
@@ -1904,8 +1904,8 @@
           ],
           "type": "Procedure",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone"
           ],
           "interaction": [
             {
@@ -1939,7 +1939,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-procedure-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-procedure-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -1951,7 +1951,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-procedure-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-procedure-status",
               "type": "token",
               "documentation": "The client **MAY** provide a status."
             },
@@ -1963,7 +1963,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-procedure-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-procedure-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -1978,7 +1978,7 @@
           ],
           "type": "RelatedPerson",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
           ],
           "interaction": [
             {
@@ -2012,7 +2012,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-relatedperson-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-relatedperson-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             },
@@ -2024,7 +2024,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-relatedperson-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-relatedperson-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             }
@@ -2094,8 +2094,8 @@
           ],
           "type": "ServiceRequest",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested"
           ],
           "interaction": [
             {
@@ -2129,7 +2129,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-id",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-id",
               "type": "token",
               "documentation": "The client **SHALL** provide an id value."
             },
@@ -2141,7 +2141,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -2153,7 +2153,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-category",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-category",
               "type": "token",
               "documentation": "The client **MAY** provide a category."
             },
@@ -2165,7 +2165,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             },
@@ -2177,7 +2177,7 @@
                 }
               ],
               "name": "authored",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-servicerequest-authored",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-authored",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -2226,8 +2226,8 @@
           ],
           "type": "Task",
           "supportedProfile": [
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-task",
-            "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-taskrejected"
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task",
+            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected"
           ],
           "interaction": [
             {
@@ -2261,7 +2261,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-task-patient",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-task-patient",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -2273,7 +2273,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-task-status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-task-status",
               "type": "token",
               "documentation": "The client **MAY** provide a status."
             },
@@ -2285,7 +2285,7 @@
                 }
               ],
               "name": "code",
-              "definition": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-task-code",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-task-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
             }

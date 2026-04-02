@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-diagnosticreport-note",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
   "version": "0.1.0",
   "name": "USQualityCoreDiagnosticReportNote",
   "title": "US Quality Core DiagnosticReport Profile for Report and Note Exchange",
@@ -67,7 +67,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -82,7 +82,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -98,7 +98,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -143,7 +143,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -162,7 +162,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
             ]
           }
         ]
@@ -175,7 +175,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -224,8 +224,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ]
@@ -238,7 +238,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -248,8 +248,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-lab",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result"
             ]
           }
         ]
@@ -258,7 +258,7 @@
         "id": "DiagnosticReport.imagingStudy",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -268,7 +268,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-imagingstudy"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy"
             ]
           }
         ]
