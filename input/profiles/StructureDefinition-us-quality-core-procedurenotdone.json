@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-procedurenotdone",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone",
   "version": "0.1.0",
   "name": "USQualityCoreProcedureNotDone",
   "title": "US Quality Core Procedure Not Done",
@@ -46,7 +46,7 @@
             "key": "pnd-1",
             "severity": "error",
             "human": "to indicate what procedure was not performed, either at least one coding in the code or a notDoneValueSet extension shall be provided",
-            "expression": "code.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()"
+            "expression": "code.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()"
           }
         ],
         "mustSupport": false
@@ -55,7 +55,7 @@
         "id": "Procedure.extension:recorded",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -69,7 +69,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded"
             ]
           }
         ]
@@ -99,8 +99,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
             ]
           }
         ],
@@ -112,7 +112,7 @@
         "id": "Procedure.partOf",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -127,7 +127,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -146,7 +146,7 @@
         "id": "Procedure.statusReason",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -157,7 +157,7 @@
         "binding": {
           "strength": "extensible",
           "description": "The reason the procedure was not done",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"
         }
       },
       {
@@ -173,7 +173,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -203,7 +203,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
             ]
           }
         ],
@@ -225,7 +225,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -238,7 +238,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -249,7 +249,7 @@
         "id": "Procedure.reasonCode",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -260,7 +260,7 @@
         "id": "Procedure.reasonReference",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],

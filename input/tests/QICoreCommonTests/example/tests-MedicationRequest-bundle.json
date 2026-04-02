@@ -7,7 +7,7 @@
       "resourceType": "MedicationRequest",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest" ]
       },
       "text": {
         "status": "generated",

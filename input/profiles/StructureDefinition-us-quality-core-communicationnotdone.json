@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-communicationnotdone",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone",
   "version": "0.1.0",
   "name": "USQualityCoreCommunicationNotDone",
   "title": "US Quality Core Communication Not Done",
@@ -46,7 +46,7 @@
             "key": "cnd-1",
             "severity": "error",
             "human": "to indicate what communication was not carried out, either at least one coding in the topic or a notDoneValueSet extension shall be provided",
-            "expression": "topic.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor topic.coding.exists()"
+            "expression": "topic.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor topic.coding.exists()"
           }
         ],
         "mustSupport": false
@@ -62,7 +62,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded"
             ]
           }
         ]
@@ -88,7 +88,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"
         }
       },
       {
@@ -101,7 +101,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
               "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
@@ -137,7 +137,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
             ]
           }
         ]

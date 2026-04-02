@@ -3,7 +3,7 @@
   "id": "referral-example",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
+      "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"
     ]
   },
   "text": {

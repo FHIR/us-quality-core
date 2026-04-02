@@ -554,22 +554,22 @@ define fluent function direct(contactPoint ContactPoint):
 /* USQualityCore Extensions */
 
 /*
-@description: Surfaces the [isElective](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-isElective)
+@description: Surfaces the [isElective](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-isElective)
 modifier extension defined in USQualityCore.
 @comment: This function returns the value of the isElective modifier extension as a boolean.
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-isElective
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-isElective
 */
 define fluent function isElective(serviceRequest ServiceRequest):
-  serviceRequest.modifierExtension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-isElective').value as boolean
+  serviceRequest.modifierExtension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-isElective').value as boolean
 
 /*
-@description: Surfaces the [procedure](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure)
+@description: Surfaces the [procedure](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure)
 extension defined in USQualityCore.
 @comment: This function returns a tuple with elements for each subextension (type, rank, and procedure).
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure
 */
 define fluent function procedure(encounter Encounter):
-  (encounter.extensions('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure')) E
+  (encounter.extensions('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-procedure')) E
     return {
       type: E.extension('type').value as CodeableConcept,
       rank: E.extension('rank').value as positiveInt,
@@ -577,55 +577,55 @@ define fluent function procedure(encounter Encounter):
     }
 
 /*
-@description: Surfaces the [doNotPerform](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason)
+@description: Surfaces the [doNotPerform](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason)
 extension defined in USQualityCore.
 @comment: This function returns the value of the extension as a CodeableConcept
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason
 */
 define fluent function doNotPerformReason(requestResource DomainResource):
-  requestResource.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as CodeableConcept
+  requestResource.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as CodeableConcept
 
 /*
-@description: Surfaces the [recorded](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded)
+@description: Surfaces the [recorded](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded)
 extension defined in USQualityCore.
 @comment: This function returns the value of the extension as a dateTime
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded
 */
 define fluent function recorded(domainResource DomainResource):
-  domainResource.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as dateTime
+  domainResource.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as dateTime
 
 /*
-@description: Surfaces the [notDone](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDone)
+@description: Surfaces the [notDone](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDone)
 modifier extension defined in USQualityCore.
 @comment: This function returns the value of the modifier extension as a boolean
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDone
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDone
 */
 define fluent function notDone(eventResource DomainResource):
-  eventResource.modifierExtension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDone').value as boolean
+  eventResource.modifierExtension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDone').value as boolean
 
 /*
-@description: Surfaces the [notDoneReason](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason)
+@description: Surfaces the [notDoneReason](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason)
 extension defined in USQualityCore.
 @comment: This function returns the value of the extension as a CodeableConcept
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason
 */
 define fluent function notDoneReason(eventResource DomainResource):
-  eventResource.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason').value as CodeableConcept
+  eventResource.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason').value as CodeableConcept
 
 /*
-@description: Surfaces the [notDoneValueSet](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet)
+@description: Surfaces the [notDoneValueSet](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet)
 extension defined in USQualityCore.
 @comment: This function returns the value of the extension as a canonical
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet
 */
 define fluent function notDoneValueSet(concept CodeableConcept):
-  concept.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value as canonical
+  concept.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value as canonical
 
 /*
-@description: Surfaces the [presentOnAdmission](http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission)
+@description: Surfaces the [presentOnAdmission](http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission)
 extension defined in USQualityCore.
 @comment: This function returns the value of the extension as a CodeableConcept
-@extension: http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission
+@extension: http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission
 */
 define fluent function presentOnAdmission(element Element):
-  element.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission').value as CodeableConcept
+  element.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission').value as CodeableConcept

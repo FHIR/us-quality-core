@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-medicationadministrationnotdone",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone",
   "version": "0.1.0",
   "name": "USQualityCoreMedicationAdministrationNotDone",
   "title": "US Quality Core MedicationAdministration Not Done",
@@ -46,7 +46,7 @@
             "key": "mna-1",
             "severity": "error",
             "human": "To indicate what medication was not administered, either at least one coding in the medication or a notDoneValueSet extension shall be provided",
-            "expression": "medication.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor medication.coding.exists()",
+            "expression": "medication.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor medication.coding.exists()",
             "xpath": "exists(f:extension)"
           }
         ],
@@ -68,7 +68,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded"
             ]
           }
         ]
@@ -77,7 +77,7 @@
         "id": "MedicationAdministration.status",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -94,7 +94,7 @@
         "id": "MedicationAdministration.statusReason",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -105,7 +105,7 @@
         "binding": {
           "strength": "extensible",
           "description": "The reason the event did not occur or was not performed",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"
         }
       },
       {
@@ -130,7 +130,7 @@
         "id": "MedicationAdministration.medication[x].extension:notDoneValueSet",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -143,7 +143,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
             ]
           }
         ],
@@ -159,7 +159,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -172,7 +172,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter",
               "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
             ]
           }
@@ -191,7 +191,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"
             ]
           }
         ]

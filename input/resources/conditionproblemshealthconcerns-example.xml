@@ -10,7 +10,7 @@
                      value="This example of a US Quality Core Condition Problems and Health Concerns Profile illustrates its use to capture information about a patient's health concern."/>
     </extension>
     <profile
-             value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"/>
+             value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"/>
   </meta>
   <extension
              url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">

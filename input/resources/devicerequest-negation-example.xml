@@ -2,9 +2,9 @@
 <DeviceRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="negation-example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"/>
   </meta>
-  <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason">
+  <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason">
     <valueCodeableConcept>
       <coding>
         <system value="http://snomed.info/sct"/>
@@ -19,7 +19,7 @@
   <status value="completed"/>
   <intent value="original-order"/>
   <codeCodeableConcept>
-      <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet">
+      <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet">
         <valueCanonical value="http://cts.nlm.nih.gov/fhir/2.16.840.1.113883.3.117.1.7.1.230"/>
       </extension>
     <text value="Not Done Value Set: Venous Foot Pumps (VFP)"/>

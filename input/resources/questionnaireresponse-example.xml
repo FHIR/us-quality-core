@@ -2,7 +2,7 @@
   <id value="PHQ-9-example"/>
   <meta>
     <profile
-             value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse"/>
+             value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse"/>
   </meta>
   <questionnaire
                  value="http://hl7.org/fhir/uv/sdc/Questionnaire/questionnaire-sdc-profile-example-PHQ9"/>

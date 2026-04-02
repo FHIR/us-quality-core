@@ -7,7 +7,7 @@
       "resourceType": "Condition",
       "id": "appendicitis-example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition" ]
       },
       "text": {
         "status": "generated",
@@ -72,7 +72,7 @@
       "resourceType": "Condition",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition" ]
       },
       "text": {
         "status": "generated",

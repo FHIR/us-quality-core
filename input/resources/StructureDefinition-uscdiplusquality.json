@@ -5,7 +5,7 @@
     "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">US Quality Core USCDI+ Quality Extension</div>"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
   "version": "0.1.0",
   "name": "USQualityCoreUSCDIQualityExtension",
   "title": "US Quality Core USCDI+ Quality Extension",
@@ -206,7 +206,7 @@
             "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -278,7 +278,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality"
+        "fixedUri": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality"
       },
       {
         "id": "Extension.value[x]",

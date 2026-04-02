@@ -3,7 +3,7 @@
   <id value="example"/>
   <!-- Example based on NutritionOrder/diabeticdiet -->
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nutritionorder"/>
   </meta>
     <identifier>
 		<system value="http://goodhealthhospital.org/nutrition-requests"/>

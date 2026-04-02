@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "us-quality-core-non-negative-medication-admin-status",
-  "url": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status",
+  "url": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status",
   "version": "4.0.0",
   "name": "NonNegativeMedicationAdministrationStatus",
   "title": "Non-Negative MedicationAdministration Status",

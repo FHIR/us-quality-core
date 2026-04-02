@@ -7,7 +7,7 @@
       "resourceType": "Claim",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim" ]
       },
       "text": {
         "status": "generated",

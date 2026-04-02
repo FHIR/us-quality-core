@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <url value="http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-medication-dose-type"/>
+  <url value="http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-medication-dose-type"/>
   <version value="3.2.0"/>
   <name value="USQualityCoreMedicationDoseType"/>
   <title value="USQualityCore SNOMED CT Dosage Codes"/>

@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="us-quality-core-notDoneValueSet"/>
-  <url value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"/>
+  <url value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"/>
   <name value="USQualityCoreNotDoneValueSet"/>
   <title value="USQualityCore Not Done ValueSet"/>
   <status value="draft"/>
@@ -58,7 +58,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"/>
+      <fixedUri value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

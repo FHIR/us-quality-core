@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><ServiceRequest xmlns="http://hl7.org/fhir">
 	<id value="appropriateness-example"/>
-  <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore">
+  <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore">
     <valueCode value="appropriate"/>
   </extension>
   <status value="completed"/>

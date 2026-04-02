@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-observation-clinical-result",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
   "version": "0.1.0",
   "name": "USQualityCoreObservationClinicalResult",
   "title": "US Quality Core Observation Clinical Result",
@@ -46,7 +46,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -54,7 +54,7 @@
         "short": "(USCDI+ Quality) (USCDI) registered | prliminary | final | amended | corrected | entered-in-error | unknown",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-observation-status"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-observation-status"
         }
       },
       {
@@ -142,7 +142,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -170,7 +170,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -183,7 +183,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -213,7 +213,7 @@
             "valueBoolean": true
           },
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],

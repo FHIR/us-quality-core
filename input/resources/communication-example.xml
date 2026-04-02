@@ -2,7 +2,7 @@
 <Communication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communication"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communication"/>
   </meta>
   <!-- NOTE: This identifier is based on an example in the base spec and does not make sense in this context -->
   <!-- <identifier>

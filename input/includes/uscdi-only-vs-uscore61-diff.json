@@ -3,7 +3,7 @@
   "uscorePackage": "/tmp/uscore-6.1.0/package",
   "criteria": "local differential elements with uscdi-requirement and without uscdiplusquality",
   "exclusionRules": [
-    "exclude if local element type.profile or type.targetProfile references http://fhir.org/guides/astp/us-quality-core/StructureDefinition/",
+    "exclude if local element type.profile or type.targetProfile references http://fhir.org/guides/onc/us-quality-core/StructureDefinition/",
     "exclude if only diff is uscore mustSupport=true while local mustSupport is missing"
   ],
   "totalCandidatesBeforeExclusion": 98,
@@ -421,7 +421,7 @@
   "items": [
     {
       "file": "StructureDefinition-us-quality-core-allergyintolerance.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
       "elementId": "AllergyIntolerance.reaction.manifestation",
       "elementPath": "AllergyIntolerance.reaction.manifestation",
@@ -446,7 +446,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-careplan.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
       "elementId": "CarePlan.category",
       "elementPath": "CarePlan.category",
@@ -519,7 +519,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-careplan.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
       "elementId": "CarePlan.category:AssessPlan",
       "elementPath": "CarePlan.category",
@@ -588,7 +588,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-condition-encounter-diagnosis.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
       "elementId": "Condition.onset[x]",
       "elementPath": "Condition.onset[x]",
@@ -651,7 +651,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-condition-encounter-diagnosis.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
       "elementId": "Condition.abatement[x]",
       "elementPath": "Condition.abatement[x]",
@@ -709,7 +709,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-condition-problems-health-concerns.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns",
       "elementId": "Condition.onset[x]",
       "elementPath": "Condition.onset[x]",
@@ -772,7 +772,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-diagnosticreport-note.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
       "elementId": "DiagnosticReport.category",
       "elementPath": "DiagnosticReport.category",
@@ -795,7 +795,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-goal.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-goal",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal",
       "elementId": "Goal.start[x]",
       "elementPath": "Goal.start[x]",
@@ -884,7 +884,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-immunization.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
       "elementId": "Immunization.vaccineCode",
       "elementPath": "Immunization.vaccineCode",
@@ -924,7 +924,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-immunizationnotdone.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
       "elementId": "Immunization.status",
       "elementPath": "Immunization.status",
@@ -970,7 +970,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-immunizationnotdone.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
       "elementId": "Immunization.statusReason",
       "elementPath": "Immunization.statusReason",
@@ -991,7 +991,7 @@
         },
         {
           "path": "binding.valueSet",
-          "local": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason",
+          "local": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason",
           "uscore": "http://hl7.org/fhir/ValueSet/immunization-status-reason"
         },
         {
@@ -1019,7 +1019,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-immunizationnotdone.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
       "elementId": "Immunization.vaccineCode",
       "elementPath": "Immunization.vaccineCode",
@@ -1059,7 +1059,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationdispense.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispense",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
       "elementId": "MedicationDispense.whenHandedOver",
       "elementPath": "MedicationDispense.whenHandedOver",
@@ -1087,7 +1087,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationdispensedeclined.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
       "elementId": "MedicationDispense.medication[x]",
       "elementPath": "MedicationDispense.medication[x]",
@@ -1123,7 +1123,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationdispensedeclined.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
       "elementId": "MedicationDispense.quantity",
       "elementPath": "MedicationDispense.quantity",
@@ -1162,7 +1162,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationdispensedeclined.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
       "elementId": "MedicationDispense.dosageInstruction",
       "elementPath": "MedicationDispense.dosageInstruction",
@@ -1185,7 +1185,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationdispensedeclined.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
       "elementId": "MedicationDispense.dosageInstruction.doseAndRate.dose[x]",
       "elementPath": "MedicationDispense.dosageInstruction.doseAndRate.dose[x]",
@@ -1233,7 +1233,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationnotrequested.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
       "elementId": "MedicationRequest.status",
       "elementPath": "MedicationRequest.status",
@@ -1268,7 +1268,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationnotrequested.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
       "elementId": "MedicationRequest.medication[x]",
       "elementPath": "MedicationRequest.medication[x]",
@@ -1324,7 +1324,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationnotrequested.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
       "elementId": "MedicationRequest.authoredOn",
       "elementPath": "MedicationRequest.authoredOn",
@@ -1359,7 +1359,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-medicationnotrequested.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
       "elementId": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
       "elementPath": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
@@ -1407,7 +1407,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-clinical-result.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
       "elementId": "Observation.category",
       "elementPath": "Observation.category",
@@ -1476,7 +1476,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-clinical-result.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
       "elementId": "Observation.category:us-core",
       "elementPath": "Observation.category",
@@ -1538,7 +1538,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-clinical-result.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
       "elementId": "Observation.dataAbsentReason",
       "elementPath": "Observation.dataAbsentReason",
@@ -1584,7 +1584,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-lab.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-lab",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
       "elementId": "Observation.specimen",
       "elementPath": "Observation.specimen",
@@ -1613,7 +1613,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-screening-assessment.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment",
       "elementId": "Observation.category:survey",
       "elementPath": "Observation.category",
@@ -1682,7 +1682,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-screening-assessment.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment",
       "elementId": "Observation.category:screening-assessment",
       "elementPath": "Observation.category",
@@ -1741,7 +1741,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-observation-screening-assessment.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment",
       "elementId": "Observation.dataAbsentReason",
       "elementPath": "Observation.dataAbsentReason",
@@ -1795,7 +1795,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-questionnaireresponse.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
       "elementId": "QuestionnaireResponse.item.answer.value[x]",
       "elementPath": "QuestionnaireResponse.item.answer.value[x]",
@@ -1895,7 +1895,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-servicenotrequested.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest",
       "elementId": "ServiceRequest.occurrence[x]",
       "elementPath": "ServiceRequest.occurrence[x]",
@@ -1944,7 +1944,7 @@
     },
     {
       "file": "StructureDefinition-us-quality-core-servicerequest.json",
-      "localProfileUrl": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest",
+      "localProfileUrl": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest",
       "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest",
       "elementId": "ServiceRequest.occurrence[x]",
       "elementPath": "ServiceRequest.occurrence[x]",

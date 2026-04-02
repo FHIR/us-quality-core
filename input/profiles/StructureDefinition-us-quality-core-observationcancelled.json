@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-observationcancelled",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observationcancelled",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled",
   "version": "0.1.0",
   "name": "USQualityCoreObservationCancelled",
   "title": "US Quality Core Observation Cancelled",
@@ -52,7 +52,7 @@
             "key": "ond-1",
             "severity": "error",
             "human": "to indicate what observation was not recorded, either at least one coding in the code or a notDoneValueSet extension shall be provided",
-            "expression": "code.extension('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()",
+            "expression": "code.extension('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').exists() xor code.coding.exists()",
             "xpath": "exists(f:extension)"
           }
         ]
@@ -61,7 +61,7 @@
         "id": "Observation.extension:notDoneReason",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -74,7 +74,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason"
             ]
           }
         ]
@@ -83,7 +83,7 @@
         "id": "Observation.status",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -102,7 +102,7 @@
         "id": "Observation.category",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -115,7 +115,7 @@
         "id": "Observation.code",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -128,7 +128,7 @@
         "id": "Observation.code.extension:notDoneValueSet",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -143,7 +143,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet"
             ]
           }
         ]
@@ -158,7 +158,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -167,7 +167,7 @@
         "id": "Observation.effective[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -188,10 +188,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
             ]
           }
         ]
@@ -200,7 +200,7 @@
         "id": "Observation.value[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -329,8 +329,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
               "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
               "http://hl7.org/fhir/StructureDefinition/Media",

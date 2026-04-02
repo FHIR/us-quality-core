@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-observation-patient",
-  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-observation-patient",
+  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-patient",
   "version": "0.1.0",
   "name": "UsQualityCoreObservationPatient",
   "status": "active",

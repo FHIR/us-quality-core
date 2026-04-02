@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-claimresponse",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claimresponse",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claimresponse",
   "version": "0.1.0",
   "name": "USQualityCoreClaimResponse",
   "title": "US Quality Core ClaimResponse",
@@ -157,7 +157,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ],
@@ -202,7 +202,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
             ]
           }
         ],
@@ -226,9 +226,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
             ]
           }
         ],
@@ -251,7 +251,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"
             ]
           }
         ],

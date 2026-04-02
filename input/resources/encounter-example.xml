@@ -2,7 +2,7 @@
 <Encounter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"/>
   </meta>
   <status value="in-progress"/>
   <class>
@@ -21,7 +21,7 @@
     <reference value="Patient/example"/>
   </subject>
   <diagnosis>
-    <extension url="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission">
+    <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission">
       <valueCodeableConcept>
         <coding>
           <system value="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding"/>

@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-devicerequest",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
   "version": "0.1.0",
   "name": "USQualityCoreDeviceRequest",
   "title": "US Quality Core DeviceRequest",
@@ -88,7 +88,7 @@
         "id": "DeviceRequest.code[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -107,7 +107,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
