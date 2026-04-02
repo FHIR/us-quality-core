@@ -16,7 +16,7 @@ defines profiles that derive from and extend the base [FHIR version R4](http://h
 
 This guide reflects a coordinated federal effort to enable
 standardized FHIR-based exchange of data for digital quality measurement and
-reporting. [ONC](https://healthit.gov/certification-health-it/about-onc-health-it-certification-program/)/[ONC](http://www.healthit.gov/newsroom/about-onc) has established the [USCDI+ Quality data element list](https://uscdiplus.healthit.gov/uscdiplus?id=uscdi_record&table=x_g_sshh_uscdi_domain&sys_id=7ddf78228745b95098e5edb90cbb3525&view=sp) as a common, reusable foundation that can support quality measurement across programs
+reporting. [ONC](http://www.healthit.gov/newsroom/about-onc) has established the [USCDI+ Quality data element list](https://uscdiplus.healthit.gov/uscdiplus?id=uscdi_record&table=x_g_sshh_uscdi_domain&sys_id=7ddf78228745b95098e5edb90cbb3525&view=sp) as a common, reusable foundation that can support quality measurement across programs
 and settings over time, with a transparent process for proposing and considering additional data elements in future versions. This guide specifies how to represent and exchange the USCDI+ Quality data elements as needed to support reporting of [electronic clinical quality measures (eCQMs)](https://ecqi.healthit.gov/glossary/electronic-clinical-quality-measure-ecqm) used in certain CMS
 quality reporting programs, as well as providing guidance on additional data elements used in other quality reporting programs. For more detail on USCDI+ Quality and its scope, see the [USCDI+ Quality](uscdiquality.html) page in this guide.
 
