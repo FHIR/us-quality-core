@@ -1,8 +1,11 @@
-library USQualityCoreCommonTests version '0.1.000'
+library USQualityCoreCommonTests version '0.1.0-cibuild'
 
-using USQualityCore version '0.1.0'
+using USQualityCore version '0.1.0-cibuild'
+using USCore version '6.1.0-derived'
+using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
+include USQualityCoreCommon
 
 codesystem "Marital Status Codes": 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus'
 codesystem "CDC Race and Ethnicity Codes": 'urn:oid:2.16.840.1.113883.6.238'
@@ -73,24 +76,22 @@ define TestMedicationDispenseDeclined: ["MedicationDispenseDeclined"]
 define TestMedicationNotRequested: ["MedicationNotRequested"]
 define TestMedicationRequest: ["MedicationRequest"]
 define TestMedicationStatement: ["MedicationStatement"]
-define TestObservation: ["Observation"]
+define TestObservation: ["SimpleObservation"]
 define TestObservationCancelled: ["ObservationCancelled"]
-define TestObservationClinicalTestResult: ["ObservationClinicalTestResult"]
-define TestObservationImagingResult: ["ObservationImagingResult"]
-define TestObservationSurvey: ["ObservationSurvey"]
+define TestObservationClinicalTestResult: ["ObservationClinicalResult"]
+define TestObservationImagingResult: ["NonPatientObservation"]
+define TestObservationSurvey: ["ObservationScreeningAssessment"]
 define TestOrganization: ["Organization"]
 define TestPatient: ["Patient"]
-define TestVitalsPanel: ["USCoreVitalSignsProfile"]
-define TestRespRate: ["USCoreRespiratoryRateProfile"]
-define TestHeartRate: ["USCoreHeartRateProfile"]
-//define TestOxygenSat: ["USCoreOxygenSaturationProfile"]
-define TestOxygenSat: ["observation-oxygensat"]
-define TestBodyTemp: ["USCoreBodyTemperatureProfile"]
-define TestBodyHeight: ["USCoreBodyHeightProfile"]
-define TestHeadCircum: ["USCoreHeadCircumferenceProfile"]
-define TestBodyWeight: ["USCoreBodyWeightProfile"]
-define TestBMI: ["USCoreBMIProfile"]
-define TestBP: ["USCoreBloodPressureProfile"]
+define TestVitalsPanel: [USCore.VitalSignsProfile]
+define TestRespRate: [USCore.RespiratoryRateProfile]
+define TestHeartRate: [USCore.HeartRateProfile]
+define TestBodyTemp: [USCore.BodyTemperatureProfile]
+define TestBodyHeight: [USCore.BodyHeightProfile]
+define TestHeadCircum: [USCore.HeadCircumferenceProfile]
+define TestBodyWeight: [USCore.BodyWeightProfile]
+define TestBMI: [USCore.BMIProfile]
+define TestBP: [USCore.BloodPressureProfile]
 define TestPractitioner: ["Practitioner"]
 define TestPractitionerRole: ["PractitionerRole"]
 define TestProcedure: ["Procedure"]
@@ -102,258 +103,207 @@ define TestSpecimen: ["Specimen"]
 define TestSubstance: ["Substance"]
 define TestTask: ["Task"]
 define TestTaskRejected: ["TaskRejected"]
-define TestUSCoreImplantableDevice: ["USCoreImplantableDeviceProfile"]
-define TestUSCoreSmokingStatus: ["USCoreSmokingStatusProfile"]
-define TestUSCorePulseOximetry: ["USCorePulseOximetryProfile"]
-define TestUSCorePediatricBMIForAge: ["USCorePediatricBMIforAgeObservationProfile"]
-define TestUSCorePediatricWeightForHeight: ["USCorePediatricWeightForHeightObservationProfile"]
-define TestUSCorePediatricHeadOccipitalFrontalCircumferencePercentileProfile: ["USCorePediatricHeadOccipitalFrontalCircumferencePercentileProfile"]
-define TestUSCoreObservationSDOHAssessment: ["USCoreObservationSDOHAssessment"]
-define TestUSCoreObservationSocialHistoryProfile: ["USCoreObservationSocialHistoryProfile"]
-define TestUSCoreObservationSexualOrientationProfile: ["USCoreObservationSexualOrientationProfile"]
-
-define TestAge:
-  AgeInYears()
-
-define TestAgeAt:
-  AgeInYearsAt(@2022-10-14)
-
-define TestPrimitives:
-  Patient P
-    where P.gender = 'male'
-      and P.active is true
-      and P.birthDate before Today()
-      and P.maritalStatus in "Marital Status"
-      and P.maritalStatus ~ "Marital Status - Married"
-
-define TestChoice:
-  Patient P
-    where P.deceased is false
-      or P.deceased before Today()
-
-define TestSlices:
-  ["USCoreBloodPressureProfile"] BP
-    where BP.systolic.value < 140 'mm[Hg]'
-      and BP.diastolic.value < 90 'mm[Hg]'
-
-define TestSimpleExtensions:
-  Patient P
-    where P.birthsex = 'M'
-
-define TestComplexExtensions:
-  Patient P
-    where P.race.ombCategory contains "American Indian or Alaska Native"
-      and P.race.detailed contains "Alaska Native"
+define TestUSCoreImplantableDevice: [USCore.ImplantableDeviceProfile]
+define TestUSCoreSmokingStatus: [USCore.SmokingStatusProfile]
+define TestUSCorePulseOximetry: [USCore.PulseOximetryProfile]
+define TestUSCorePediatricBMIForAge: [USCore.PediatricBMIforAgeObservationProfile]
+define TestUSCorePediatricWeightForHeight: [USCore.PediatricWeightForHeightObservationProfile]
+define TestUSCorePediatricHeadOccipitalFrontalCircumferencePercentileProfile: [USCore.PediatricHeadOccipitalFrontalCircumferencePercentileProfile]
+//define TestUSCoreObservationSDOHAssessment: [USCore.ObservationSDOHAssessment]
+//define TestUSCoreObservationSocialHistoryProfile: [USCore.ObservationSocialHistoryProfile]
+define TestUSCoreObservationSexualOrientationProfile: [USCore.ObservationSexualOrientationProfile]
 
 // Validate Encounter.diagnosis cardinality
 define TestEncounterDiagnosisCardinality:
-    exists (First([Encounter]).diagnosis)
+  exists (First([Encounter]).diagnosis)
 
 // Validate ProcedureNotDone elements
 define TestProcedureNotDoneElements:
-    [ProcedureNotDone] P
-      where P.recorded on or before day of Today()
-        and exists (P.identifier)
-        and P.status = 'not-done'
-        and P.statusReason is not null
-        and P.category is not null
-        and P.code is not null
-        and P.performed is null
+  [ProcedureNotDone] P
+    where P.recorded() on or before day of Today()
+      and exists (P.identifier)
+      and P.status = 'not-done'
+      and P.statusReason is not null
+      and P.category is not null
+      and P.code is not null
+      and P.performed is null
 
 // Validate NotDone...
 
 // CommunicationNotDone
 define TestSpecificCommunicationNotDone:
-    ["CommunicationNotDone": CommunicationCode]
+  ["CommunicationNotDone": CommunicationCode]
 
 // TODO: Support this case, need to introduce a terminology contains operator
+// This operator is introduced in CQL R2
 //define TestSpecificCommunicationNotDoneActual:
 //    ["CommunicationNotDone": topic ~ CommunicationCode]
-//      union ["CommunicationNotDone": topic contains CommunicationCode]
+//      union ["CommunicationNotDone": topic ~contains CommunicationCode]
 
 define TestSpecificCommunicationNotDoneExplicit:
-    ["CommunicationNotDone"] C
-      where C.topic ~ CommunicationCode
-        or CommunicationCode in C.topic
-
-// NOTE: Consider using topic rather than reasonCode as the negation focus?
-//define TestSpecificCommunicationNotDoneExplicit:
-//    [Communication] C
-//      where (C.topic ~ CommunicationCode
-//          or CommunicationCode in ValueSet { id: C.topic.extension("http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet").value as String }
-//        )
-//        and C.status = 'not-done'
-//        and C.recorded on or before day of Today()
-//        and C.statusReason in NegationReasonCodes
+  ["CommunicationNotDone"] C
+    where C.topic() ~ CommunicationCode
+      or CommunicationCode in C.topic()
 
 define TestGeneralCommunicationNotDone:
-    ["CommunicationNotDone": CommunicationCodes]
+  ["CommunicationNotDone": CommunicationCodes]
 
-//define TestGeneralCommunicationNotDoneActual:
-//    ["CommunicationNotDone": topic in CommunicationCodes]
-//      union ["CommunicationNotDone": topic ~ CommunicationCodes]
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
+define TestGeneralCommunicationNotDoneActual:
+  ["CommunicationNotDone": topic in CommunicationCodes]
+    union ["CommunicationNotDone": topic ~ CommunicationCodes]
 
 define TestGeneralCommunicationNotDoneExplicit:
-    ["CommunicationNotDone"] C
-      where C.topic in CommunicationCodes
-        or C.topic ~ CommunicationCodes
-
-//define TestGeneralCommunicationNotDoneExplicit:
-//    [Communication] C
-//      where (C.topic in CommunicationCodes
-//          or CommunicationCodes ~ ValueSet { id: C.topic.extension("http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet").value as String }
-//        )
-//        and C.status = 'not-done'
-//        and C.recorded on or before day of Today()
-//        and C.statusReason in NegationReasonCodes
+  ["CommunicationNotDone"] C
+    where C.topic() in CommunicationCodes
+      or C.topic() ~ CommunicationCodes
 
 // DeviceNotRequested
 define TestSpecificDeviceNotRequested:
-    ["DeviceNotRequested": DeviceCode]
+  ["DeviceNotRequested": DeviceCode]
 
 // TODO: Support this use case
 //define TestSpecificDeviceNotRequestedActual:
 //    ["DeviceNotRequested": code ~ DeviceCode]
-//      union ["DeviceNotRequested": code contains DeviceCode]
+//      union ["DeviceNotRequested": code ~contains DeviceCode]
 
 define TestSpecificDeviceNotRequestedExplicit:
-    [DeviceNotRequested] D
-      where D.code ~ DeviceCode
-        or DeviceCode in D.code
+  [DeviceNotRequested] D
+    where D.code() ~ DeviceCode
+      or DeviceCode in D.code()
 
 define TestGeneralDeviceNotRequested:
-    ["DeviceNotRequested": DeviceCodes]
+  ["DeviceNotRequested": DeviceCodes]
 
-define TestGeneralDeviceNotRequestedCode:
-    ["DeviceNotRequested": code in DeviceCodes]
-
-define TestGeneralDeviceNotRequestedValueSet:
-    ["DeviceNotRequested": code ~ DeviceCodes]
-
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralDeviceNotRequestedActual:
-    ["DeviceNotRequested": code in DeviceCodes]
-      union ["DeviceNotRequested": code ~ DeviceCodes]
+  ["DeviceNotRequested": code in DeviceCodes]
+    union ["DeviceNotRequested": code ~ DeviceCodes]
 
 define TestGeneralDeviceNotRequestedExplicit:
-    ["DeviceNotRequested"] D
-      where D.code in DeviceCodes
-        or D.code ~ DeviceCodes
+  ["DeviceNotRequested"] D
+    where D.code() in DeviceCodes
+      or D.code() ~ DeviceCodes
 
 define TestGeneralDeviceNotRequestedCodeExplicit:
-    ["DeviceNotRequested"] D
-      where D.code in DeviceCodes
+  ["DeviceNotRequested"] D
+    where D.code() in DeviceCodes
 
 define TestGeneralDeviceNotRequestedValueSetExplicit:
-    ["DeviceNotRequested"] D
-      where D.code ~ DeviceCodes
+  ["DeviceNotRequested"] D
+    where D.code() ~ DeviceCodes
 
 // ImmunizationNotDone
 define TestSpecificImmunizationNotDone:
-    ["ImmunizationNotDone": ImmunizationCode]
+  ["ImmunizationNotDone": ImmunizationCode]
 
 // TODO: Support this use case
 //define TestSpecificImmunizationNotDoneActual:
 //    ["ImmunizationNotDone": vaccineCode ~ ImmunizationCode]
-//      union ["ImmunizationNotDone": vaccineCode contains ImmunizationCode]
+//      union ["ImmunizationNotDone": vaccineCode ~contains ImmunizationCode]
 
 define TestSpecificImmunizationNotDoneExplicit:
-    ["ImmunizationNotDone"] I
-      where I.vaccineCode ~ ImmunizationCode
-        or ImmunizationCode in I.vaccineCode
+  ["ImmunizationNotDone"] I
+    where I.vaccineCode() ~ ImmunizationCode
+      or ImmunizationCode in I.vaccineCode()
 
 define TestGeneralImmunizationNotDone:
-    ["ImmunizationNotDone": ImmunizationCodes]
+  ["ImmunizationNotDone": ImmunizationCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralImmunizationNotDoneActual:
-    ["ImmunizationNotDone": vaccineCode in ImmunizationCodes]
-      union ["ImmunizationNotDone": vaccineCode ~ ImmunizationCodes]
+  ["ImmunizationNotDone": vaccineCode in ImmunizationCodes]
+    union ["ImmunizationNotDone": vaccineCode ~ ImmunizationCodes]
 
 define TestGeneralImmunizationNotDoneExplicit:
-    ["ImmunizationNotDone"] I
-      where I.vaccineCode in ImmunizationCodes
-        or I.vaccineCode ~ ImmunizationCodes
+  ["ImmunizationNotDone"] I
+    where I.vaccineCode() in ImmunizationCodes
+      or I.vaccineCode() ~ ImmunizationCodes
 
 // MedicationAdministrationNotDone
 define TestSpecificMedicationAdministrationNotDone:
-    ["MedicationAdministrationNotDone": MedicationCode]
+  ["MedicationAdministrationNotDone": MedicationCode]
 
 // TODO: Support this use case
 //define TestSpecificMedicationAdministrationNotDoneActual:
 //    ["MedicationAdministrationNotDone": medication ~ MedicationCode]
-//      union ["MedicationAdministrationNotDone": medication contains MedicationCode]
+//      union ["MedicationAdministrationNotDone": medication ~contains MedicationCode]
 
 define TestSpecificMedicationAdministrationNotDoneExplicit:
-    ["MedicationAdministrationNotDone"] I
-      where I.medication ~ MedicationCode
-        or MedicationCode in I.medication
+  ["MedicationAdministrationNotDone"] I
+    where I.medication() ~ MedicationCode
+      or MedicationCode in I.medication()
 
 define TestGeneralMedicationAdministrationNotDone:
-    ["MedicationAdministrationNotDone": MedicationCodes]
+  ["MedicationAdministrationNotDone": MedicationCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralMedicationAdministrationNotDoneActual:
-    ["MedicationAdministrationNotDone": medication in MedicationCodes]
-      union ["MedicationAdministrationNotDone": medication ~ MedicationCodes]
+  ["MedicationAdministrationNotDone": medication in MedicationCodes]
+    union ["MedicationAdministrationNotDone": medication ~ MedicationCodes]
 
 define TestGeneralMedicationAdministrationNotDoneExplicit:
-    ["MedicationAdministrationNotDone"] I
-      where I.medication in MedicationCodes
-        or I.medication ~ MedicationCodes
+  ["MedicationAdministrationNotDone"] I
+    where I.medication() in MedicationCodes
+      or I.medication() ~ MedicationCodes
 
 // MedicationDispenseDeclined
 define TestSpecificMedicationDispenseDeclined:
-    ["MedicationDispenseDeclined": MedicationCode]
+  ["MedicationDispenseDeclined": MedicationCode]
 
 // TODO: Support this use case
 //define TestSpecificMedicationDispenseDeclinedActual:
 //    ["MedicationDispenseDeclined": medication ~ MedicationCode]
-//      union ["MedicationDispenseDeclined": medication contains MedicationCode]
+//      union ["MedicationDispenseDeclined": medication ~contains MedicationCode]
 
 define TestSpecificMedicationDispenseDeclinedExplicit:
-    ["MedicationDispenseDeclined"] I
-      where I.medication ~ MedicationCode
-        or MedicationCode in I.medication
+  ["MedicationDispenseDeclined"] I
+    where I.medication() ~ MedicationCode
+      or MedicationCode in I.medication()
 
 define TestGeneralMedicationDispenseDeclined:
-    ["MedicationDispenseDeclined": MedicationCodes]
+  ["MedicationDispenseDeclined": MedicationCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralMedicationDispenseDeclinedActual:
-    ["MedicationDispenseDeclined": medication in MedicationCodes]
-      union ["MedicationDispenseDeclined": medication ~ MedicationCodes]
+  ["MedicationDispenseDeclined": medication in MedicationCodes]
+    union ["MedicationDispenseDeclined": medication ~ MedicationCodes]
 
 define TestGeneralMedicationDispenseDeclinedExplicit:
-    ["MedicationDispenseDeclined"] I
-      where I.medication in MedicationCodes
-        or I.medication ~ MedicationCodes
+  ["MedicationDispenseDeclined"] I
+    where I.medication() in MedicationCodes
+      or I.medication() ~ MedicationCodes
 
 // MedicationNotRequested
 define TestSpecificMedicationNotRequested:
-    ["MedicationNotRequested": MedicationCode]
+  ["MedicationNotRequested": MedicationCode]
 
 // TODO: Support this use case
 //define TestSpecificMedicationNotRequestedActual:
 //    ["MedicationNotRequested": medication ~ MedicationCode]
-//      union ["MedicationNotRequested": medication contains MedicationCode]
+//      union ["MedicationNotRequested": medication ~contains MedicationCode]
 
 define TestSpecificMedicationNotRequestedExplicit:
-    ["MedicationNotRequested"] I
-      where I.medication ~ MedicationCode
-        or MedicationCode in I.medication
+  ["MedicationNotRequested"] I
+    where I.medication() ~ MedicationCode
+      or MedicationCode in I.medication()
 
 define TestGeneralMedicationNotRequested:
-    ["MedicationNotRequested": MedicationCodes]
+  ["MedicationNotRequested": MedicationCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralMedicationNotRequestedActual:
-    ["MedicationNotRequested": medication in MedicationCodes]
-      union ["MedicationNotRequested": medication ~ MedicationCodes]
+  ["MedicationNotRequested": medication in MedicationCodes]
+    union ["MedicationNotRequested": medication ~ MedicationCodes]
 
 define TestGeneralMedicationNotRequestedExplicit:
-    ["MedicationNotRequested"] I
-      where I.medication in MedicationCodes
-        or I.medication ~ MedicationCodes
+  ["MedicationNotRequested"] I
+    where I.medication() in MedicationCodes
+      or I.medication() ~ MedicationCodes
 
 // ObservationCancelled
 define TestSpecificObservationCancelled:
-    ["ObservationCancelled": ObservationCode]
+  ["ObservationCancelled": ObservationCode]
 
 // TODO: Support this use case
 //define TestSpecificObservationCancelledActual:
@@ -361,77 +311,80 @@ define TestSpecificObservationCancelled:
 //      union ["ObservationCancelled": code contains ObservationCode]
 
 define TestSpecificObservationCancelledExplicit:
-    ["ObservationCancelled"] I
-      where I.code ~ ObservationCode
-        or ObservationCode in I.code
+  ["ObservationCancelled"] I
+    where I.code() ~ ObservationCode
+      or ObservationCode in I.code()
 
 define TestGeneralObservationCancelled:
-    ["ObservationCancelled": ObservationCodes]
+  ["ObservationCancelled": ObservationCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralObservationCancelledActual:
-    ["ObservationCancelled": code in ObservationCodes]
-      union ["ObservationCancelled": code ~ ObservationCodes]
+  ["ObservationCancelled": code in ObservationCodes]
+    union ["ObservationCancelled": code ~ ObservationCodes]
 
 define TestGeneralObservationCancelledExplicit:
-    ["ObservationCancelled"] I
-      where I.code in ObservationCodes
-        or I.code ~ ObservationCodes
+  ["ObservationCancelled"] I
+    where I.code() in ObservationCodes
+      or I.code() ~ ObservationCodes
 
 // ProcedureNotDone
 define TestSpecificProcedureNotDone:
-    ["ProcedureNotDone": ProcedureCode]
+  ["ProcedureNotDone": ProcedureCode]
 
 // TODO: Support this use case
 //define TestSpecificProcedureNotDoneActual:
 //    ["ProcedureNotDone": code ~ ProcedureCode]
-//      union ["ProcedureNotDone": code contains ProcedureCode]
+//      union ["ProcedureNotDone": code ~contains ProcedureCode]
 
 define TestSpecificProcedureNotDoneExplicit:
-    ["ProcedureNotDone"] I
-      where I.code ~ ProcedureCode
-        or ProcedureCode in I.code
+  ["ProcedureNotDone"] I
+    where I.code() ~ ProcedureCode
+      or ProcedureCode in I.code()
 
 define TestGeneralProcedureNotDone:
-    ["ProcedureNotDone": ProcedureCodes]
+  ["ProcedureNotDone": ProcedureCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralProcedureNotDoneActual:
-    ["ProcedureNotDone": code in ProcedureCodes]
-      union ["ProcedureNotDone": code ~ ProcedureCodes]
+  ["ProcedureNotDone": code in ProcedureCodes]
+    union ["ProcedureNotDone": code ~ ProcedureCodes]
 
 define TestGeneralProcedureNotDoneExplicit:
-    ["ProcedureNotDone"] I
-      where I.code in ProcedureCodes
-        or I.code ~ ProcedureCodes
+  ["ProcedureNotDone"] I
+    where I.code() in ProcedureCodes
+      or I.code() ~ ProcedureCodes
 
 // ServiceNotRequested
 define TestSpecificServiceNotRequested:
-    ["ServiceNotRequested": ProcedureCode]
+  ["ServiceNotRequested": ProcedureCode]
 
 // TODO: Support this use case
 //define TestSpecificServiceNotRequestedActual:
 //    ["ServiceNotRequested": code ~ ProcedureCode]
-//      union ["ServiceNotRequested": code contains ProcedureCode]
+//      union ["ServiceNotRequested": code ~contains ProcedureCode]
 
 define TestSpecificServiceNotRequestedExplicit:
-    ["ServiceNotRequested"] I
-      where I.code ~ ProcedureCode
-        or ProcedureCode in I.code
+  ["ServiceNotRequested"] I
+    where I.code() ~ ProcedureCode
+      or ProcedureCode in I.code()
 
 define TestGeneralServiceNotRequested:
-    ["ServiceNotRequested": ProcedureCodes]
+  ["ServiceNotRequested": ProcedureCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralServiceNotRequestedActual:
-    ["ServiceNotRequested": code in ProcedureCodes]
-      union ["ServiceNotRequested": code ~ ProcedureCodes]
+  ["ServiceNotRequested": code in ProcedureCodes]
+    union ["ServiceNotRequested": code ~ ProcedureCodes]
 
 define TestGeneralServiceNotRequestedExplicit:
-    ["ServiceNotRequested"] I
-      where I.code in ProcedureCodes
-        or I.code ~ ProcedureCodes
+  ["ServiceNotRequested"] I
+    where I.code() in ProcedureCodes
+      or I.code() ~ ProcedureCodes
 
 // TaskRejected
 define TestSpecificTaskRejected:
-    ["TaskRejected": TaskCode]
+  ["TaskRejected": TaskCode]
 
 // TODO: Support this use case
 //define TestSpecificTaskRejectedActual:
@@ -439,18 +392,19 @@ define TestSpecificTaskRejected:
 //      union ["TaskRejected": code contains TaskCode]
 
 define TestSpecificTaskNotDoneExplicit:
-    ["TaskRejected"] I
-      where I.code ~ TaskCode
-        or TaskCode in I.code
+  ["TaskRejected"] I
+    where I.code() ~ TaskCode
+      or TaskCode in I.code()
 
 define TestGeneralTaskRejected:
-    ["TaskRejected": TaskCodes]
+  ["TaskRejected": TaskCodes]
 
+// NOTE: This warning should not be happening, logged a translator issue to investigate: https://github.com/cqframework/clinical_quality_language/issues/1714
 define TestGeneralTaskRejectedActual:
-    ["TaskRejected": code in TaskCodes]
-      union ["TaskRejected": code ~ TaskCodes]
+  ["TaskRejected": code in TaskCodes]
+    union ["TaskRejected": code ~ TaskCodes]
 
 define TestGeneralTaskRejectedExplicit:
-    ["TaskRejected"] I
-      where I.code in TaskCodes
-        or I.code ~ TaskCodes
+  ["TaskRejected"] I
+    where I.code() in TaskCodes
+      or I.code() ~ TaskCodes

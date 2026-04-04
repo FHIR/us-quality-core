@@ -12,7 +12,7 @@
   "validateUnits":true,
   "verifyOnly":false,
   "errorLevel":"Info",
-  "signatureLevel":"None",
-  "analyzeDataRequirements":false,
+  "signatureLevel":"All",
+  "analyzeDataRequirements":true,
   "collapseDataRequirements":true
 }

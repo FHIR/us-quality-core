@@ -13,8 +13,8 @@
   <pre>
   <code>define "Venous Foot Pumps Not Ordered":
 [DeviceNotRequested: "Venous Foot Pumps (VFP)"] DeviceNotOrdered
-  where (DeviceNotOrdered.doNotPerformReason in "Medical Reason"
-    or DeviceNotOrdered.doNotPerformReason in "Patient Refusal"
+  where (DeviceNotOrdered.doNotPerformReason() in "Medical Reason"
+    or DeviceNotOrdered.doNotPerformReason() in "Patient Refusal"
   )</code>
   </pre>
   <a name="examples"> </a>

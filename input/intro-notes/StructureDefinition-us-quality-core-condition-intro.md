@@ -9,7 +9,7 @@
 <code>define "Absence of Cervix":
   [Condition : "Congenital absence of cervix (disorder)"] NoCervixBirth
     where NoCervixBirth.onset.toInterval() starts before end of "Measurement Period"
-      and NoCervixBirth.clinicalStatus ~ Global."active"
+      and NoCervixBirth.isActive()
 </code>
 </pre>
   <a name="examples"> </a>
