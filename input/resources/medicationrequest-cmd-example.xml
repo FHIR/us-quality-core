@@ -8,12 +8,12 @@ The cumulative medication duration in this example would be calculated as:
 (100 * (1 + 2)) / (5 * 3) = 20 days
 
 See the QDM to US Quality Core mapping for details regarding QDM data attribute representation in FHIR.
-http://fhir.org/guides/astp/us-quality-core/qdm-to-us-quality-core.html
+http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
 -->
 <MedicationRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="cmd-example"/>
   <meta>
-    <profile value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
   </meta>
   <status value="active" />
   <intent value="order" />

@@ -252,7 +252,7 @@
       "resourceType": "DiagnosticReport",
       "id": "note-example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note" ]
       },
       "text": {
         "status": "generated",

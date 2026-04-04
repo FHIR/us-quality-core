@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="us-quality-core-negation-reason"/>
-  <url value="http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason"/>
+  <url value="http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason"/>
   <version value="5.0.0"/>
   <name value="NegationReasonCodes"/>
   <title value="USQualityCore Negation Reason Codes"/>

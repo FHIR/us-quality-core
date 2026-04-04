@@ -7,7 +7,7 @@
       "resourceType": "MedicationDispense",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispense" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense" ]
       },
       "text": {
         "status": "generated",
@@ -103,7 +103,7 @@
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: negation-example</p><p><b>status</b>: declined</p><p><b>statusReason</b>: Drug treatment not indicated (situation) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '183966005' = 'Drug treatment not indicated', given as 'Drug treatment not indicated (situation)'})</span></p><p><b>medication</b>: Medication Brand Name value set <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'null' = 'null)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: id: example; Medical record number = 12345 (USUAL); active; Peter James Chalmers (OFFICIAL), Jim Chalmers , Peter James Windsor (MAIDEN); ph: (03) 5555 6473(WORK), ph: (03) 3410 5613(MOBILE), ph: (03) 5555 8834(OLD); gender: male; birthDate: 1974-12-25; </a></p><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-example.html\">Generated Summary: id: example; status: active; intent: order; ????; authoredOn: Mar 26, 2015 12:32:52 AM; </a></p><p><b>dosageInstruction</b>: </p></div>"
       },
       "extension": [ {
-        "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+        "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
         "valueDateTime": "2017-01-17"
       } ],
       "status": "declined",

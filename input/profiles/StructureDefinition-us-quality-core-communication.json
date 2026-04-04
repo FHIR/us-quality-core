@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-communication",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communication",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communication",
   "version": "0.1.0",
   "name": "USQualityCoreCommunication",
   "title": "US Quality Core Communication",
@@ -49,7 +49,7 @@
         "short": "preparation | in-progress | on-hold | stopped | completed | entered-in-error | unknown",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-event-status"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-event-status"
         }
       },
       {
@@ -60,7 +60,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
               "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
@@ -93,12 +93,12 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
               "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
@@ -112,12 +112,12 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner",
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
             ]
           }
         ]

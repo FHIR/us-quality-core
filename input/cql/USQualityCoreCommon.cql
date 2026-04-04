@@ -54,7 +54,7 @@ define fluent function toValueSet(canonical FHIR.canonical):
 @seealso: [Negation In US Quality Core](negation.html)
 */
 define fluent function toActivityExtent(codeableConcept FHIR.CodeableConcept):
-  (codeableConcept.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value) X
+  (codeableConcept.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value) X
     return
       if X is not null 
         then X.toValueSet()
@@ -64,7 +64,7 @@ define fluent function toActivityExtent(codeableConcept FHIR.CodeableConcept):
 @description: Returns the value of the recorded extension for a Communication Not Done
 */
 define fluent function recorded(communicationNotDone CommunicationNotDone):
-  communicationNotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+  communicationNotDone.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
 
 /*
 @description: Returns the negated activity extent for a Communication Not Done
@@ -77,7 +77,7 @@ define fluent function topic(communicationNotDone CommunicationNotDone):
 @description: Returns the value of the doNotPerformReason extension for a Device Not Requested
 */
 define fluent function doNotPerformReason(deviceNotRequested DeviceNotRequested):
-  deviceNotRequested.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as FHIR.CodeableConcept
+  deviceNotRequested.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as FHIR.CodeableConcept
 
 /*
 @description: Returns the value of the doNotPerform extension for a Device Not Requested
@@ -115,7 +115,7 @@ define fluent function vaccineCode(immunizationNotDone ImmunizationNotDone):
 @description: Returns the value of the recorded extension for a Medication Administration Not Done
 */
 define fluent function recorded(medicationAdministrationNotDone MedicationAdministrationNotDone):
-  medicationAdministrationNotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+  medicationAdministrationNotDone.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
 
 /*
 @description: Returns the negated activity extent for a Medication Administration Not Done
@@ -128,7 +128,7 @@ define fluent function medication(medicationAdministrationNotDone MedicationAdmi
 @description: Returns the value of the recorded extension for a Medication Dispense Declined
 */
 define fluent function recorded(medicationDispenseDeclined MedicationDispenseDeclined):
-  medicationDispenseDeclined.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+  medicationDispenseDeclined.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
 
 /*
 @description: Returns the negated activity extent for a Medication Dispense Declined
@@ -148,7 +148,7 @@ define fluent function medication(medicationNotRequested MedicationNotRequested)
 @description: Returns the notDoneReason for an ObservationCancelled
 */
 define fluent function notDoneReason(observationCancelled ObservationCancelled):
-  observationCancelled.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason').value as FHIR.CodeableConcept
+  observationCancelled.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason').value as FHIR.CodeableConcept
 
 /*
 @description: Returns the negated activity extent for an ObservationCancelled
@@ -161,13 +161,13 @@ define fluent function code(observationCancelled ObservationCancelled):
 @description: Returns the value of the recorded extension for a Procedure
 */
 define fluent function recorded(procedure Procedure):
-  procedure.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+  procedure.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
 
 /*
 @description: Returns the value of the recorded extension for a Medication Administration Not Done
 */
 define fluent function recorded(procedureNotDone ProcedureNotDone):
-  procedureNotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+  procedureNotDone.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
 
 /*
 @description: Returns the negated activity extent for a Procedure Not Done
@@ -180,7 +180,7 @@ define fluent function code(procedureNotDone ProcedureNotDone):
 @description: Returns the value of the recorded extension for a Medication Administration Not Done
 */
 define fluent function reasonRefused(serviceNotRequested ServiceNotRequested):
-  serviceNotRequested.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as FHIR.CodeableConcept
+  serviceNotRequested.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as FHIR.CodeableConcept
 
 /*
 @description: Returns the negated activity extent for a Service Not Requested

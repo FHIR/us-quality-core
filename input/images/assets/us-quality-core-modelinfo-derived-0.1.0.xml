@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<modelInfo name="USQualityCore" version="0.1.0" url="http://fhir.org/guides/astp/us-quality-core" targetUrl="http://hl7.org/fhir" targetQualifier="quality-core" patientClassName="Patient" patientBirthDatePropertyName="birthDate" xmlns="urn:hl7-org:elm-modelinfo:r1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<modelInfo name="USQualityCore" version="0.1.0" url="http://fhir.org/guides/onc/us-quality-core" targetUrl="http://hl7.org/fhir" targetQualifier="quality-core" patientClassName="Patient" patientBirthDatePropertyName="birthDate" xmlns="urn:hl7-org:elm-modelinfo:r1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredModelInfo name="System" version="1.0.0"/>
     <requiredModelInfo name="FHIR" version="4.0.1"/>
     <requiredModelInfo name="USCore" version="6.1.0-derived"/>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="AdverseEvent" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-adverseevent" label="AdverseEvent" retrievable="true" primaryCodePath="event" baseType="FHIR.AdverseEvent">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="AdverseEvent" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent" label="AdverseEvent" retrievable="true" primaryCodePath="event" baseType="FHIR.AdverseEvent">
         <element name="identifier" elementType="FHIR.Identifier"/>
         <element name="actuality" elementType="FHIR.AdverseEventActuality"/>
         <element name="category">
@@ -52,7 +52,7 @@
         <element name="author" elementType="FHIR.Reference"/>
         <element name="method" elementType="FHIR.CodeableConcept"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="AllergyIntolerance" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance" label="AllergyIntolerance" retrievable="true" primaryCodePath="code" baseType="USCore.AllergyIntolerance">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="AllergyIntolerance" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance" label="AllergyIntolerance" retrievable="true" primaryCodePath="code" baseType="USCore.AllergyIntolerance">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -104,7 +104,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Annotation"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="BodyStructure" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-bodystructure" label="BodyStructure" retrievable="true" primaryCodePath="location" baseType="FHIR.BodyStructure">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="BodyStructure" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-bodystructure" label="BodyStructure" retrievable="true" primaryCodePath="location" baseType="FHIR.BodyStructure">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -121,7 +121,7 @@
         <element name="patient" elementType="FHIR.Reference"/>
         <contextRelationship context="Patient" relatedKeyElement="patient"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CarePlan" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan" label="CarePlan" retrievable="true" primaryCodePath="category" baseType="USCore.CarePlanProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CarePlan" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan" label="CarePlan" retrievable="true" primaryCodePath="category" baseType="USCore.CarePlanProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -234,7 +234,7 @@
         <element name="quantity" elementType="FHIR.SimpleQuantity"/>
         <element name="description" elementType="FHIR.string"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CareTeam" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careteam" label="CareTeam" retrievable="true" primaryCodePath="category" baseType="USCore.CareTeam">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CareTeam" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam" label="CareTeam" retrievable="true" primaryCodePath="category" baseType="USCore.CareTeam">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -276,7 +276,7 @@
         <element name="onBehalfOf" elementType="FHIR.Reference"/>
         <element name="period" elementType="FHIR.Period"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Claim" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claim" label="Claim" retrievable="true" primaryCodePath="type" baseType="FHIR.Claim">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Claim" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim" label="Claim" retrievable="true" primaryCodePath="type" baseType="FHIR.Claim">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -516,7 +516,7 @@
         </element>
         <element name="reason" elementType="FHIR.CodeableConcept"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ClaimResponse" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-claimresponse" label="ClaimResponse" retrievable="true" primaryCodePath="type" baseType="FHIR.ClaimResponse">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ClaimResponse" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claimresponse" label="ClaimResponse" retrievable="true" primaryCodePath="type" baseType="FHIR.ClaimResponse">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -721,7 +721,7 @@
         <element name="category" elementType="FHIR.CodeableConcept"/>
         <element name="amount" elementType="FHIR.Money"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Communication" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communication" label="Communication" retrievable="true" primaryCodePath="topic" baseType="FHIR.Communication">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Communication" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communication" label="Communication" retrievable="true" primaryCodePath="topic" baseType="FHIR.Communication">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -793,7 +793,7 @@
             </elementTypeSpecifier>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CommunicationNotDone" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone" label="Communication Not Done" target="Communication" retrievable="true" primaryCodePath="topic" baseType="FHIR.Communication">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CommunicationNotDone" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone" label="Communication Not Done" target="Communication" retrievable="true" primaryCodePath="topic" baseType="FHIR.Communication">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -846,7 +846,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Annotation"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CommunicationRequest" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationrequest" label="CommunicationRequest" retrievable="true" primaryCodePath="category" baseType="FHIR.CommunicationRequest">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="CommunicationRequest" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationrequest" label="CommunicationRequest" retrievable="true" primaryCodePath="category" baseType="FHIR.CommunicationRequest">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -934,7 +934,7 @@
         </element>
         <element name="type" elementType="FHIR.CodeableConcept"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ConditionEncounterDiagnosis" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis" label="Condition Encounter Diagnosis" target="Condition" retrievable="true" primaryCodePath="code" baseType="USCore.ConditionEncounterDiagnosisProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ConditionEncounterDiagnosis" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis" label="Condition Encounter Diagnosis" target="Condition" retrievable="true" primaryCodePath="code" baseType="USCore.ConditionEncounterDiagnosisProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -979,7 +979,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Annotation"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ConditionProblemsHealthConcerns" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" label="Condition Problems Health Concerns" target="Condition" retrievable="true" primaryCodePath="code" baseType="USCore.ConditionProblemsHealthConcernsProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ConditionProblemsHealthConcerns" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" label="Condition Problems Health Concerns" target="Condition" retrievable="true" primaryCodePath="code" baseType="USCore.ConditionProblemsHealthConcernsProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1024,7 +1024,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Annotation"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Coverage" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage" label="Coverage" retrievable="true" primaryCodePath="type" baseType="USCore.CoverageProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Coverage" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-coverage" label="Coverage" retrievable="true" primaryCodePath="type" baseType="USCore.CoverageProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1083,7 +1083,7 @@
         <element name="type" elementType="FHIR.CodeableConcept"/>
         <element name="period" elementType="FHIR.Period"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Device" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-device" label="Device" retrievable="true" primaryCodePath="type" baseType="FHIR.Device">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Device" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device" label="Device" retrievable="true" primaryCodePath="type" baseType="FHIR.Device">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1161,7 +1161,7 @@
         <element name="component" elementType="FHIR.Identifier"/>
         <element name="value" elementType="FHIR.string"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DeviceRequest" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest" label="DeviceRequest" retrievable="true" primaryCodePath="code" baseType="FHIR.DeviceRequest">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DeviceRequest" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest" label="DeviceRequest" retrievable="true" primaryCodePath="code" baseType="FHIR.DeviceRequest">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1242,7 +1242,7 @@
             </elementTypeSpecifier>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DeviceUseStatement" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement" label="DeviceUseStatement" retrievable="true" primaryCodePath="device.type" baseType="FHIR.DeviceUseStatement">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DeviceUseStatement" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement" label="DeviceUseStatement" retrievable="true" primaryCodePath="device.type" baseType="FHIR.DeviceUseStatement">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1281,7 +1281,7 @@
         <element name="comment" elementType="FHIR.string"/>
         <element name="link" elementType="FHIR.Reference"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DiagnosticReportLab" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab" label="DiagnosticReport Profile for Laboratory Results Reporting" target="DiagnosticReport" retrievable="true" primaryCodePath="code" baseType="USCore.DiagnosticReportProfileLaboratoryReporting">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DiagnosticReportLab" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab" label="DiagnosticReport Profile for Laboratory Results Reporting" target="DiagnosticReport" retrievable="true" primaryCodePath="code" baseType="USCore.DiagnosticReportProfileLaboratoryReporting">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1328,7 +1328,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Attachment"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DiagnosticReportNote" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note" label="DiagnosticReport Profile for Report and Note Exchange" target="DiagnosticReport" retrievable="true" primaryCodePath="code" baseType="USCore.DiagnosticReportProfileNoteExchange">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="DiagnosticReportNote" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note" label="DiagnosticReport Profile for Report and Note Exchange" target="DiagnosticReport" retrievable="true" primaryCodePath="code" baseType="USCore.DiagnosticReportProfileNoteExchange">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1375,7 +1375,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Attachment"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Encounter" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter" label="Encounter" retrievable="true" primaryCodePath="type" baseType="USCore.EncounterProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Encounter" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter" label="Encounter" retrievable="true" primaryCodePath="type" baseType="USCore.EncounterProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1473,7 +1473,7 @@
         <element name="status" elementType="FHIR.EncounterStatus"/>
         <element name="period" elementType="FHIR.Period"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="FamilyMemberHistory" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory" label="FamilyMemberHistory" retrievable="true" primaryCodePath="relationship" baseType="FHIR.FamilyMemberHistory">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="FamilyMemberHistory" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory" label="FamilyMemberHistory" retrievable="true" primaryCodePath="relationship" baseType="FHIR.FamilyMemberHistory">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1544,7 +1544,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Annotation"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Flag" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-flag" label="Flag" retrievable="true" primaryCodePath="code" baseType="FHIR.Flag">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Flag" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-flag" label="Flag" retrievable="true" primaryCodePath="code" baseType="FHIR.Flag">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1561,7 +1561,7 @@
         <contextRelationship context="Patient" relatedKeyElement="patient"/>
         <contextRelationship context="Device" relatedKeyElement="author"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Goal" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-goal" label="Goal" retrievable="true" primaryCodePath="category" baseType="USCore.GoalProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Goal" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal" label="Goal" retrievable="true" primaryCodePath="category" baseType="USCore.GoalProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1619,7 +1619,7 @@
             </elementTypeSpecifier>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImagingStudy" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-imagingstudy" label="ImagingStudy" retrievable="true" primaryCodePath="procedureCode" baseType="FHIR.ImagingStudy">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImagingStudy" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy" label="ImagingStudy" retrievable="true" primaryCodePath="procedureCode" baseType="FHIR.ImagingStudy">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1694,7 +1694,7 @@
         <element name="function" elementType="FHIR.CodeableConcept"/>
         <element name="actor" elementType="FHIR.Reference"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Immunization" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunization" label="Immunization" retrievable="true" primaryCodePath="vaccineCode" baseType="USCore.ImmunizationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Immunization" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization" label="Immunization" retrievable="true" primaryCodePath="vaccineCode" baseType="USCore.ImmunizationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1785,7 +1785,7 @@
         <element name="detail" elementType="FHIR.Reference"/>
         <element name="reported" elementType="FHIR.boolean"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationEvaluation" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation" label="ImmunizationEvaluation" retrievable="true" primaryCodePath="targetDisease" baseType="FHIR.ImmunizationEvaluation">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationEvaluation" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation" label="ImmunizationEvaluation" retrievable="true" primaryCodePath="targetDisease" baseType="FHIR.ImmunizationEvaluation">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1815,7 +1815,7 @@
         </element>
         <contextRelationship context="Patient" relatedKeyElement="patient"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationNotDone" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone" label="Immunization Not Done" target="Immunization" retrievable="true" primaryCodePath="vaccineCode" baseType="USCore.ImmunizationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationNotDone" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone" label="Immunization Not Done" target="Immunization" retrievable="true" primaryCodePath="vaccineCode" baseType="USCore.ImmunizationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1870,7 +1870,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Immunization.ProtocolApplied"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationRecommendation" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationrecommendation" label="ImmunizationRecommendation" retrievable="true" primaryCodePath="recommendation.vaccineCode" baseType="FHIR.ImmunizationRecommendation">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ImmunizationRecommendation" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationrecommendation" label="ImmunizationRecommendation" retrievable="true" primaryCodePath="recommendation.vaccineCode" baseType="FHIR.ImmunizationRecommendation">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1922,7 +1922,7 @@
         <element name="code" elementType="FHIR.CodeableConcept"/>
         <element name="value" elementType="FHIR.dateTime"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="LaboratoryResultObservation" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab" label="Laboratory Result Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.LaboratoryResultObservationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="LaboratoryResultObservation" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-lab" label="Laboratory Result Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.LaboratoryResultObservationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -1992,7 +1992,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Observation.Component"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Location" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-location" label="Location" retrievable="true" primaryCodePath="type" baseType="USCore.Location">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Location" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location" label="Location" retrievable="true" primaryCodePath="type" baseType="USCore.Location">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2036,7 +2036,7 @@
         <element name="latitude" elementType="FHIR.decimal"/>
         <element name="altitude" elementType="FHIR.decimal"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Medication" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication" label="Medication" retrievable="true" primaryCodePath="code" baseType="USCore.MedicationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Medication" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication" label="Medication" retrievable="true" primaryCodePath="code" baseType="USCore.MedicationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2064,7 +2064,7 @@
         <element name="isActive" elementType="FHIR.boolean"/>
         <element name="strength" elementType="FHIR.Ratio"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationAdministration" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration" label="MedicationAdministration" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationAdministration">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationAdministration" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration" label="MedicationAdministration" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationAdministration">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2141,7 +2141,7 @@
         <element name="function" elementType="FHIR.CodeableConcept"/>
         <element name="actor" elementType="FHIR.Reference"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationAdministrationNotDone" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone" label="MedicationAdministration Not Done" target="MedicationAdministration" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationAdministration">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationAdministrationNotDone" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone" label="MedicationAdministration Not Done" target="MedicationAdministration" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationAdministration">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2189,7 +2189,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Reference"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationDispense" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispense" label="MedicationDispense" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationDispenseProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationDispense" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense" label="MedicationDispense" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationDispenseProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2264,7 +2264,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Reference"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationDispenseDeclined" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined" label="MedicationDispense Declined" target="MedicationDispense" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationDispenseProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationDispenseDeclined" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined" label="MedicationDispense Declined" target="MedicationDispense" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationDispenseProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2315,7 +2315,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Reference"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationRequest" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest" label="MedicationRequest" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationRequestProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationRequest" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest" label="MedicationRequest" retrievable="true" primaryCodePath="medication" baseType="USCore.MedicationRequestProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2404,7 +2404,7 @@
         </element>
         <element name="reason" elementType="FHIR.CodeableConcept"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationStatement" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationstatement" label="MedicationStatement" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationStatement">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="MedicationStatement" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement" label="MedicationStatement" retrievable="true" primaryCodePath="medication" baseType="FHIR.MedicationStatement">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2454,7 +2454,7 @@
         <contextRelationship context="Patient" relatedKeyElement="subject"/>
         <contextRelationship context="RelatedPerson" relatedKeyElement="informationSource"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NonPatientObservation" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation" label="NonPatient Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="FHIR.Observation">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NonPatientObservation" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation" label="NonPatient Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="FHIR.Observation">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2525,9 +2525,9 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Observation.Component"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NotDoneRecorded" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded" label="Not Done Recorded" retrievable="false" baseType="FHIR.dateTime"/>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NotDoneValueSet" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet" label="Not Done ValueSet" retrievable="false" baseType="FHIR.canonical"/>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NutritionOrder" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder" label="NutritionOrder" retrievable="true" baseType="FHIR.NutritionOrder">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NotDoneRecorded" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded" label="Not Done Recorded" retrievable="false" baseType="FHIR.dateTime"/>
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NotDoneValueSet" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet" label="Not Done ValueSet" retrievable="false" baseType="FHIR.canonical"/>
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="NutritionOrder" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nutritionorder" label="NutritionOrder" retrievable="true" baseType="FHIR.NutritionOrder">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2660,7 +2660,7 @@
         <element name="age" elementType="FHIR.Range"/>
         <element name="text" elementType="FHIR.string"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ObservationClinicalResult" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result" label="Observation Clinical Result" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.ObservationClinicalResultProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ObservationClinicalResult" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result" label="Observation Clinical Result" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.ObservationClinicalResultProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2730,7 +2730,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Observation.Component"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ObservationScreeningAssessment" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" label="Observation Screening Assessment" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.ObservationScreeningAssessmentProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ObservationScreeningAssessment" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" label="Observation Screening Assessment" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.ObservationScreeningAssessmentProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2800,7 +2800,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Observation.Component"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Organization" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization" label="Organization" retrievable="true" primaryCodePath="type" baseType="USCore.OrganizationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Organization" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization" label="Organization" retrievable="true" primaryCodePath="type" baseType="USCore.OrganizationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2834,7 +2834,7 @@
         </element>
         <element name="address" elementType="FHIR.Address"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Patient" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient" label="Patient" retrievable="true" baseType="USCore.PatientProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Patient" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient" label="Patient" retrievable="true" baseType="USCore.PatientProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2904,7 +2904,7 @@
         <element name="other" elementType="FHIR.Reference"/>
         <element name="type" elementType="FHIR.LinkType"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Practitioner" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitioner" label="Practitioner" retrievable="true" baseType="USCore.PractitionerProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Practitioner" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner" label="Practitioner" retrievable="true" baseType="USCore.PractitionerProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2938,7 +2938,7 @@
         <element name="period" elementType="FHIR.Period"/>
         <element name="issuer" elementType="FHIR.Reference"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="PractitionerRole" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-practitionerrole" label="PractitionerRole" retrievable="true" primaryCodePath="code" baseType="USCore.PractitionerRoleProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="PractitionerRole" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole" label="PractitionerRole" retrievable="true" primaryCodePath="code" baseType="USCore.PractitionerRoleProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -2985,7 +2985,7 @@
         <element name="description" elementType="FHIR.string"/>
         <element name="during" elementType="FHIR.Period"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Procedure" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" label="Procedure" retrievable="true" primaryCodePath="code" baseType="USCore.ProcedureProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Procedure" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure" label="Procedure" retrievable="true" primaryCodePath="code" baseType="USCore.ProcedureProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3071,7 +3071,7 @@
         <element name="actor" elementType="FHIR.Reference"/>
         <element name="onBehalfOf" elementType="FHIR.Reference"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ProcedureNotDone" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone" label="Procedure Not Done" target="Procedure" retrievable="true" primaryCodePath="code" baseType="USCore.ProcedureProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ProcedureNotDone" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone" label="Procedure Not Done" target="Procedure" retrievable="true" primaryCodePath="code" baseType="USCore.ProcedureProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3143,7 +3143,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.CodeableConcept"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="QuestionnaireResponse" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse" label="QuestionnaireResponse" retrievable="true">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="QuestionnaireResponse" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse" label="QuestionnaireResponse" retrievable="true">
         <contextRelationship context="Practitioner" relatedKeyElement="author"/>
         <contextRelationship context="Practitioner" relatedKeyElement="source"/>
         <contextRelationship context="Patient" relatedKeyElement="subject"/>
@@ -3180,7 +3180,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.QuestionnaireResponse.Item"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="RelatedPerson" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-relatedperson" label="RelatedPerson" retrievable="true" primaryCodePath="relationship" baseType="USCore.RelatedPersonProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="RelatedPerson" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson" label="RelatedPerson" retrievable="true" primaryCodePath="relationship" baseType="USCore.RelatedPersonProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3213,7 +3213,7 @@
         <element name="language" elementType="FHIR.CodeableConcept"/>
         <element name="preferred" elementType="FHIR.boolean"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ServiceRequest" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest" label="ServiceRequest" retrievable="true" primaryCodePath="code" baseType="USCore.ServiceRequestProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="ServiceRequest" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest" label="ServiceRequest" retrievable="true" primaryCodePath="code" baseType="USCore.ServiceRequestProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3309,7 +3309,7 @@
         <contextRelationship context="Device" relatedKeyElement="requester"/>
         <contextRelationship context="RelatedPerson" relatedKeyElement="performer"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="SimpleObservation" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-simple-observation" label="Simple Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.SimpleObservationProfile">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="SimpleObservation" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation" label="Simple Observation" target="Observation" retrievable="true" primaryCodePath="code" baseType="USCore.SimpleObservationProfile">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3380,7 +3380,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="USQualityCore.Observation.Component"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Substance" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-substance" label="Substance" retrievable="true" primaryCodePath="code" baseType="FHIR.Substance">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Substance" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance" label="Substance" retrievable="true" primaryCodePath="code" baseType="FHIR.Substance">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3406,7 +3406,7 @@
         <element name="expiry" elementType="FHIR.dateTime"/>
         <element name="quantity" elementType="FHIR.SimpleQuantity"/>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Task" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-task" label="Task" retrievable="true" primaryCodePath="code" baseType="FHIR.Task">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Task" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task" label="Task" retrievable="true" primaryCodePath="code" baseType="FHIR.Task">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>
@@ -3578,7 +3578,7 @@
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Reference"/>
         </element>
     </typeInfo>
-    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="TaskRejected" identifier="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-taskrejected" label="Task Rejected" target="Task" retrievable="true" primaryCodePath="code" baseType="FHIR.Task">
+    <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="TaskRejected" identifier="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected" label="Task Rejected" target="Task" retrievable="true" primaryCodePath="code" baseType="FHIR.Task">
         <element name="identifier">
             <elementTypeSpecifier xsi:type="ListTypeSpecifier" elementType="FHIR.Identifier"/>
         </element>

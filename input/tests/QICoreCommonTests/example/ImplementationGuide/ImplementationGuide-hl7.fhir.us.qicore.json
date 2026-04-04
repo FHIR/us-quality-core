@@ -3,9 +3,9 @@
   "id": "hl7.fhir.us.us-quality-core",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>USQualityCore</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/astp/us-quality-core/ImplementationGuide/hl7.fhir.us.us-quality-core</pre><div><p>The USQualityCore Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications. The profiles in this implementation guide derive from and extend the <a href=\"http://hl7.org/fhir/us/core\">US Core</a> profiles to provide a common foundation for building, sharing, and evaluating knowledge artifacts across quality improvement efforts in the US Realm.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>USQualityCore</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/hl7.fhir.us.us-quality-core</pre><div><p>The USQualityCore Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications. The profiles in this implementation guide derive from and extend the <a href=\"http://hl7.org/fhir/us/core\">US Core</a> profiles to provide a common foundation for building, sharing, and evaluating knowledge artifacts across quality improvement efforts in the US Realm.</p>\n</div></div>"
   },
-  "url": "http://fhir.org/guides/astp/us-quality-core/ImplementationGuide/hl7.fhir.us.us-quality-core",
+  "url": "http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/hl7.fhir.us.us-quality-core",
   "version": "4.0.0",
   "name": "USQualityCore",
   "title": "US Quality Core Implementation Guide",
@@ -137,7 +137,7 @@
         "reference": {
           "reference": "CarePlan/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careplan"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan"
       },
       {
         "extension": [
@@ -153,7 +153,7 @@
         "reference": {
           "reference": "CareTeam/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-careteam"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam"
       },
       {
         "extension": [
@@ -201,7 +201,7 @@
         "reference": {
           "reference": "Communication/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone"
       },
       {
         "extension": [
@@ -296,7 +296,7 @@
         "reference": {
           "reference": "DeviceRequest/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest"
       },
       {
         "extension": [
@@ -312,7 +312,7 @@
         "reference": {
           "reference": "DeviceRequest/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"
       },
       {
         "extension": [
@@ -344,7 +344,7 @@
         "reference": {
           "reference": "DiagnosticReport/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab"
       },
       {
         "extension": [
@@ -360,7 +360,7 @@
         "reference": {
           "reference": "DiagnosticReport/note-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note"
       },
       {
         "extension": [
@@ -440,7 +440,7 @@
         "reference": {
           "reference": "ImagingStudy/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-imagingstudy"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy"
       },
       {
         "extension": [
@@ -472,7 +472,7 @@
         "reference": {
           "reference": "Immunization/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone"
       },
       {
         "extension": [
@@ -568,7 +568,7 @@
         "reference": {
           "reference": "MedicationAdministration/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-mednotadministered"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-mednotadministered"
       },
       {
         "extension": [
@@ -600,7 +600,7 @@
         "reference": {
           "reference": "MedicationDispense/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotdispensed"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotdispensed"
       },
       {
         "extension": [
@@ -632,7 +632,7 @@
         "reference": {
           "reference": "MedicationRequest/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"
       },
       {
         "extension": [
@@ -664,7 +664,7 @@
         "reference": {
           "reference": "NutritionOrder/example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-nutritionorder"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nutritionorder"
       },
       {
         "extension": [
@@ -696,7 +696,7 @@
         "reference": {
           "reference": "Observation/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observationcancelled"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled"
       },
       {
         "extension": [
@@ -792,7 +792,7 @@
         "reference": {
           "reference": "Procedure/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone"
       },
       {
         "extension": [
@@ -840,7 +840,7 @@
         "reference": {
           "reference": "ServiceRequest/negation-example"
         },
-        "exampleCanonical": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested"
+        "exampleCanonical": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested"
       },
       {
         "extension": [

@@ -2,7 +2,7 @@
   <id value="note-example"/>
   <meta>
     <profile
-             value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note"/>
+             value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note"/>
   </meta>
   <status value="final"/>
   <category>

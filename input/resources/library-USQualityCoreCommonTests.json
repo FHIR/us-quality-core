@@ -4,7 +4,7 @@
   "meta": {
     "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library" ]
   },
-  "url": "https://madie.cms.gov/Library/USQualityCoreCommon",
+  "url": "http://fhir.org/guides/onc/us-quality-core/USQualityCoreCommonTests",
   "version": "0.1.0-cibuild",
   "name": "USQualityCoreCommonTests",
   "title": "US Quality Core CommonTests",

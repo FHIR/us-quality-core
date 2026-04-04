@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="us-quality-core-servicerequest-appropriatenessScore"/>
-  <url value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
+  <url value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
   <name value="USQualityCoreServiceRequestAppropriatenessScore"/>
   <title value="USQualityCore Appropriateness Score"/>
   <status value="draft"/>
@@ -97,7 +97,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
+      <fixedUri value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -150,7 +150,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
+      <fixedUri value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest-appropriatenessScore"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

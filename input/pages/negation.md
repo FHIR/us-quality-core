@@ -71,10 +71,10 @@ See the <a href="MedicationAdministration-negation-with-code-example.html">Medic
     "resourceType" : "MedicationAdministration",
     "id" : "negation-with-code-example",
     "meta" : {
-        "profile" : ["http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
+        "profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
     },
     "extension" : [{
-        "url" : "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+        "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
         "valueDateTime" : "2015-01-15"
     }],
     "status" : "not-done",
@@ -112,10 +112,10 @@ See the <a href="MedicationAdministration-negation-example.html">MedicationAdmin
     "resourceType" : "MedicationAdministration",
     "id" : "negation-example",
     "meta" : {
-        "profile" : ["http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
+        "profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
     },
     "extension" : [{
-        "url" : "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+        "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
         "valueDateTime" : "2015-01-15"
     }],
     "status" : "not-done",
@@ -128,7 +128,7 @@ See the <a href="MedicationAdministration-negation-example.html">MedicationAdmin
     }],
     "medicationCodeableConcept" : {
         "extension" : [{
-            "url" : "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet",
+            "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet",
             "valueCanonical" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
         }],
         "text" : "Not Done Value Set: Antithrombotic Therapy for Ischemic Stroke"

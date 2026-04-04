@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-medicationadministration",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
   "version": "0.1.0",
   "name": "USQualityCoreMedicationAdministration",
   "title": "US Quality Core MedicationAdministration",
@@ -42,7 +42,7 @@
         "id": "MedicationAdministration.status",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -50,7 +50,7 @@
         "short": "(USCDI+ Quality) in-progress | on-hold | completed | entered-in-error | stopped | unknown",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status"
+          "valueSet": "http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-non-negative-medication-admin-status"
         }
       },
       {
@@ -62,7 +62,7 @@
         "id": "MedicationAdministration.medication[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -75,7 +75,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medication"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication"
             ]
           }
         ],
@@ -93,7 +93,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
@@ -106,7 +106,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter",
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter",
               "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
             ]
           }
@@ -116,7 +116,7 @@
         "id": "MedicationAdministration.effective[x]",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -131,7 +131,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"
             ]
           }
         ]
@@ -140,7 +140,7 @@
         "id": "MedicationAdministration.dosage",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -152,7 +152,7 @@
         "id": "MedicationAdministration.dosage.route",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],
@@ -167,7 +167,7 @@
         "id": "MedicationAdministration.dosage.dose",
         "extension": [
           {
-            "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/uscdiplusquality",
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
             "valueBoolean": true
           }
         ],

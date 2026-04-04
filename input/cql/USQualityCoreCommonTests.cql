@@ -23,7 +23,7 @@ valueset "MedicationCodes": 'http://example.org/fhir/ValueSet/medication-codes' 
 valueset "ObservationCodes": 'http://example.org/fhir/ValueSet/observation-codes' // Random set of observation codes from 'http://hl7.org/fhir/ValueSet/observation-codes'
 valueset "ProcedureCodes": 'http://example.org/fhir/ValueSet/procedure-codes' // Random set of procedure codes from 'http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code'
 valueset "TaskCodes": 'http://hl7.org/fhir/ValueSet/task-code'
-valueset "NegationReasonCodes": 'http://fhir.org/guides/astp/us-quality-core/ValueSet/us-quality-core-negation-reason'
+valueset "NegationReasonCodes": 'http://fhir.org/guides/onc/us-quality-core/ValueSet/us-quality-core-negation-reason'
 
 code "Marital Status - Married": 'M' from "Marital Status Codes"
 code "American Indian or Alaska Native": '1002-5' from "CDC Race and Ethnicity Codes"

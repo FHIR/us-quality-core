@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "USQualityCore-ModelInfo",
-  "url": "http://fhir.org/guides/astp/us-quality-core/USQualityCore-ModelInfo",
+  "url": "http://fhir.org/guides/onc/us-quality-core/USQualityCore-ModelInfo",
   "name": "USQualityCore",
   "title": "US Quality Core Model Definition",
   "status": "active",

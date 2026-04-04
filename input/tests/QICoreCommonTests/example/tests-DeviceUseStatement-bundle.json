@@ -7,7 +7,7 @@
       "resourceType": "DeviceUseStatement",
       "id": "example",
       "meta": {
-        "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement" ]
+        "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement" ]
       },
       "text": {
         "status": "generated",

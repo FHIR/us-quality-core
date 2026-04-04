@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-substance",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-substance",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance",
   "version": "0.1.0",
   "name": "USQualityCoreSubstance",
   "title": "US Quality Core Substance",
@@ -76,7 +76,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-substance"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance"
             ]
           }
         ]

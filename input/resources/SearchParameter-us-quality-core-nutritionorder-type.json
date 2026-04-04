@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-nutritionorder-type",
-  "url": "http://fhir.org/guides/astp/us-quality-core/SearchParameter/us-quality-core-nutritionorder-type",
+  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-nutritionorder-type",
   "version": "0.1.0",
   "name": "UsQualityCoreNutritionorderType",
   "status": "active",

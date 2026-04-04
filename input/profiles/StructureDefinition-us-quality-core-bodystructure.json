@@ -1,6 +1,6 @@
 {
   "id": "us-quality-core-bodystructure",
-  "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-bodystructure",
+  "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-bodystructure",
   "version": "0.1.0",
   "name": "USQualityCoreBodyStructure",
   "title": "US Quality Core BodyStructure",
@@ -79,7 +79,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
             ]
           }
         ]
