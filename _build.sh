@@ -72,7 +72,7 @@ function build_ig() {
     if [ "$online" = "false" ]; then
       args+=("-tx" "n/a")
     fi
-    java -Dfile.encoding=UTF-8 -Xmx8192m -jar "$jar_location" -ig . "${args[@]}" "$@"
+    java -Dfile.encoding=UTF-8 -jar "$jar_location" -ig . "${args[@]}" "$@"
   else
     echo "publisher.jar not found. Please run update."
   fi
@@ -81,7 +81,7 @@ function build_ig() {
 
 function build_nosushi() {
   if [ "$jar_location" != "not_found" ]; then
-    java -Dfile.encoding=UTF-8 -Xmx8192m -jar "$jar_location" -ig . -no-sushi "$@"
+    java -Dfile.encoding=UTF-8 -jar "$jar_location" -ig . -no-sushi "$@"
   else
     echo "publisher.jar not found. Please run update."
   fi
@@ -89,7 +89,7 @@ function build_nosushi() {
 
 function build_notx() {
   if [ "$jar_location" != "not_found" ]; then
-    java -Dfile.encoding=UTF-8 -Xmx8192m -jar "$jar_location" -ig . -tx n/a "$@"
+    java -Dfile.encoding=UTF-8 -jar "$jar_location" -ig . -tx n/a "$@"
   else
     echo "publisher.jar not found. Please run update."
   fi
@@ -146,7 +146,7 @@ case "$1" in
     echo "---------------------------------------------"
     echo
     echo "Please select an option:"
-    echo "1) Update publisher"
+    echo "1) Download or update publisher"
     echo "2) Build IG"
     echo "3) Build IG without Sushi"
     echo "4) Build IG without TX server"

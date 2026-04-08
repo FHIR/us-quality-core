@@ -11,7 +11,7 @@
     "Task"
   ],
   "type": "token",
-  "expression": "Task.for.where(resolve() is Patient)",
+  "expression": "Task.code",
   "xpathUsage": "normal",
   "multipleOr": true,
   "multipleAnd": true,
