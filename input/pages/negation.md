@@ -68,69 +68,32 @@ See the <a href="MedicationAdministration-negation-with-code-example.html">Medic
 
 ```json
 {
-
-"resourceType" : "MedicationAdministration",
-
-"id" : "negation-with-code-example",
-
-"meta" : {
-
-"profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
-
-},
-
-"extension" : [{
-
-"url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
-
-"valueDateTime" : "2015-01-15"
-
-}],
-
-"status" : "not-done",
-
-"statusReason" : [{
-
-"coding" : [{
-
-"system" : "http://snomed.info/sct",
-
-"code" : "183966005",
-
-"display" : "Drug treatment not indicated (situation)"
-
-}]
-
-}],
-
-"medicationCodeableConcept" : {
-
-"coding" : [{
-
-"system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-
-"code" : "1116635",
-
-"display" : "ticagrelor 90 MG Oral Tablet"
-
-}]
-
-},
-
-"subject" : ...,
-
-"context" : ...,
-
-"supportingInformation" : ...,
-
-"effectivePeriod" : ...,
-
-"request" : ...,
-
-"note" : ...,
-
-"dosage" : ...
-
+    "resourceType" : "MedicationAdministration",
+    "id" : "negation-with-code-example",
+    "meta" : {
+        "profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
+    },
+    "extension" : [{
+        "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
+        "valueDateTime" : "2015-01-15"
+    }],
+    "status" : "not-done",
+    "statusReason" : [{
+        "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "183966005",
+            "display" : "Drug treatment not indicated (situation)"
+        }]
+    }],
+    "medicationCodeableConcept" : {
+        "coding" : [{
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code" : "1116635",
+            "display" : "ticagrelor 90 MG Oral Tablet"
+        }]
+    },
+    "subject" : ...,
+    "effectivePeriod" : ...
 }
 ```
 
@@ -146,72 +109,59 @@ See the <a href="MedicationAdministration-negation-example.html">MedicationAdmin
 
 ```json
 {
-
-"resourceType" : "MedicationAdministration",
-
-"id" : "negation-example",
-
-"meta" : {
-
-"profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
-
-},
-
-"extension" : [{
-
-"url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
-
-"valueDateTime" : "2015-01-15"
-
-}],
-
-"status" : "not-done",
-
-"statusReason" : [{
-
-"coding" : [{
-
-"system" : "http://snomed.info/sct",
-
-"code" : "183966005",
-
-"display" : "Drug treatment not indicated (situation)"
-
-}]
-
-}],
-
-"medicationCodeableConcept" : {
-
-"extension" : [{
-
-"url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet",
-
-"valueCanonical" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
-
-}],
-
-"text" : "Not Done Value Set: Antithrombotic Therapy for Ischemic Stroke"
-
-},
-
-"subject" : ...,
-
-"context" : ...,
-
-"supportingInformation" : ...,
-
-"effectivePeriod" : ...,
-
-"request" : ...,
-
-"note" : ...,
-
-"dosage" : ...
-
+    "resourceType" : "MedicationAdministration",
+    "id" : "negation-example",
+    "meta" : {
+        "profile" : ["http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"]
+    },
+    "extension" : [{
+        "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-recorded",
+        "valueDateTime" : "2015-01-15"
+    }],
+    "status" : "not-done",
+    "statusReason" : [{
+        "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "183966005",
+            "display" : "Drug treatment not indicated (situation)"
+        }]
+    }],
+    "medicationCodeableConcept" : {
+        "extension" : [{
+            "url" : "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet",
+            "valueCanonical" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
+        }],
+        "text" : "Not Done Value Set: Antithrombotic Therapy for Ischemic Stroke"
+    },
+    "subject" : ...,
+    "effectivePeriod" : ...
 }
+```
+
+When using a retrieve to access negated information, whether the activity extent is recorded as a CodeableConcept or a ValueSet is handled by the CQL. In most cases, the terminology can be provided as part of the retrieve directly. However, there are situations where authors may want to perform the terminology filtering for a negation activity outside of a retrieve. In these cases, authors can use the appropriate extension to access the negated element. For example, for MedicationAdministrationNotDone, the medication element has the notDoneValueSet extension defined, so the negation can be accessed using the `medication()` fluent function.
+
+The first case is when the negation is for a specific activity, so the terminology is provided as a direct-reference code. This case cannot be handled in the retrieve directly due to a known issue. CQL R2 introduces a terminology contains operator to support this, and until that operator is available, the filtering needs to be handled outside the retrieve, as illustrated by the following example.
+
+Indication that a specific medication was not administered (using a direct-reference code):
+
+```cql
+define TestSpecificMedicationAdministrationNotDoneExplicit:
+  ["MedicationAdministrationNotDone"] I
+    where I.medication() ~ MedicationCode
+      or MedicationCode in I.medication()
+```
+
+The second case is when an alternative filter is being used in the retrieve, so the negated value set is provided in an addition filtering clause.
+
+Indication that a class of medications were not administered (using a value set):
+
+```cql
+define TestGeneralMedicationAdministrationNotDoneExplicit:
+  ["MedicationAdministrationNotDone": status in "MedicationAdministrationCompletedCodes"] I
+    where I.medication() in MedicationCodes
+      or I.medication() ~ MedicationCodes
 ```
 
 ### Negation in CQL
 
-For quality measurement and reporting, measure expression may only need to determine the existence or absence of an activity or event to determine if criteria have been met. If the reason for absence is not relevant to the measure evaluation, the absence of evidence pattern should be used as described in the [Using CQL section of the Quality Measure IG](https://hl7.org/fhir/us/cqfmeasures/using-cql.html#negation-in-fhir).
+For quality measurement and reporting, measure expression may only need to determine the existence or absence of an activity or event to determine if criteria have been met. If the reason for absence is not relevant to the measure evaluation, the absence of evidence pattern should be used as described in the [Negation section of the Using CQL IG](https://hl7.org/fhir/uv/cql/STU1/patterns.html#negation-in-fhir).

@@ -42,8 +42,8 @@
 
 <pre><code>define "Intermittent Pneumatic Compression Devices Not Ordered":
   ["ServiceNotRequested": "Application of intermittent pneumatic compression devices (IPC)"] DeviceNotOrdered
-    where (DeviceNotOrdered.reasonRefused in "Medical Reason"
-      or DeviceNotOrdered.reasonRefused in "Patient Refusal")
+    where (DeviceNotOrdered.reasonRefused() in "Medical Reason"
+      or DeviceNotOrdered.reasonRefused() in "Patient Refusal")
       and DeviceNotOrdered.status in { 'active', 'completed', 'on-hold' }</code></pre>
 
 <p>For a more complete discussion of representation of negation within US Quality Core and quality improvement artifacts, see the <a href="index.html#negation-in-us-quality-core">Negation in US Quality Core</a> topic.</p>
