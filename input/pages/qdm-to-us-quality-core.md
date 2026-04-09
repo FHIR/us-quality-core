@@ -1,7 +1,7 @@
 {:toc}
 The US Quality Core Implementation Guide includes the QDM-to–QI-Core mappings
 from QI-Core v6.0.0, with minor edits and
-[errata](https://jira.hl7.org/browse/FHIR-53324), as a reference to support the
+[errata](https://jira.hl7.org/browse/FHIR-53324) as well as updated mappings to US Quality Core profiles and elements, as a reference to support the
 transition from Quality Data Model (QDM)-based eCQMs to FHIR-based digital
 quality measures (dQMs). QDM version 5.6 is the current version used by eCQMs
 since 2024 and thus forms the basis for this mapping.   
