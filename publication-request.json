@@ -1,5 +1,5 @@
 {
-  "package-id" : "hl7.fhir.us.quality-core",
+  "package-id" : "fhir.onc.us-quality-core",
   "version" : "0.1.0",
   "path" : "http://fhir.org/guides/onc/us-quality-core",
   "mode": "milestone",
