@@ -6,9 +6,9 @@ and [US CQL](https://hl7.org/fhir/us/cql) Common IGs. This library is derived fr
 quality measure specifications. However, most of the functionality that was defined in QICoreCommon is now either in [FHIRCommon](https://hl7.org/fhir/uv/cql/Library-FHIRCommon.html)
 or [USCoreCommon](https://hl7.org/fhir/us/cql/Library-USCoreCommon.html).
 */
-library USQualityCoreCommon version '0.1.0-cibuild'
+library USQualityCoreCommon version '0.1.0'
 
-using USQualityCore version '0.1.0-cibuild'
+using USQualityCore version '0.1.0'
 
 include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1'
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0'

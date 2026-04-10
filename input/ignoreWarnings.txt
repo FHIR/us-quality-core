@@ -65,3 +65,31 @@ INFORMATION: Observation/example-preterm-births: Observation.value.ofType(intege
 # The validator is trying to resolve an "example.org" artifact which by convention does not exist
 A definition for CodeSystem 'http://example.org/fhir/CodeSystem/ex-visionservice' could not be found, so the code cannot be validated
 INFORMATION: Flag/example: Flag.code.coding[0].system: A definition for CodeSystem 'http://example.org/local' could not be found, so the code cannot be validated
+
+# Accepted pinned versions
+%Pinned the version of%
+
+# Pinning to a manifest, so it's not clear why these messages are still being generated
+%There are multiple different potential matches for the url%
+
+# Accepted CQL warnings for type usage, identifier hiding, and terminology target
+%USQualityCoreCommon.cql: Result type US Quality Core Patient of definition Patient is not supported; implementations may not be able to use the result of this expression
+%USQualityCoreCommonTests.cql: An operand identifier reference is hiding another identifier of the same name.
+%USQualityCoreCommonTests: Could not resolve membership operator for terminology target of the retrieve.
+%USQualityCoreCommonTests.cql: Result type US Quality Core Patient of definition Patient is not supported; implementations may not be able to use the result of this expression
+%USQualityCoreCommonTests.cql: Result type List of US Quality Core Communication Not Done of definition TestCommunicationNotDone is not supported; implementations may not be able to use the result of this expression
+%USQualityCoreCommonTests.cql: Result type List of US Quality Core Condition Encounter Diagnosis of definition TestConditionEncounterDiagnosis is not supported; implementations may not be able to use the result of this expression
+%USQualityCoreCommonTests.cql: Result type List of US Quality Core Condition Problems Health Concerns of definition TestConditionProblemsHealthConcerns is not supported; implementations may not be able to use the result of this expression
+%USQualityCoreCommonTests.cql: Result type List of US Quality Core Device Not Requested of definition TestDeviceNotRequested is not supported; implementations may not be able to use the result of this expression
+
+# These are being added by the publisher
+WARNING: Parameters/manifest: Parameters.parameter[5]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[6]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[7]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[8]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[9]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[10]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[123]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[124]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[126]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string
+WARNING: Parameters/manifest: Parameters.parameter[127]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found string

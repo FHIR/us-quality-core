@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<modelInfo name="USQualityCore" version="0.1.0-cibuild" url="http://fhir.org/guides/onc/us-quality-core" targetUrl="http://hl7.org/fhir" targetQualifier="usqualitycore" patientClassName="Patient" patientBirthDatePropertyName="birthDate" xmlns="urn:hl7-org:elm-modelinfo:r1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<modelInfo name="USQualityCore" version="0.1.0" url="http://fhir.org/guides/onc/us-quality-core" targetUrl="http://hl7.org/fhir" targetQualifier="usqualitycore" patientClassName="Patient" patientBirthDatePropertyName="birthDate" xmlns="urn:hl7-org:elm-modelinfo:r1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredModelInfo name="System" version="1.0.0"/>
     <requiredModelInfo name="FHIR" version="4.0.1"/>
     <requiredModelInfo name="USCore" version="6.1.0-derived"/>
