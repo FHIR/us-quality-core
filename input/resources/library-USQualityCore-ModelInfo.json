@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "USQualityCore-ModelInfo",
-  "url": "http://fhir.org/guides/onc/us-quality-core/USQualityCore-ModelInfo",
+  "url": "http://fhir.org/guides/onc/us-quality-core/Library/USQualityCore-ModelInfo",
   "name": "USQualityCore",
   "title": "US Quality Core Model Definition",
   "status": "active",
@@ -22,6 +22,6 @@
     "text": "CQL Model Information"
   } ],
   "content": [ {
-    "id": "ig-loader-usqualitycore-modelinfo-0.1.0-cibuild.xml"
+    "id": "ig-loader-usqualitycore-modelinfo-0.1.0.xml"
   } ]
 }

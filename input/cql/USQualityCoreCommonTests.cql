@@ -1,6 +1,6 @@
-library USQualityCoreCommonTests version '0.1.0-cibuild'
+library USQualityCoreCommonTests version '0.1.0'
 
-using USQualityCore version '0.1.0-cibuild'
+using USQualityCore version '0.1.0'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
