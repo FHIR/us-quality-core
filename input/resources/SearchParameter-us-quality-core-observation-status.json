@@ -1,0 +1,19 @@
+{
+  "id": "us-quality-core-observation-status",
+  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-status",
+  "version": "0.1.0",
+  "name": "UsQualityCoreObservationStatus",
+  "status": "active",
+  "date": "2026-03-31",
+  "description": "US Quality Core Observation Status Search Parameter",
+  "code": "status",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.status",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true,
+  "resourceType": "SearchParameter"
+}
