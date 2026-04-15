@@ -35,7 +35,6 @@
 <li>status: (USCDI+ Quality) The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action</li>
 <li>statusReason: (USCDI+ Quality)</li>
 <li>code: (USCDI+ Quality) Task Type</li>
-<li>code.extension:notDoneValueSet: (USCDI+ Quality) Url of a value set of activities not requested or performed</li>
 <li>focus: (USCDI+ Quality)</li>
 <li>executionPeriod: (USCDI+ Quality) The timing the task was rejected and the reason.</li>
 <li>reasonCode: (USCDI+ Quality) Why task is needed</li>
