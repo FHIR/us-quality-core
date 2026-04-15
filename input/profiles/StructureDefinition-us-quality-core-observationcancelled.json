@@ -126,15 +126,9 @@
       },
       {
         "id": "Observation.code.extension:notDoneValueSet",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Observation.code.extension",
         "sliceName": "notDoneValueSet",
-        "short": "(USCDI+ Quality) What was not done",
+        "short": "What was not done",
         "definition": "Specifies the value set that characterizes the events or activities that did not occur or were not performed.",
         "requirements": "Must be able to indicate the value set from which the expected event would be drawn, had it occurred.",
         "min": 0,

@@ -128,15 +128,9 @@
       },
       {
         "id": "MedicationAdministration.medication[x].extension:notDoneValueSet",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "MedicationAdministration.medication[x].extension",
         "sliceName": "notDoneValueSet",
-        "short": "(USCDI+ Quality) Url of a value set of activities not requested or performed",
+        "short": "Url of a value set of activities not requested or performed",
         "min": 0,
         "max": "1",
         "type": [

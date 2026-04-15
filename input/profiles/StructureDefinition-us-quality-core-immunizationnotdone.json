@@ -85,10 +85,14 @@
           {
             "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
             "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
           }
         ],
         "path": "Immunization.status",
-        "short": "(USCDI) completed | entered-in-error | not-done",
+        "short": "(USCDI+ Quality) (USCDI) completed | entered-in-error | not-done",
         "type": [
           {
             "code": "code"
@@ -127,15 +131,9 @@
       },
       {
         "id": "Immunization.vaccineCode.extension:notDoneValueSet",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Immunization.vaccineCode.extension",
         "sliceName": "notDoneValueSet",
-        "short": "(USCDI+ Quality) What wasn't administered",
+        "short": "What wasn't administered",
         "min": 0,
         "max": "1",
         "type": [

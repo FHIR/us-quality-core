@@ -47,7 +47,6 @@
 <li>status: (USCDI+ Quality) registered \| preliminary \| final \| amended +</li>
 <li>category: (USCDI+ Quality) Classification of type of observation</li>
 <li>code: (USCDI+ Quality) Type of observation (code / type)</li>
-<li>code.extension:notDoneValueSet: (USCDI+ Quality) What was not done</li>
 <li>effective[x]: (USCDI+ Quality) Clinically relevant time/time-period for observation</li>
 <li>value[x]: (USCDI+ Quality) Actual result</li>
 </ul>
