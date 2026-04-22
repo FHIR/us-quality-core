@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "MedicationDispense",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

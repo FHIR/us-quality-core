@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "QuestionnaireResponse",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -79,7 +79,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0"
             ]
           }
         ]

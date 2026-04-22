@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -413,7 +413,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0",
               "http://hl7.org/fhir/StructureDefinition/Media",
               "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
             ]

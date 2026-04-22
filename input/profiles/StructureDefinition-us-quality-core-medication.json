@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Medication",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

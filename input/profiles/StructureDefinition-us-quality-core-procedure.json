@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Procedure",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -244,7 +244,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0"
             ]
           }
         ]

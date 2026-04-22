@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "AllergyIntolerance",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

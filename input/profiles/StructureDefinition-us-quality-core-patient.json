@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -65,7 +65,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0"
             ]
           }
         ],
@@ -99,7 +99,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0"
             ]
           }
         ],
@@ -133,7 +133,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation|6.1.0"
             ]
           }
         ],
