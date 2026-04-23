@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "RelatedPerson",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

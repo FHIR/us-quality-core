@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

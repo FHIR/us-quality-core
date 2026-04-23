@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

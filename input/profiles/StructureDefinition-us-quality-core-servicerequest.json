@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "ServiceRequest",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -206,7 +206,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0"
             ]
           }
         ]

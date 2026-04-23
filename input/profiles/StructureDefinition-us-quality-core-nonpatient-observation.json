@@ -120,7 +120,7 @@
             "targetProfile": [
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0"
             ]
           }
         ]
@@ -317,7 +317,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0",
               "http://hl7.org/fhir/StructureDefinition/Media",
               "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
             ]

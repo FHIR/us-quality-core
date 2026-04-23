@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Coverage",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

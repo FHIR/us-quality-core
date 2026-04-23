@@ -235,7 +235,7 @@
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
             ]
           }

@@ -325,7 +325,7 @@
             "targetProfile": [
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
               "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-questionnaireresponse",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0",
               "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
               "http://hl7.org/fhir/StructureDefinition/Media",
               "http://hl7.org/fhir/StructureDefinition/MolecularSequence"

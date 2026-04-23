@@ -34,7 +34,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "MedicationRequest",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [

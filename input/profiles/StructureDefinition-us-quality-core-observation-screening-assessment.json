@@ -33,7 +33,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|6.1.0",
   "derivation": "constraint",
   "differential": {
     "element": [
