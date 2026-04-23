@@ -22,7 +22,7 @@
   </table>
   </p>
 
-  <p>This example meets measure intent for exclusion as defined in the following example CQL:</p>
+  <p>This example meets measure intent for exclusion as defined in the following illustrative CQL (informational; not part of conformance requirements):</p>
 
 <pre><code>[CommunicationNotDone: "Macular edema absent (finding)"] MacularEdemaAbsentNotCommunicated
   with "Diabetic Retinopathy Encounter" EncounterDiabeticRetinopathy

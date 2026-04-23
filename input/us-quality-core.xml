@@ -938,16 +938,16 @@
       </page>
       <page>
         <nameUrl value="cql-artifacts.html"/>
-        <title value="CQL Artifacts and Patterns"/>
+        <title value="CQL Artifacts and Patterns (Informational)"/>
         <generation value="markdown"/>
         <page>
           <nameUrl value="modelinfo.html"/>
-          <title value="US Quality Core ModelInfo"/>
+          <title value="US Quality Core ModelInfo (Informational)"/>
           <generation value="markdown"/>
         </page>
         <page>
           <nameUrl value="patterns.html"/>
-          <title value="US Quality Core Patterns"/>
+          <title value="US Quality Core Patterns (Informational)"/>
           <generation value="markdown"/>
         </page>
       </page>

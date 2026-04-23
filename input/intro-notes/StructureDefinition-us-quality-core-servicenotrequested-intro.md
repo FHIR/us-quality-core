@@ -37,7 +37,7 @@
 </table>
 </p>
 
-<p>Both of these example instances meet measure intent for exclusion as defined in the following example CQL:
+<p>Both of these example instances meet measure intent for exclusion as defined in the following illustrative CQL (informational; not part of conformance requirements):
 </p>
 
 <pre><code>define "Intermittent Pneumatic Compression Devices Not Ordered":
