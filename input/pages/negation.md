@@ -142,7 +142,7 @@ When using a retrieve to access negated information, whether the activity extent
 
 The first case is when the negation is for a specific activity, so the terminology is provided as a direct-reference code. This case cannot be handled in the retrieve directly due to a known issue. CQL R2 introduces a terminology contains operator to support this, and until that operator is available, the filtering needs to be handled outside the retrieve, as illustrated by the following example.
 
-Indication that a specific medication was not administered (using a direct-reference code):
+The following illustrative CQL example shows indication that a specific medication was not administered (using a direct-reference code). CQL examples in this guide are informational and are not part of the conformance requirements.
 
 ```cql
 define TestSpecificMedicationAdministrationNotDoneExplicit:
@@ -153,7 +153,7 @@ define TestSpecificMedicationAdministrationNotDoneExplicit:
 
 The second case is when an alternative filter is being used in the retrieve, so the negated value set is provided in an addition filtering clause.
 
-Indication that a class of medications were not administered (using a value set):
+The following illustrative CQL example shows indication that a class of medications were not administered (using a value set):
 
 ```cql
 define TestGeneralMedicationAdministrationNotDoneExplicit:
