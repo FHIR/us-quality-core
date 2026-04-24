@@ -56,7 +56,7 @@
                 },
                 {
                   "url": "required",
-                  "valueString": "recordedDate"
+                  "valueString": "recorded-date"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
@@ -121,8 +121,8 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "recordedDate",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recordedDate",
+              "name": "recorded-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recorded-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
@@ -1504,6 +1504,10 @@
                 {
                   "url": "required",
                   "valueString": "intent"
+                },
+                {
+                  "url": "required",
+                  "valueString": "do-not-perform"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
@@ -1520,7 +1524,7 @@
                 },
                 {
                   "url": "required",
-                  "valueString": "do-not-perform"
+                  "valueString": "intent"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
@@ -1612,6 +1616,27 @@
                 {
                   "url": "required",
                   "valueString": "category"
+                },
+                {
+                  "url": "required",
+                  "valueString": "status"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "category"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
@@ -1650,23 +1675,6 @@
                 {
                   "url": "required",
                   "valueString": "code"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                },
-                {
-                  "url": "required",
-                  "valueString": "patient"
-                },
-                {
-                  "url": "required",
-                  "valueString": "status"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
