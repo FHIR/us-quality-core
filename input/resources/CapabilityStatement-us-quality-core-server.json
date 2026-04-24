@@ -56,7 +56,7 @@
                 },
                 {
                   "url": "required",
-                  "valueString": "recordedDate"
+                  "valueString": "recorded-date"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
@@ -121,8 +121,8 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "recordedDate",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recordedDate",
+              "name": "recorded-date",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recorded-date",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             }
