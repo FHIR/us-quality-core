@@ -204,10 +204,6 @@
         "id": "Patient.name.use",
         "extension": [
           {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscore-requirement",
-            "valueBoolean": true
-          },
-          {
             "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
             "valueBoolean": true
           },
