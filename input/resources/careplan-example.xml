@@ -6,7 +6,6 @@
             <reference value="EpisodeOfCare/mom-pregnancy-episode"/>
         </valueReference>
     </extension-->
-    <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact-schedule"/>
     <status value="active"/>
     <intent value="plan"/>
     <category>
@@ -45,7 +44,6 @@
         </outcomeReference>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -71,7 +69,6 @@
         </reference-->
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -97,7 +94,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -123,7 +119,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -149,7 +144,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -175,7 +169,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -201,7 +194,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
@@ -227,7 +219,6 @@
     <activity>
         <detail>
             <kind value="ServiceRequest"/>
-            <instantiatesCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
             <code>
                 <coding>
                     <system value="http://snomed.info/sct"/>
