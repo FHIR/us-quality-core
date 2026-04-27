@@ -35,7 +35,7 @@
   </p>
 
 
-  <p>For a more complete discussion of representation of negation within US Quality Core and quality improvement artifacts, see the <a href="index.html#negation-in-us-quality-core">Negation in US Quality Core</a> topic.</p>
+  <p>For a more complete discussion of representation of negation within US Quality Core and quality improvement artifacts, see the <a href="general-requirements.html#negation-in-us-quality-core">Negation in US Quality Core</a> topic.</p>
 
 </div>
 
