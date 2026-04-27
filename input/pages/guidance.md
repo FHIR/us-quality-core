@@ -1,7 +1,6 @@
 
 - [USCDI+ Quality](uscdiquality.html)
-- [General Guidance](general-guidance.html)
-- [Basic Provenance](basic-provenance.html)
-- [Relationship With Other IGs](relationship-with-other-igs.html)
-
+- [General Requirements](general-requirements.html)
+- [Provenance](provenance.html)
+- [Relationship with USCore and QI-Core](relationship-with-uscore-qicore.html)
 
