@@ -5,7 +5,7 @@
   "name": "UsQualityCoreDiagnosticreportDate",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core DiagnosticReport Date Search Parameter",
+  "description": "US Quality Core DiagnosticReport date Search Parameter",
   "code": "date",
   "base": [
     "DiagnosticReport"
