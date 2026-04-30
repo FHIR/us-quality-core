@@ -1631,8 +1631,8 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1795,7 +1795,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU9.0.0-ballot/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU9.0.0-ballot/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1813,8 +1813,8 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1832,7 +1832,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1840,7 +1840,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
