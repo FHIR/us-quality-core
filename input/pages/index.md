@@ -49,7 +49,7 @@ This guide is divided into several pages, which are listed at the top of each pa
     * [Extensions](extensions.html): This page lists all extensions defined as part of US Quality Core.
     * [Terminology](terminology.html): This page lists the US Quality Core ValueSets and Code Systems defined for the profiles.
     * [Examples](examples.html): This page lists all the examples used in this guide.
-* [CQL Artifacts and Patterns](cql-artifacts.html): These pages provide the US Quality Core model information (ModelInfo) and document patterns for use with US Quality Core.
+* [CQL Artifacts and Patterns (Informational)](cql-artifacts.html): These pages provide the US Quality Core model information (ModelInfo) and document patterns for use with US Quality Core. This content is informational and is not part of the conformance requirements of this guide.
     * [US Quality Core ModelInfo](modelinfo.html): This page provides the US Quality Core model information to support implementation using Clinical Quality Language (CQL).
     * [US Quality Core Patterns](patterns.html): This page describes patterns of usage for US Quality Core applications.
 * [Downloads](downloads.html): This page provides links to downloadable artifacts.
@@ -71,7 +71,7 @@ These limited FHIR artifact changes made in this guide include:
 * Removed 'QI-Core' flags on FHIR elements, this guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](#summary-of-conformance-requirements).
   * In cases where a 'QI-Core' flagged FHIR element within a QI-Core 6.0.0 profile does not map to a USCDI+ Quality data element, the FHIR element is not flagged and is therefore not part of the conformance requirements of this guide.
 
-Note that the ModelInfo file that supports implementations using CQL has been updated to reflect the changes made to US Quality Core.
+Note that the informational ModelInfo file that supports implementations using CQL has been updated to reflect the changes made to US Quality Core. See [CQL Artifacts and Patterns (Informational)](cql-artifacts.html) for details; this content is not part of the conformance requirements of this guide.
 
 ### Acknowledgements
 
