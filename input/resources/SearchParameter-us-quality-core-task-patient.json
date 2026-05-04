@@ -5,7 +5,7 @@
   "name": "UsQualityCoreTaskPatient",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core Task Patient Search Parameter",
+  "description": "US Quality Core Task patient Search Parameter",
   "code": "patient",
   "base": [
     "Task"

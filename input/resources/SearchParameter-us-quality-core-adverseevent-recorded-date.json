@@ -5,7 +5,7 @@
   "name": "UsQualityCoreAdverseeventRecordedDate",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core AdverseEvent Recorded-date Search Parameter",
+  "description": "US Quality Core AdverseEvent recorded-date Search Parameter",
   "code": "recorded-date",
   "base": [
     "AdverseEvent"

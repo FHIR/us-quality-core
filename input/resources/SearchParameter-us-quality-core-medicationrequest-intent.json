@@ -5,7 +5,7 @@
   "name": "UsQualityCoreMedicationrequestIntent",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core MedicationRequest Intent Search Parameter",
+  "description": "US Quality Core MedicationRequest intent Search Parameter",
   "code": "intent",
   "base": [
     "MedicationRequest"

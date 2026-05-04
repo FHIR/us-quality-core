@@ -5,7 +5,7 @@
   "name": "UsQualityCoreServicerequestDoNotPerform",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core ServiceRequest Do-not-perform Search Parameter",
+  "description": "US Quality Core ServiceRequest do-not-perform Search Parameter",
   "code": "do-not-perform",
   "base": [
     "ServiceRequest"

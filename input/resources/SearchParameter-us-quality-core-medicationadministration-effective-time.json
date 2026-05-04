@@ -5,7 +5,7 @@
   "name": "UsQualityCoreMedicationadministrationEffectiveTime",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core MedicationAdministration Effective-time Search Parameter",
+  "description": "US Quality Core MedicationAdministration effective-time Search Parameter",
   "code": "effective-time",
   "base": [
     "MedicationAdministration"
