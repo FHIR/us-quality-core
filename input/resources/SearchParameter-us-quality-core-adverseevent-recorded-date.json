@@ -1,12 +1,12 @@
 {
-  "id": "us-quality-core-adverseevent-recordedDate",
-  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recordedDate",
+  "id": "us-quality-core-adverseevent-recorded-date",
+  "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-adverseevent-recorded-date",
   "version": "0.1.0",
   "name": "UsQualityCoreAdverseeventRecordedDate",
   "status": "active",
   "date": "2026-03-31",
-  "description": "US Quality Core AdverseEvent RecordedDate Search Parameter",
-  "code": "recordedDate",
+  "description": "US Quality Core AdverseEvent Recorded-date Search Parameter",
+  "code": "recorded-date",
   "base": [
     "AdverseEvent"
   ],
