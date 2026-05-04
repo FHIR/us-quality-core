@@ -38,7 +38,7 @@ This guide is divided into several pages, which are listed at the top of each pa
     * [Security](security.html): This page documents the general security requirements.
 * [Guidance](guidance.html): These pages document best practices and how to use the profiles defined in this guide.
     * [USCDI+ Quality](uscdiquality.html): This page provides additional information about the relationship between USCDI+ Quality and US Quality Core. It maps the US Quality Core Profiles to the USCDI+ Quality data classes and data elements.
-    * [General Guidance](general-guidance.html): This page provides guidance and requirements common to all profiles used in this guide.
+    * [General Requirements](general-requirements.html): This page provides guidance and requirements common to all profiles used in this guide.
     * [US Quality Core Negation](negation.html): This page provides guidance on using US Quality Core negation profiles.
     * [Provenance](provenance.html): This page describes the use of Provenance for this guide.
     * [Relationship with USCore and QI-Core](relationship-with-uscore-qicore.html): This page describes the US Quality Core relationship with US-Core and QI-Core.
@@ -68,7 +68,7 @@ This guide retains all artifacts provided by QI-Core 6.0.0, with limited alterat
 These limited FHIR artifact changes made in this guide include:
 * Updated the prefix of FHIR profile names from QI-Core to US Quality Core.
 * Updated logical id of the resources from 'qicore' to 'us-quality-core'.
-* Removed 'QI-Core' flags on FHIR elements, this guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](#summary-of-conformance-requirements).
+* Removed 'QI-Core' flags on FHIR elements, this guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](general-requirements.html#summary-of-conformance-requirements).
   * In cases where a 'QI-Core' flagged FHIR element within a QI-Core 6.0.0 profile does not map to a USCDI+ Quality data element, the FHIR element is not flagged and is therefore not part of the conformance requirements of this guide.
 
 Note that the informational ModelInfo file that supports implementations using CQL has been updated to reflect the changes made to US Quality Core. See [CQL Artifacts and Patterns (Informational)](cql-artifacts.html) for details; this content is not part of the conformance requirements of this guide.

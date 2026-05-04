@@ -39,6 +39,21 @@
   "differential": {
     "element": [
       {
+        "id": "DiagnosticReport.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "DiagnosticReport.status",
+        "short": "(USCDI+ Quality) (USCDI) registered | partial | preliminary | final +"
+      },
+      {
         "id": "DiagnosticReport.category",
         "extension": [
           {
@@ -58,21 +73,6 @@
         },
         "short": "(USCDI) Service Category",
         "min": 1
-      },
-      {
-        "id": "DiagnosticReport.status",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
-        "path": "DiagnosticReport.status",
-        "short": "(USCDI+ Quality) (USCDI) registered | partial | preliminary | final +"
       },
       {
         "id": "DiagnosticReport.category:us-core",

@@ -22,7 +22,7 @@
 	<li><a href="StructureDefinition-us-quality-core-observation-lab.html">USQualityCore Laboratory Result Observation</a></li>
 	<li><a href="StructureDefinition-us-quality-core-observation-screening-assessment.html">USQualityCore Observation Screening Assessment</a></li></ul></p>
 
-	<p> As stated in the Home Page, US Quality Core derives from US Core and so the requirements on “MustSupport” defined in US Core must be respected. US Quality Core further <a href="index.html#mustsupport-flag">describes and constrains the “MustSupport” functionality</a>.</p>
+	<p> As stated in the Home Page, US Quality Core derives from US Core and so the requirements on “MustSupport” defined in US Core must be respected. US Quality Core further <a href="must-support.html">describes and constrains the “MustSupport” functionality</a>.</p>
 	<p>To create an expression specifically requesting information that an observation intentionally did not occur for a medical, patient or system reason, use the profile <a href="StructureDefinition-us-quality-core-observationcancelled.html">USQualityCore Observation Cancelled</a>.</p>
 
 <p>The following example illustrates the use of the observation profile.</p>

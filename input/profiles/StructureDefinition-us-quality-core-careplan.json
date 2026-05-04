@@ -39,6 +39,21 @@
   "differential": {
     "element": [
       {
+        "id": "CarePlan.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
+        "path": "CarePlan.text",
+        "short": "(USCDI+ Quality) (USCDI) Text summary of the resource, for human interpretation"
+      },
+      {
         "id": "CarePlan.category",
         "extension": [
           {
@@ -85,21 +100,6 @@
           "description": "Identifies what \"kind\" of plan this is to support differentiation between multiple co-existing plans; e.g. \"Home health\", \"psychiatric\", \"asthma\", \"disease management\", etc.",
           "valueSet": "http://hl7.org/fhir/ValueSet/care-plan-category"
         }
-      },
-      {
-        "id": "CarePlan.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-            "valueBoolean": true
-          },
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
-        "path": "CarePlan.text",
-        "short": "(USCDI+ Quality) (USCDI) Text summary of the resource, for human interpretation"
       },
       {
         "id": "CarePlan.category:AssessPlan",
