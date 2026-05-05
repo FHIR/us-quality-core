@@ -95,13 +95,6 @@ A definition for CodeSystem 'http://example.org/fhir/CodeSystem/ex-visionservice
 %USQualityCoreCommonTests.cql: Result type List of US Quality Core Device Not Requested of definition TestDeviceNotRequested is not supported; implementations may not be able to use the result of this expression
 
 # These are being added by the publisher
-WARNING: Parameters/manifest: Parameters.parameter[5]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[6]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[7]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[8]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[9]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[10]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[127]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[128]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[130]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
-WARNING: Parameters/manifest: Parameters.parameter[131]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
+WARNING: Parameters/manifest: Parameters.parameter[1]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
+WARNING: Parameters/manifest: Parameters.parameter[2]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
+WARNING: Parameters/manifest: Parameters.parameter[3]: If the parameter 'system-version' is an instance of the parameter defined in the base FHIR standard, then the type should be canonical, but found uri
