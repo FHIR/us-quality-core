@@ -16,7 +16,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="Communication-negation-example.html">Negation Example using a single coded concept</a></td><td>Communication of finding of Macular Edema absent not done because patient moved away.</td>
+          <td><a href="Communication-negation-example.html">Negation Example</a></td><td>Communication of finding of Macular Edema absent not done because patient moved away.</td>
       </tr>
     </tbody>
   </table>

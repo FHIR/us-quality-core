@@ -18,7 +18,7 @@
     <table>
       <tbody>
         <tr>
-            <td><a href="Observation-example-screening-assessment-10-minute-apgar-heart-rate.html">10 minute Apgar Heart Rate Example</a></td>
+            <td><a href="Observation-example-screening-assessment-10-minute-apgar-heart-rate.html">10 minute Apgar Heart Rate Screening Assessment Observation</a></td>
         </tr>
       </tbody>
     </table>

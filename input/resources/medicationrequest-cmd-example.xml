@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-This example MedicationRequest models QDM Medication, Order. Cooking with CQL session 49 discusses how to calculate cumulative medication duration:
-https://github.com/cqframework/CQL-Formatting-and-Usage-Wiki/blob/master/Source/Cooking%20With%20CQL/49/36_CumulativeMedicationDuration.cql
-
-The cumulative medication duration in this example would be calculated as:
-(supply * (1 + refills )) / (dosage * frequency)
-(100 * (1 + 2)) / (5 * 3) = 20 days
-
-See the QDM to US Quality Core mapping for details regarding QDM data attribute representation in FHIR.
-http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
--->
 <MedicationRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
   <id value="cmd-example"/>
   <meta>

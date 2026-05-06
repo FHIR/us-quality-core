@@ -9,11 +9,7 @@
   </extension>
   <status value="not-done"/>
   <statusReason>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="443390004"/>
-      <display value="Refused"/>
-    </coding>
+    <text value="Patient moved away and could not be reached"/>
   </statusReason>
   <category>
     <coding>
@@ -43,15 +39,13 @@
   <encounter>
     <reference value="Encounter/example"/>
   </encounter>
-  <sent value="2014-12-12T18:01:10-08:00"/>
-  <received value="2014-12-12T18:01:11-08:00"/>
   <recipient>
-    <reference value="Practitioner/example"/>
+    <reference value="Patient/example"/>
   </recipient>
   <sender>
-    <reference value="Device/example"/>
+    <reference value="Practitioner/example"/>
   </sender>
   <payload>
-    <contentString value="Patient example has moved away"/>
+    <contentString value="Patient could not be reached to discuss follow-up care after moving away."/>
   </payload>
 </Communication>

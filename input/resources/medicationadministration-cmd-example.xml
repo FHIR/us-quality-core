@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-This example MedicationAdministration models QDM Medication, Administered. Cooking with CQL session 53 discusses how to calculate cumulative medication duration:
-https://github.com/cqframework/CQL-Formatting-and-Usage-Wiki/blob/master/Source/Cooking%20With%20CQL/53/CumulativeMedicationDurationFHIR.cql
-
-The cumulative medication duration in this example would be calculated as:
-startDate + therapeuticDuration
-startDate + 14 days
-
-The therapeuticDuration is likely measure specific, though could potentially be established for
-any drug and distributed as a CodeSystem supplement.
-It is defaulted to 14 days in the CumulativeMedicationDurationFHIR4.cql library
-
-See the QDM to US Quality Core mapping for details regarding QDM data attribute representation in FHIR.
-http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
--->
 <MedicationAdministration xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
     <id value="cmd-example"/>
   <meta>

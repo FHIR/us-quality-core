@@ -21,10 +21,10 @@ did not occur for a medical, patient or system reason, use the profile <a href="
 <table>
   <tbody>
     <tr>
-        <td><a href="MedicationDispense-example.html">Penicillin MedicationDispense Example</a></td>
+        <td><a href="MedicationDispense-example.html">Alemtuzumab MedicationDispense Example</a></td>
     </tr>
     <tr>
-        <td><a href="MedicationDispense-cmd-example.html">MedicationDispense Cumulative Duration Example</a></td>
+        <td><a href="MedicationDispense-cmd-example.html">Alemtuzumab MedicationDispense Course Example</a></td>
     </tr>
   </tbody>
 </table>

@@ -11,7 +11,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="Organization-example.html">HL7 Example</a></td>
+          <td><a href="Organization-example.html">HL7 Organization Example</a></td>
       </tr>
     </tbody>
   </table>

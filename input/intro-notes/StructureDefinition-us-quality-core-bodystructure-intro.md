@@ -11,7 +11,7 @@
   <table>
     <tbody>
   <tr>
-      <td><a href="BodyStructure-example.html">BodyStructure Example</a> - identifying a specific tumor or lesion</td>
+      <td><a href="BodyStructure-example.html">BodyStructure example identifying a specific tumor or lesion</a> - identifying a specific tumor or lesion</td>
   </tr>
 </tbody>
 </table>

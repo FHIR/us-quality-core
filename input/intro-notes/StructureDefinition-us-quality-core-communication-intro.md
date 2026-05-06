@@ -23,7 +23,7 @@ a medical, patient or system reason, use the profile <a href="StructureDefinitio
 <table>
   <tbody>
     <tr>
-        <td><a href="Communication-example.html">Written Alert Example</a></td>
+        <td><a href="Communication-example.html">Radiology Report Notification Example</a></td>
     </tr>
   </tbody>
 </table>

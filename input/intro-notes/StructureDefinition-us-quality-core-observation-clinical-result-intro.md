@@ -11,7 +11,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="Observation-clinical-result-heart-rate-rhythm.html">Heart rate rhythm clinical result example</a></td>
+          <td><a href="Observation-clinical-result-heart-rate-rhythm.html">Heart Rate Rhythm Clinical Result Observation</a></td>
       </tr>
     </tbody>
   </table>

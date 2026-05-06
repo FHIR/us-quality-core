@@ -14,7 +14,7 @@
           <td><a href="Patient-example.html">Basic Patient Example</a></td>
       </tr>
       <tr>
-          <td><a href="Patient-example-2.html">65+ Female Patient Example</a></td>
+          <td><a href="Patient-example-2.html">Senior Patient Example</a></td>
       </tr>
       <tr>
           <td><a href="Patient-infant-example.html">Infant Patient Example</a></td>

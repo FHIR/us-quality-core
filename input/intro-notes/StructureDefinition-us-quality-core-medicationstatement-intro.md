@@ -11,7 +11,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="MedicationStatement-example.html">Penicillin MedicationStatement Example</a></td>
+          <td><a href="MedicationStatement-example.html">Alemtuzumab MedicationStatement Example</a></td>
       </tr>
     </tbody>
   </table>

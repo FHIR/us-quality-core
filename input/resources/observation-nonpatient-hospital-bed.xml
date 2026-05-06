@@ -20,12 +20,11 @@
     </coding>
   </code>
   <subject>
-    <reference value="Device/example"/>
-    <display value="Hospital Bed"/>
+    <display value="Hospital bed inventory"/>
   </subject>
-  <effectiveDateTime value ="2023-07-07"/>
+  <effectiveDateTime value="2023-07-07"/>
   <performer>
-    <reference value= "Organization/example1"/>
+    <reference value="Organization/example"/>
     <display value="Hendricks Country Hospital"/>
   </performer>
   <valueCodeableConcept>

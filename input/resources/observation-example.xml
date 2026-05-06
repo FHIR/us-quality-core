@@ -75,26 +75,12 @@
   	<reference value="Observation/example"/>
   </derivedFrom>
   <component>
-    <!--
-           Observations are often coded in multiple code systems.
-           - LOINC provides a very specific code (though not more specific in this particular
-     case)
-           - snomed provides a clinically relevant code that is usually less granular
-     than LOINC
-           - the source system provides its own code, which may be less or more granular
-     than LOINC
-
-this is shown here to demonstrate  the concept of translations within the codeableConcept
-     datatype. The diastolic code below only has a LOINC code
-              -->
     <code>
-      <!--      LOINC -code      -->
       <coding>
         <system value="http://loinc.org"/>
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
-      <!--      SNOMED CT Codes      -->
       <coding>
         <system value="http://snomed.info/sct"/>
         <code value="271649006"/>
@@ -107,7 +93,6 @@ this is shown here to demonstrate  the concept of translations within the codeab
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>
     </valueQuantity>
-    <!--      an interpretation for the individual composite observation    -->
     <interpretation>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
@@ -116,10 +101,8 @@ this is shown here to demonstrate  the concept of translations within the codeab
       </coding>
       <text value="Normal"/>
     </interpretation>
-    <!--       Should have a refrange as well     -->
   </component>
   <component>
-    <!--      this codes only has a LOINC code      -->
     <code>
       <coding>
         <system value="http://loinc.org"/>
@@ -133,7 +116,6 @@ this is shown here to demonstrate  the concept of translations within the codeab
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>
     </valueQuantity>
-    <!--      an interpretation for the individual composite observation    -->
     <interpretation>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
@@ -142,6 +124,5 @@ this is shown here to demonstrate  the concept of translations within the codeab
       </coding>
       <text value="Below low normal"/>
     </interpretation>
-    <!--       Should have a refrange as well     -->
   </component>
 </Observation>

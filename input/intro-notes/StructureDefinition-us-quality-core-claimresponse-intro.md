@@ -11,7 +11,7 @@
 <table>
   <tbody>
     <tr>
-        <td><a href="ClaimResponse-example.html">Preauthorization Vision ClaimResponse Example</a></td>
+        <td><a href="ClaimResponse-example.html">Professional ClaimResponse for Appendectomy</a></td>
     </tr>
   </tbody>
 </table>

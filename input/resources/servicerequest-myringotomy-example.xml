@@ -33,11 +33,6 @@
   </occurrencePeriod>
     <asNeededBoolean value="true"/>
     <authoredOn value="2014-02-14" />
-    <!--<requester>-->
-        <!--<agent>-->
-          <!--<reference value="Practitioner/example"/>-->
-        <!--</agent>-->
-    <!--</requester>-->
     <performerType>
         <coding>
           <system value="http://snomed.info/sct"/>
@@ -45,9 +40,6 @@
           <display value="Pediatric otolaryngology"/>
         </coding>
     </performerType>
-    <!--<recipient>-->
-        <!--<reference value="Practitioner/example"/>-->
-    <!--</recipient>-->
     <reasonCode>
         <coding>
           <system value="http://snomed.info/sct"/>

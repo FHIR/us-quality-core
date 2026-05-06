@@ -17,7 +17,6 @@
       <display value="Organizational team"/>
     </coding>
   </type>
-<!--    HL7 itself    -->
   <name value="Health Level Seven International"/>
   <telecom>
     <system value="phone"/>

@@ -5,14 +5,15 @@
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"/>
   </meta>
   <identifier>
-    <system value="http://example.com"/>
+    <system value="http://example.org/claims"/>
     <value value="6612346"/>
   </identifier>
   <status value="active"/>
   <type>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
-      <code value="vision"/>
+      <code value="professional"/>
+      <display value="Professional"/>
     </coding>
   </type>
   <use value="claim"/>
@@ -32,9 +33,6 @@
       <code value="normal"/>
     </coding>
   </priority>
-  <prescription>
-    <reference value="MedicationRequest/example"/>
-  </prescription>
   <payee>
     <type>
 	  <coding>
@@ -57,9 +55,16 @@
     <diagnosisCodeableConcept>
       <coding>
         <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
-        <code value="H44.23"/>
+        <code value="K35.80"/>
+        <display value="Unspecified acute appendicitis"/>
       </coding>
     </diagnosisCodeableConcept>
+    <onAdmission>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding"/>
+        <code value="Y"/>
+      </coding>
+    </onAdmission>
   </diagnosis>
   <insurance>
     <sequence value="1"/>
@@ -71,71 +76,18 @@
   <item>
     <sequence value="1"/>
     <careTeamSequence value="1"/>
+    <diagnosisSequence value="1"/>
     <productOrService>
       <coding>
-        <system value="http://example.org/fhir/CodeSystem/ex-visionservice"/>
-        <code value="glasses"/>
+        <system value="http://www.ama-assn.org/go/cpt"/>
+        <code value="44950"/>
+        <display value="Appendectomy"/>
       </coding>
     </productOrService>
-    <servicedDate value="2014-08-16"/>
+    <servicedDate value="2013-04-05"/>
     <unitPrice>
-      <value value="214.00"/>
+      <value value="4000.00"/>
       <currency value="USD"/>
     </unitPrice>
-    <detail>
-      <sequence value="1"/>
-      <productOrService>
-        <coding>
-          <system value="http://example.org/fhir/CodeSystem/ex-visionservice"/>
-          <code value="frame"/>
-        </coding>
-      </productOrService>
-      <unitPrice>
-        <value value="100.00"/>
-        <currency value="USD"/>
-      </unitPrice>
-      <net>
-        <value value="100.00"/>
-        <currency value="USD"/>
-      </net>
-    </detail>
-    <detail>
-      <sequence value="2"/>
-      <productOrService>
-        <coding>
-          <system value="http://example.org/fhir/CodeSystem/ex-visionservice"/>
-          <code value="lens"/>
-        </coding>
-      </productOrService>
-      <quantity>
-        <value value="2"/>
-      </quantity>
-      <unitPrice>
-        <value value="50.00"/>
-        <currency value="USD"/>
-      </unitPrice>
-      <net>
-        <value value="100.00"/>
-        <currency value="USD"/>
-      </net>
-    </detail>
-    <detail>
-      <sequence value="3"/>
-      <productOrService>
-        <coding>
-          <system value="http://example.org/fhir/CodeSystem/ex-visionservice"/>
-          <code value="fst"/>
-        </coding>
-      </productOrService>
-      <unitPrice>
-        <value value="200.00"/>
-        <currency value="USD"/>
-      </unitPrice>
-      <factor value="0.07"/>
-      <net>
-        <value value="14.00"/>
-        <currency value="USD"/>
-      </net>
-    </detail>
   </item>
 </Claim>

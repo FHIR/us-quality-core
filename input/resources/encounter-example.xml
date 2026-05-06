@@ -4,7 +4,11 @@
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"/>
   </meta>
-  <status value="in-progress"/>
+  <identifier>
+    <system value="http://example.org/encounters"/>
+    <value value="ENC-20130404-appendicitis"/>
+  </identifier>
+  <status value="finished"/>
   <class>
     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
     <code value="IMP"/>
@@ -20,6 +24,10 @@
   <subject>
     <reference value="Patient/example"/>
   </subject>
+  <period>
+    <start value="2013-04-04T18:00:00-04:00"/>
+    <end value="2013-04-06T11:00:00-04:00"/>
+  </period>
   <diagnosis>
     <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission">
       <valueCodeableConcept>
@@ -33,4 +41,24 @@
       <reference value="Condition/appendicitis-example"/>
     </condition>
   </diagnosis>
+  <hospitalization>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+        <code value="home"/>
+        <display value="Home"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/example"/>
+      <display value="South Wing, second floor"/>
+    </location>
+    <status value="completed"/>
+    <period>
+      <start value="2013-04-04T18:00:00-04:00"/>
+      <end value="2013-04-06T11:00:00-04:00"/>
+    </period>
+  </location>
 </Encounter>

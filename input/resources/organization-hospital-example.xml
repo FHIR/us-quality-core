@@ -17,7 +17,6 @@
       <display value="Healthcare Provider"/>
     </coding>
   </type>
-<!--    Hospital itself    -->
   <name value="HENDRICKS COUNTY HOSPITAL"/>
   <telecom>
     <system value="phone"/>

@@ -19,18 +19,4 @@
   <code>
     <text value="apitoxin (Honey Bee Venom)"/>
   </code>
-  <ingredient>
-	<quantity>
-	  <numerator>
-		<value value="0.150"/>
-		<unit value="mg"/>
-	  </numerator>
-	  <denominator>
-		<value value="1"/>
-	  </denominator>
-	</quantity>
-	<substanceReference>
-		<reference value="Substance/example"/>
-	</substanceReference>
-  </ingredient>
 </Substance>

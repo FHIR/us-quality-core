@@ -11,10 +11,10 @@
   <table>
     <tbody>
       <tr>
-        <td><a href="DeviceRequest-negation-example.html">Device Not Requested Example</a></td>
+        <td><a href="DeviceRequest-negation-example.html">DeviceRequest Negation Example</a></td>
       </tr>
       <tr>
-        <td><a href="ServiceRequest-negation-example.html">Service Not Requested Example</a></td>
+        <td><a href="ServiceRequest-negation-example.html">ServiceRequest Negation Example</a></td>
       </tr>
     </tbody>
   </table>
