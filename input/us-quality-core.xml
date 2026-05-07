@@ -307,6 +307,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Immunization/statusreason-example"/>
+      </reference>
+      <name value="Entered-in-error Influenza immunization record example"/>
+      <description value="Example of an entered-in-error influenza immunization record with statusReason"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Immunization/negation-example"/>
       </reference>
       <name value="Immunization negation example"/>
