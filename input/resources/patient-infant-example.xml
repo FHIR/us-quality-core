@@ -9,13 +9,13 @@
     <type>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="MR"/>
-        <display value="Medical Record Number"/>
+        <code value="SS"/>
+        <display value="Social Security number"/>
       </coding>
-      <text value="Medical Record Number"/>
+      <text value="Social Security number"/>
     </type>
-    <system value="http://example.com"/>
-    <value value="1032703"/>
+    <system value="http://hl7.org/fhir/sid/us-ssn"/>
+    <value value="999123458"/>
   </identifier>
   <active value="true"/>
   <name>

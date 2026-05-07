@@ -5,7 +5,6 @@
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nutritionorder"/>
   </meta>
     <identifier>
-		<system value="http://example.com"/>
 		<value value="123"/>
 	</identifier>
 	<status value="active"/><intent value="order"/>

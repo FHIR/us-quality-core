@@ -5,7 +5,6 @@
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-bodystructure"/>
   </meta>
   <identifier>
-    <system value="http://example.com"/>
     <value value="12345"/>
   </identifier>
 	<active value="true"/>

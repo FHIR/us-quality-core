@@ -34,10 +34,6 @@
     <display value="Practitioner"/>
   </performer>
   <valueCodeableConcept>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH"/>
-      <code value="29-2099.06.034077"/>
-      <display value="Radiology Technician (Radiology Tech) [Radiologic Technicians]"/>
-    </coding>
+    <text value="Radiology Technician (Radiology Tech) [Radiologic Technicians]"/>
   </valueCodeableConcept>
 </Observation>

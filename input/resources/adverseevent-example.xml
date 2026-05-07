@@ -5,7 +5,6 @@
 		<profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent"/>
 	</meta>
 	<identifier>
-		<system value="urn:oid:1.2.36.146.595.217.0.9"/>
 		<value value="49476534"/>
 	</identifier>
 	<actuality value="actual"/>

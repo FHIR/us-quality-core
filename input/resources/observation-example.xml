@@ -97,7 +97,7 @@
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
         <code value="N"/>
-        <display value="normal"/>
+        <display value="Normal"/>
       </coding>
       <text value="Normal"/>
     </interpretation>
@@ -120,7 +120,7 @@
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
         <code value="L"/>
-        <display value="low"/>
+        <display value="Low"/>
       </coding>
       <text value="Below low normal"/>
     </interpretation>

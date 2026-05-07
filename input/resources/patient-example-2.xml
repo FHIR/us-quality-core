@@ -9,11 +9,11 @@
     <type>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="MR"/>
+        <code value="SS"/>
       </coding>
     </type>
-    <system value="urn:oid:1.2.36.146.595.217.0.1"/>
-    <value value="12345"/>
+    <system value="http://hl7.org/fhir/sid/us-ssn"/>
+    <value value="999123457"/>
     <period>
       <start value="1995-05-06"/>
     </period>
