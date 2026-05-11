@@ -11,7 +11,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="Flag-example.html">Large Dog Warning Example</a></td>
+          <td><a href="Flag-example.html">Fall Risk Safety Flag Example</a></td>
       </tr>
     </tbody>
   </table>

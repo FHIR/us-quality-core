@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<DeviceRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<DeviceRequest xmlns="http://hl7.org/fhir">
   <id value="example"/>
-  <!--    insert contents here    -->
-  <status value="completed"/>
+  <meta>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest"/>
+  </meta>
+  <modifierExtension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform">
+    <valueBoolean value="false"/>
+  </modifierExtension>
+  <status value="active"/>
   <intent value="original-order"/>
-  <codeReference>
-    <reference value="Device/example"/>
-    <display value="Device/example"/>
-  </codeReference>
+  <codeCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="86184003"/>
+      <display value="Electrocardiographic monitor and recorder"/>
+    </coding>
+    <text value="Electrocardiographic monitor and recorder"/>
+  </codeCodeableConcept>
   <subject>
     <reference value="Patient/example"/>
-    <display value="Patient/example"/>
+    <display value="Peter Chalmers"/>
   </subject>
+  <encounter>
+    <reference value="Encounter/example"/>
+  </encounter>
+  <authoredOn value="2015-01-15T13:15:00+01:00"/>
+  <requester>
+    <reference value="Practitioner/example"/>
+  </requester>
 </DeviceRequest>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<Observation xmlns="http://hl7.org/fhir">
   <id value="negation-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled"/>
+  </meta>
   <extension url="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneReason">
     <valueCodeableConcept>
       <coding>
@@ -39,4 +42,9 @@
     <reference value= "Organization/example1"/>
     <display value="Hendricks Country Hospital"/>
   </performer>
+  <valueCodeableConcept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="not-performed"/>
+    </extension>
+  </valueCodeableConcept>
 </Observation>

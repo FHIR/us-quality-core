@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImmunizationEvaluation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<ImmunizationEvaluation xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation"/>
@@ -19,7 +19,8 @@
 	<targetDisease>
 		<coding>
 			<system value="http://snomed.info/sct"/>
-			<code value="1857005"/>
+			<code value="6142004"/>
+      <display value="Influenza (disorder)"/>
 		</coding>
 	</targetDisease>
 	<immunizationEvent>
@@ -34,5 +35,5 @@
 	</doseStatus>
 	<series value="Vaccination Series 1"/>
 	<doseNumberPositiveInt value="1"/>
-	<seriesDosesPositiveInt value="3"/>
+	<seriesDosesPositiveInt value="2"/>
 </ImmunizationEvaluation>

@@ -15,10 +15,10 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="Task-negation-example.html">Task rejected using a value set</a></td><td>Medication reconciliation not done due to patient declination; indicates that none of the tasks in the given not done value set were performed.</td>
+          <td><a href="Task-negation-example.html">Task rejected using a value set to indicate what was not done</a></td><td>Medication reconciliation not done due to patient declination; indicates that none of the tasks in the given not done value set were performed.</td>
         </tr>
         <tr>
-          <td><a href="Task-negation-with-code-example.html">Task rejected using a code</a></td><td>Medication reconciliation not done due to patient declination; indicates that the specific task, by code, was not done.</td>
+          <td><a href="Task-negation-with-code-example.html">Task rejected using a code to indicate what was not done</a></td><td>Medication reconciliation not done due to patient declination; indicates that the specific task, by code, was not done.</td>
       </tr>
     </tbody>
   </table>

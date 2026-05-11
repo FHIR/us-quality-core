@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Location xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<Location xmlns="http://hl7.org/fhir">
     <id value="example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"/>
   </meta>
     <identifier>
         <use value="temp"/>
-        <system value="http://example.com"/>
         <value value="B1-S.F2"/>
     </identifier>
     <status value="active"/>

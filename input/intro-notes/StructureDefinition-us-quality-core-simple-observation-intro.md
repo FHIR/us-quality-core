@@ -45,28 +45,28 @@
   <table>
     <tbody>
 			<tr>
-					<td><a href="Observation-example-frailty.html">Example of a Frailty Observation</a></td>
+					<td><a href="Observation-example-frailty.html">Frailty Observation Example</a></td>
 			</tr>
 			<tr>
-					<td><a href="Observation-example-gestation.html">Example of a Gestation Age at Birth Observation</a></td>
+					<td><a href="Observation-example-gestation.html">Gestational Age at Birth Example</a></td>
 			</tr>
     	<tr>
-    		<td><a href="Observation-example-obstetric-delivery.html">Example of a Date and time of obstetric delivery observation</a></td>
+    		<td><a href="Observation-example-obstetric-delivery.html">Date and Time of Obstetric Delivery Example</a></td>
     	</tr>
     	<tr>
-    		<td><a href="Observation-example-delivery-date-estimate.html">Example of an estimated delivery date observation</a></td>
+    		<td><a href="Observation-example-delivery-date-estimate.html">Delivery Date Estimated Example</a></td>
     	</tr>
     	<tr>
-    		<td><a href="Observation-example-preterm-births.html">Example of a number of preterm births observation</a></td>
+    		<td><a href="Observation-example-preterm-births.html">Number of Preterm Births Example</a></td>
     	</tr>
     	<tr>
-    		<td><a href="Observation-example-births.html">Example of a number of term births observation</a></td>
+    		<td><a href="Observation-example-births.html">Number of Term Births Example</a></td>
     	</tr>
     	<tr>
-    		<td><a href="Observation-example-parity.html">Example of a number of parity observation</a></td>
+    		<td><a href="Observation-example-parity.html">Number of Parity Example</a></td>
     	</tr>
     	<tr>
-    		<td><a href="Observation-example-pregnancies.html">Example of a number of pregnancies observation</a></td>
+    		<td><a href="Observation-example-pregnancies.html">Number of Pregnancies Example</a></td>
     	</tr>
     </tbody>
   </table>

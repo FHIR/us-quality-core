@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CommunicationRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<CommunicationRequest xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationrequest"/>
   </meta>
-  <!--   body of the resource   -->
   <identifier>
-    <system value="http://example.com"/>
     <value value="ABC123"/>
-    <!--   this is the value to which the response will refer   -->
   </identifier>
   <basedOn>
-    <display value="EligibilityRequest"/>
+    <reference value="Claim/example"/>
+    <display value="Appendectomy professional claim"/>
   </basedOn>
   <replaces>
-    <display value="prior CommunicationRequest"/>
+    <display value="Prior request for appendectomy claim documentation"/>
   </replaces>
   <groupIdentifier>
     <value value="12345"/>
@@ -35,21 +33,24 @@
     </coding>
     <text value="written"/>
   </medium>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
   <encounter>
     <reference value="Encounter/example"/>
   </encounter>
   <payload>
-    <contentString value="Please provide the accident report and any associated pictures to support your Claim #DEF5647."/>
+    <contentString value="Please provide the operative report supporting professional claim 6612346 for appendectomy."/>
   </payload>
-  <occurrenceDateTime value="2016-06-10T11:01:10-08:00"/>
-  <authoredOn value="2016-06-10T11:01:10-08:00"/>
+  <occurrenceDateTime value="2014-08-16T11:01:10-08:00"/>
+  <authoredOn value="2014-08-16T11:01:10-08:00"/>
   <requester>
-    <reference value="Practitioner/example"/>
+    <reference value="Organization/example"/>
   </requester>
   <recipient>
-    <reference value="Organization/example"/>
+    <reference value="Practitioner/example"/>
   </recipient>
   <sender>
-    <reference value="Patient/example"/>
+    <reference value="Organization/example"/>
   </sender>
 </CommunicationRequest>

@@ -36,6 +36,7 @@
     <display value="Amy Shaw"/>
   </subject>
   <effectiveDateTime value="2005-07-05"/>
+  <issued value="2005-07-05T14:30:00-05:00"/>
   <performer>
     <reference value= "Organization/example1"/>
     <display value="Hendricks Country Hospital"/>
@@ -45,6 +46,14 @@
     <unit value="mg/dL"/>
     <system value="http://unitsofmeasure.org"/>
   </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+    <text value="Normal"/>
+  </interpretation>
   <referenceRange>
     <low>
       <value value="40.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<Observation xmlns="http://hl7.org/fhir">
   <id value="example-nonpatient-mechanical-ventilator"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation"/>
@@ -20,12 +20,11 @@
     </coding>
   </code>
   <subject>
-    <reference value="Device/example"/>
-    <display value="Ventilator"/>
+    <display value="Mechanical ventilator inventory"/>
   </subject>
-  <effectiveDateTime value ="2023-07-07"/>
+  <effectiveDateTime value="2023-07-07"/>
   <performer>
-    <reference value= "Organization/example1"/>
+    <reference value="Organization/example"/>
     <display value="Hendricks Country Hospital"/>
   </performer>
   <valueCodeableConcept>

@@ -16,13 +16,13 @@
 * [Example of a CareTeam involved in the delivery of care for a pregnancy](CareTeam-example.html)
 
 **USQualityCoreClaim**
-* [Simple Vision Claim](Claim-example.html)
+* [Professional Claim for Appendectomy](Claim-example.html)
 
 **USQualityCoreClaimResponse**
-* [Simple Vision ClaimResponse](ClaimResponse-example.html)
+* [Professional ClaimResponse for Appendectomy](ClaimResponse-example.html)
 
 **USQualityCoreCommunication**
-* [Written Alert Example](Communication-example.html)
+* [Radiology Report Notification Example](Communication-example.html)
 
 **USQualityCoreCommunicationNotDone**
 * [Negation Example](Communication-negation-example.html)
@@ -39,7 +39,6 @@
 
 **USQualityCoreCoverage**
 * [General Person Primary Coverage Example](Coverage-example.html)
-* [General Subscriber ID Coverage Example](Coverage-example-new.html)
 
 **USQualityCoreDevice**
 * [General Device Example](Device-example.html)
@@ -52,7 +51,7 @@
 * [General DeviceRequest Example](DeviceRequest-example.html)
 
 **USQualityCoreDeviceUseStatement**
-* [The provision of a wheelchair to a patient example](DeviceUseStatement-example.html)
+* [ECG Monitor Use by a Patient Example](DeviceUseStatement-example.html)
 
 **USQualityCoreDiagnosticReportLab**
 * [Blood Panel Example](DiagnosticReport-example.html)
@@ -67,7 +66,7 @@
 * [Father Died of Heart Attack Example](FamilyMemberHistory-example.html)
 
 **USQualityCoreFlag**
-* [Large Dog Warning Example](Flag-example.html)
+* [Fall Risk Safety Flag Example](Flag-example.html)
 
 **USQualityCoreGoal**
 * [Weight Loss Example](Goal-example.html)
@@ -77,6 +76,7 @@
 
 **USQualityCoreImmunization**
 * [Example of Influenza immunization shot](Immunization-example.html)
+* [Example of entered-in-error Influenza immunization record](Immunization-statusreason-example.html)
 
 **USQualityCoreImmunizationNotDone**
 * [Negation Example using valueset reference](Immunization-negation-example.html)
@@ -100,8 +100,8 @@
 * [Medication not administered using a code to indicate that a particular medication was not administered](MedicationAdministration-negation-with-code-example.html)
 
 **USQualityCoreMedicationDispense**
-* [Penicillin MedicationDispense Example](MedicationDispense-example.html)
-* [Cumulative Medication Dispense Example](MedicationDispense-cmd-example.html)
+* [Alemtuzumab MedicationDispense Example](MedicationDispense-example.html)
+* [Alemtuzumab MedicationDispense Course Example](MedicationDispense-cmd-example.html)
 
 **USQualityCoreMedicationDispenseDeclined**
 * [Negation Example with valueset](MedicationDispense-negation-example.html)
@@ -112,17 +112,20 @@
 * [Negation Example using code](MedicationRequest-negation-example-code.html)
 
 **USQualityCoreMedicationRequest**
-* [Penicillin MedicationRequest Example](MedicationRequest-example.html)
+* [Alemtuzumab MedicationRequest Example](MedicationRequest-example.html)
 * [Cumulative Medication Duration Example](MedicationRequest-cmd-example.html)
 * [Patient Reported MedicationRequest Example](MedicationRequest-patient-reported-example.html)
 * [Patient Requested MedicationRequest Example](MedicationRequest-patient-requester-example.html)
 * [Practitioner Ordered MedicationRequest Example](MedicationRequest-practitioner-ordered-example.html)
 
 **USQualityCoreMedicationStatement**
-* [Penicillin MedicationStatement Example](MedicationStatement-example.html)
+* [Alemtuzumab MedicationStatement Example](MedicationStatement-example.html)
 
 **USQualityCoreNutritionOrder**
 * [Diabetic diet example](NutritionOrder-example.html)
+
+**USQualityCoreQuestionnaireResponse**
+* [PHQ-9 Questionnaire Response Example](QuestionnaireResponse-PHQ-9-example.html)
 
 **USQualityCoreSimpleObservation**
 * [Frailty Observation Example](Observation-example-frailty.html)
@@ -196,4 +199,3 @@
 
 **Additional Examples**
 * [ODH Example](Observation-example.html)
-

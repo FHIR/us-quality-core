@@ -11,7 +11,7 @@
 <table>
   <tbody>
     <tr>
-      <td><a href="CarePlan-example.html">Antenatal Care Plan Example</a></td>
+      <td><a href="CarePlan-example.html">Assessment and care plan for a pregnancy</a></td>
     </tr>
   </tbody>
 </table>

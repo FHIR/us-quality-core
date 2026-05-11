@@ -203,14 +203,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Coverage/example-new"/>
-      </reference>
-      <name value="Coverage example - Subscriber ID"/>
-      <description value="Example of a coverage resource used to provide information about an individual's specific plan with a Subscriber Id"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Device/example"/>
       </reference>
       <name value="Device example"/>
@@ -312,6 +304,14 @@
       <name value="Immunization example"/>
       <description value="Immunization example"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/statusreason-example"/>
+      </reference>
+      <name value="Entered-in-error Influenza immunization record example"/>
+      <description value="Example of an entered-in-error influenza immunization record with statusReason"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization"/>
     </resource>
     <resource>
       <reference>

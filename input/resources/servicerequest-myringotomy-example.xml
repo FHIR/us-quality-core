@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ServiceRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<ServiceRequest xmlns="http://hl7.org/fhir">
     <id value="myringotomy-example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"/>
@@ -33,11 +33,6 @@
   </occurrencePeriod>
     <asNeededBoolean value="true"/>
     <authoredOn value="2014-02-14" />
-    <!--<requester>-->
-        <!--<agent>-->
-          <!--<reference value="Practitioner/example"/>-->
-        <!--</agent>-->
-    <!--</requester>-->
     <performerType>
         <coding>
           <system value="http://snomed.info/sct"/>
@@ -45,9 +40,6 @@
           <display value="Pediatric otolaryngology"/>
         </coding>
     </performerType>
-    <!--<recipient>-->
-        <!--<reference value="Practitioner/example"/>-->
-    <!--</recipient>-->
     <reasonCode>
         <coding>
           <system value="http://snomed.info/sct"/>

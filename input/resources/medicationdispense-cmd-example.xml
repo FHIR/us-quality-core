@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-This example MedicationDispense models QDM Medication, Dispensed. Cooking with CQL session 53 discusses how to calculate cumulative medication duration:
-https://github.com/cqframework/CQL-Formatting-and-Usage-Wiki/blob/master/Source/Cooking%20With%20CQL/53/CumulativeMedicationDurationFHIR.cql
-
-The cumulative medication duration in this example would be calculated as:
-supply or (quantity / (dose * dosesPerDay))
-30 or (450 / (5 * 3)) = 30 days
-
-See the QDM to US Quality Core mapping for details regarding QDM data attribute representation in FHIR.
-http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
--->
-<MedicationDispense xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="cmd-example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense"/>
@@ -31,19 +20,19 @@ http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
     <reference value="MedicationRequest/example"/>
   </authorizingPrescription>
   <quantity>
-    <value value="450"/>
-    <unit value="ml"/>
+    <value value="6"/>
+    <unit value="mL"/>
     <system value="http://unitsofmeasure.org"/>
-    <code value="ml"/>
+    <code value="mL"/>
   </quantity>
   <daysSupply>
-    <value value="30"/>
-    <unit value="Day"/>
+    <value value="5"/>
+    <unit value="days"/>
     <system value="http://unitsofmeasure.org"/>
     <code value="d"/>
   </daysSupply>
-  <whenPrepared value="2012-05-30T16:20:00+00:00"/>
-  <whenHandedOver value="2012-05-31T10:20:00+00:00"/>
+  <whenPrepared value="2015-03-25T16:20:00+00:00"/>
+  <whenHandedOver value="2015-03-26T10:20:00+00:00"/>
   <destination>
     <reference value="Location/example"/>
   </destination>
@@ -51,18 +40,23 @@ http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
     <reference value="Patient/example"/>
   </receiver>
   <dosageInstruction>
+    <text value="Infuse alemtuzumab 12 mg intravenously once daily for 5 days."/>
     <timing>
       <repeat>
-        <frequency value="3"/>
+        <boundsPeriod>
+          <start value="2015-03-26"/>
+          <end value="2015-03-30"/>
+        </boundsPeriod>
+        <frequency value="1"/>
         <period value="1"/>
         <periodUnit value="d"/>
       </repeat>
     </timing>
     <route>
       <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="394899003"/>
-        <display value="oral administration of treatment"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"/>
+        <code value="IV"/>
+        <display value="Infusion, intravenous"/>
       </coding>
     </route>
     <doseAndRate>
@@ -74,10 +68,10 @@ http://fhir.org/guides/onc/us-quality-core/qdm-to-us-quality-core.html
         </coding>
       </type>
       <doseQuantity>
-        <value value="5"/>
-        <unit value="ml"/>
+        <value value="12"/>
+        <unit value="mg"/>
         <system value="http://unitsofmeasure.org"/>
-        <code value="ml"/>
+        <code value="mg"/>
       </doseQuantity>
     </doseAndRate>
   </dosageInstruction>

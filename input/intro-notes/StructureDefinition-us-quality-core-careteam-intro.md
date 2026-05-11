@@ -11,7 +11,7 @@
 <table>
   <tbody>
     <tr>
-      <td><a href="CareTeam-example.html">Antenatal Care Team Example</a></td>
+      <td><a href="CareTeam-example.html">Example of a CareTeam involved in the delivery of care for a pregnancy</a></td>
     </tr>
   </tbody>
 </table>

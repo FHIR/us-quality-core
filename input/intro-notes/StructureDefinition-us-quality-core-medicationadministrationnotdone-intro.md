@@ -12,10 +12,10 @@
   <table>
     <tbody>
       <tr>
-        <td><a href="MedicationAdministration-negation-example.html">Negation example using a valueset</a></td><td>Medication not administered using a value set to indicate what was not administered; indicates that none of the medications in the given value set were administered</td>
+        <td><a href="MedicationAdministration-negation-example.html">Medication not administered using a value set to indicate what was not administered</a></td><td>Medication not administered using a value set to indicate what was not administered; indicates that none of the medications in the given value set were administered</td>
       </tr>
       <tr>
-        <td><a href="MedicationAdministration-negation-with-code-example.html">Negation example using a code</a></td><td>Medication not administered using a code to indicate that a particular medication was not administered; indicates that a specific medication, by code, was not administered</td>
+        <td><a href="MedicationAdministration-negation-with-code-example.html">Medication not administered using a code to indicate that a particular medication was not administered</a></td><td>Medication not administered using a code to indicate that a particular medication was not administered; indicates that a specific medication, by code, was not administered</td>
       </tr>
     </tbody>
   </table>

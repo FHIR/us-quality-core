@@ -11,7 +11,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="DeviceUseStatement-example.html">The provision of a wheelchair to a patient example</a></td>
+          <td><a href="DeviceUseStatement-example.html">ECG Monitor Use by a Patient Example</a></td>
       </tr>
     </tbody>
   </table>

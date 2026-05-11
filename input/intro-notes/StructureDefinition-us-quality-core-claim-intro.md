@@ -11,7 +11,7 @@
 <table>
   <tbody>
     <tr>
-        <td><a href="Claim-example.html">Simple Vision Claim</a></td>
+        <td><a href="Claim-example.html">Professional Claim for Appendectomy</a></td>
     </tr>
   </tbody>
 </table>

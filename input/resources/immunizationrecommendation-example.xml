@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImmunizationRecommendation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<ImmunizationRecommendation xmlns="http://hl7.org/fhir">
     <id value="example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationrecommendation"/>
@@ -15,13 +15,18 @@
     <recommendation>
         <vaccineCode>
             <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="1010308001"/>
-                <display value="Vaccine product containing only inactivated whole Hepatitis A virus HM-175 strain antigen (medicinal product)"/>
+                <system value="http://hl7.org/fhir/sid/cvx"/>
+                <code value="140"/>
+                <display value="Influenza, seasonal, injectable, preservative free"/>
             </coding>
         </vaccineCode>
         <forecastStatus>
-            <text value="Not Complete"/>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"/>
+                <code value="due"/>
+                <display value="Due"/>
+            </coding>
+            <text value="Dose due"/>
         </forecastStatus>
         <dateCriterion>
             <code>
@@ -53,9 +58,9 @@
             </code>
             <value value="2016-12-28T00:00:00-05:00"/>
         </dateCriterion>
-		<description value="First sequence in protocol"/>
+		<description value="Second dose in seasonal influenza vaccination series"/>
 		<series value="Vaccination Series 1"/>
-        <doseNumberPositiveInt value="1"/>
+        <doseNumberPositiveInt value="2"/>
         <supportingImmunization>
             <reference value="Immunization/example"/>
         </supportingImmunization>

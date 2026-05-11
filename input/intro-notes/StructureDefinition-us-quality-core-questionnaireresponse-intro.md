@@ -19,7 +19,7 @@
   <table>
     <tbody>
       <tr>
-          <td><a href="QuestionnaireResponse-PHQ-9-example.html">PHQ-9 QuestionnaireResponse Example</a></td>
+          <td><a href="QuestionnaireResponse-PHQ-9-example.html">PHQ-9 Questionnaire Response Example</a></td>
         </tr>
     </tbody>
   </table>

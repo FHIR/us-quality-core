@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
+<Task xmlns="http://hl7.org/fhir">
   <id value="negation-with-code-example"/>
   <meta>
     <profile value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected"/>
@@ -8,6 +8,9 @@
     <system value="http://www.acme.org/tasks"/>
     <value value="19009"/>
   </identifier>
+  <basedOn>
+    <display value="Medication reconciliation requested before alemtuzumab infusion"/>
+  </basedOn>
   <status value="rejected"/>
   <statusReason>
     <coding>
@@ -25,13 +28,16 @@
     </coding>
   </code>
   <focus>
-    <reference value="Procedure/example"/>
+    <reference value="MedicationRequest/example"/>
   </focus>
   <for>
     <reference value="Patient/example"/>
   </for>
   <executionPeriod>
-    <start value="2018-06-11"/>
-    <end value="2018-06-11"/>
+    <start value="2015-03-25"/>
+    <end value="2015-03-25"/>
   </executionPeriod>
+  <reasonCode>
+    <text value="Patient declined medication reconciliation before alemtuzumab infusion"/>
+  </reasonCode>
 </Task>
