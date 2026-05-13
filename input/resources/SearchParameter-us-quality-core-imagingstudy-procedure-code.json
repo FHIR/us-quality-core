@@ -11,7 +11,7 @@
     "ImagingStudy"
   ],
   "type": "token",
-  "expression": "ImagingStudy.procedureReference.resolve().code",
+  "expression": "ImagingStudy.procedureCode",
   "xpathUsage": "normal",
   "multipleOr": true,
   "multipleAnd": true,
