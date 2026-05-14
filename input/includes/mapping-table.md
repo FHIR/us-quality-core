@@ -303,7 +303,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis Rank</td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
+                            <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a><br />
                     </td>
                     <td>
                     </td>
@@ -376,7 +376,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission</td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
+                            <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a><br />
                     </td>
                     <td>
                     </td>
@@ -1938,39 +1938,19 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-careplan.html">US Quality Core CarePlan</a>
-    </li>
-
-    <li>
         <a href="StructureDefinition-us-quality-core-careteam.html">US Quality Core CareTeam</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
+        <a href="StructureDefinition-us-quality-core-practitioner.html">US Quality Core Practitioner</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html">US Quality Core Condition Encounter Diagnosis</a>
+        <a href="StructureDefinition-us-quality-core-practitionerrole.html">US Quality Core PractitionerRole</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-coverage.html">US Quality Core Coverage</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-devicenotrequested.html">US Quality Core Device Not Requested</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-devicerequest.html">US Quality Core DeviceRequest</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-diagnosticreport-lab.html">US Quality Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+        <a href="StructureDefinition-us-quality-core-relatedperson.html">US Quality Core RelatedPerson</a>
     </li>
 
     <li>
@@ -1978,7 +1958,27 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
+        <a href="StructureDefinition-us-quality-core-observation-clinical-result.html">US Quality Core Observation Clinical Result</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-diagnosticreport-lab.html">US Quality Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+    </li>
+
+    <li>
         <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html">US Quality Core Condition Encounter Diagnosis</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-location.html">US Quality Core Location</a>
     </li>
 
     <li>
@@ -1990,7 +1990,27 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
+        <a href="StructureDefinition-us-quality-core-coverage.html">US Quality Core Coverage</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-organization.html">US Quality Core Organization</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-simple-observation.html">US Quality Core Simple Observation</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-observation-screening-assessment.html">US Quality Core Observation Screening Assessment</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-observationcancelled.html">US Quality Core Observation Cancelled</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a>
     </li>
 
     <li>
@@ -2006,15 +2026,19 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-location.html">US Quality Core Location</a>
+        <a href="StructureDefinition-us-quality-core-devicerequest.html">US Quality Core DeviceRequest</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-medication.html">US Quality Core Medication</a>
+        <a href="StructureDefinition-us-quality-core-servicerequest.html">US Quality Core ServiceRequest</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-medicationnotrequested.html">US Quality Core Medication Not Requested</a>
+        <a href="StructureDefinition-us-quality-core-devicenotrequested.html">US Quality Core Device Not Requested</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-servicenotrequested.html">US Quality Core Service Not Requested</a>
     </li>
 
     <li>
@@ -2022,7 +2046,7 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-medicationadministrationnotdone.html">US Quality Core MedicationAdministration Not Done</a>
+        <a href="StructureDefinition-us-quality-core-medicationrequest.html">US Quality Core MedicationRequest</a>
     </li>
 
     <li>
@@ -2034,23 +2058,15 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-medicationrequest.html">US Quality Core MedicationRequest</a>
+        <a href="StructureDefinition-us-quality-core-medicationadministrationnotdone.html">US Quality Core MedicationAdministration Not Done</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-observationcancelled.html">US Quality Core Observation Cancelled</a>
+        <a href="StructureDefinition-us-quality-core-medication.html">US Quality Core Medication</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-observation-clinical-result.html">US Quality Core Observation Clinical Result</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-observation-screening-assessment.html">US Quality Core Observation Screening Assessment</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-organization.html">US Quality Core Organization</a>
+        <a href="StructureDefinition-us-quality-core-medicationnotrequested.html">US Quality Core Medication Not Requested</a>
     </li>
 
     <li>
@@ -2058,11 +2074,7 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-practitioner.html">US Quality Core Practitioner</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-practitionerrole.html">US Quality Core PractitionerRole</a>
+        <a href="StructureDefinition-us-quality-core-careplan.html">US Quality Core CarePlan</a>
     </li>
 
     <li>
@@ -2071,22 +2083,6 @@ The following profiles include at least one USCDI+ Quality–flagged element and
 
     <li>
         <a href="StructureDefinition-us-quality-core-procedurenotdone.html">US Quality Core Procedure Not Done</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-relatedperson.html">US Quality Core RelatedPerson</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-servicenotrequested.html">US Quality Core Service Not Requested</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-servicerequest.html">US Quality Core ServiceRequest</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-simple-observation.html">US Quality Core Simple Observation</a>
     </li>
 
     <li>
@@ -2108,6 +2104,10 @@ The following profiles do not include any USCDI+ Quality–flagged elements and 
 
     <li>
         <a href="StructureDefinition-us-quality-core-bodystructure.html">US Quality Core BodyStructure</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
     </li>
 
     <li>
