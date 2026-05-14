@@ -1542,20 +1542,6 @@
           ],
           "referencePolicy": [
             "resolves"
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-location-id",
-              "type": "token",
-              "documentation": "The client **SHALL** provide an id value."
-            }
           ]
         },
         {
@@ -2309,20 +2295,6 @@
           ],
           "referencePolicy": [
             "resolves"
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-practitioner-id",
-              "type": "token",
-              "documentation": "The client **SHALL** provide an id value."
-            }
           ]
         },
         {
@@ -2358,20 +2330,6 @@
           ],
           "referencePolicy": [
             "resolves"
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-practitionerrole-id",
-              "type": "token",
-              "documentation": "The client **SHALL** provide an id value."
-            }
           ]
         },
         {
