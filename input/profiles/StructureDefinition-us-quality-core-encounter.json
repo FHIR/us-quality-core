@@ -316,7 +316,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter-diagnosisPresentOnAdmission"
+              "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission"
             ]
           }
         ],
