@@ -1,20 +1,20 @@
 /*
 @description: Common terminologies and functions used in USQualityCore-based CQL artifacts
 @comment: The modelinfo included with the published IG is using [derived modelinfo](https://hl7.org/fhir/uv/cql/using-modelinfo.html#derived-modelinfo)
-to enable reuse of data elements and libraries defined in the [US Core](https://hl7.org/fhir/us/core) 
-and [US CQL](https://hl7.org/fhir/us/cql) Common IGs. This library is derived from the QICoreCommon shared library used in FHIR-based 
+to enable reuse of data elements and libraries defined in the [US Core](https://hl7.org/fhir/us/core)
+and [US CQL](https://hl7.org/fhir/us/cql) Common IGs. This library is derived from the QICoreCommon shared library used in FHIR-based
 quality measure specifications. However, most of the functionality that was defined in QICoreCommon is now either in [FHIRCommon](https://hl7.org/fhir/uv/cql/Library-FHIRCommon.html)
 or [USCoreCommon](https://hl7.org/fhir/us/cql/Library-USCoreCommon.html).
 */
-library USQualityCoreCommon version '0.1.0'
+library USQualityCoreCommon version '0.5.0'
 
-using USQualityCore version '0.1.0'
+using USQualityCore version '0.5.0'
 
 include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1'
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0'
 
 codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
-codesystem "TaskCodeSystem": 'http://hl7.org/fhir/CodeSystem/task-code' 
+codesystem "TaskCodeSystem": 'http://hl7.org/fhir/CodeSystem/task-code'
 
 // Encounter Class Codes
 code "ambulatory": 'AMB' from ActCode display 'ambulatory'
@@ -56,7 +56,7 @@ define fluent function toValueSet(canonical FHIR.canonical):
 define fluent function toActivityExtent(codeableConcept FHIR.CodeableConcept):
   (codeableConcept.ext('http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-notDoneValueSet').value) X
     return
-      if X is not null 
+      if X is not null
         then X.toValueSet()
         else codeableConcept
 
@@ -217,4 +217,3 @@ define fluent function daysInPeriod(Period Interval<DateTime>):
       dayIndex: DayIndex,
       dayPeriod: Interval[startPeriod, endPeriod)
     }
-  
