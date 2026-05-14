@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-diagnosticreport-note",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreDiagnosticReportNote",
   "title": "US Quality Core DiagnosticReport Profile for Report and Note Exchange",
   "status": "active",

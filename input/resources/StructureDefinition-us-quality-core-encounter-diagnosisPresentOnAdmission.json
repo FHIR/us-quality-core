@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-encounter-diagnosisPresentOnAdmission",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreDiagnosisPresentOnAdmission",
   "title": "US Quality Core Diagnosis Present on Admission",
   "status": "draft",

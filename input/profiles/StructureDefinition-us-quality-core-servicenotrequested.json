@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-servicenotrequested",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreServiceNotRequested",
   "title": "US Quality Core Service Not Requested",
   "status": "active",

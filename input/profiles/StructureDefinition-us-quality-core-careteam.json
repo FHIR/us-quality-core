@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-careteam",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreCareTeam",
   "title": "US Quality Core CareTeam",
   "status": "active",

@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-observation-clinical-result",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreObservationClinicalResult",
   "title": "US Quality Core Observation Clinical Result",
   "status": "active",

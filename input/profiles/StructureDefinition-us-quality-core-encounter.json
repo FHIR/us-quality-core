@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-encounter",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreEncounter",
   "title": "US Quality Core Encounter",
   "status": "active",

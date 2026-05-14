@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-task",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreTask",
   "title": "US Quality Core Task",
   "status": "active",

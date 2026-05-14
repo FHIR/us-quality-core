@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="us-quality-core"/>
   <url value="http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/us-quality-core"/>
-  <version value="0.1.0"/>
+  <version value="0.5.0"/>
   <name value="USQualityCore"/>
   <title value="US Quality Core Implementation Guide"/>
   <status value="active"/>

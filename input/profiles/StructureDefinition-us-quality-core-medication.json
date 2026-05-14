@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-medication",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreMedication",
   "title": "US Quality Core Medication",
   "status": "active",

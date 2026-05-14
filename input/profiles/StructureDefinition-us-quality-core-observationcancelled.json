@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-observationcancelled",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observationcancelled",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreObservationCancelled",
   "title": "US Quality Core Observation Cancelled",
   "status": "active",

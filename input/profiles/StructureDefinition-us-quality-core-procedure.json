@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-procedure",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreProcedure",
   "title": "US Quality Core Procedure",
   "status": "active",

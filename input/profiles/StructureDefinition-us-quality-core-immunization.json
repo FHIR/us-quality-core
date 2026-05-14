@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-immunization",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreImmunization",
   "title": "US Quality Core Immunization",
   "status": "active",

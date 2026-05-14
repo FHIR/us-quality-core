@@ -1,10 +1,10 @@
 {
   "id": "us-quality-core-medication-code",
   "url": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medication-code",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "UsQualityCoreMedicationCode",
   "status": "active",
-  "date": "2026-03-31",
+  "date": "2026-05-15",
   "description": "US Quality Core Medication Code Search Parameter",
   "code": "code",
   "base": [

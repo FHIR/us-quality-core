@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-device",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreDevice",
   "title": "US Quality Core Device",
   "status": "active",

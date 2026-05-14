@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-communicationrequest",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationrequest",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreCommunicationRequest",
   "title": "US Quality Core CommunicationRequest",
   "status": "active",

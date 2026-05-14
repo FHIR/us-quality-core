@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-imagingstudy",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreImagingStudy",
   "title": "US Quality Core ImagingStudy",
   "status": "active",

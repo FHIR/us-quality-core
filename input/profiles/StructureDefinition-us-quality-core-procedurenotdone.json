@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-procedurenotdone",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreProcedureNotDone",
   "title": "US Quality Core Procedure Not Done",
   "status": "active",

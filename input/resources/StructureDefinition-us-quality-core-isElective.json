@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-isElective",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-isElective",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreIsElective",
   "title": "US Quality Core IsElective",
   "status": "draft",

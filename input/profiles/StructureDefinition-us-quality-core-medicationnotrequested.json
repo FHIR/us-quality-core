@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-medicationnotrequested",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreMedicationNotRequested",
   "title": "US Quality Core Medication Not Requested",
   "status": "active",

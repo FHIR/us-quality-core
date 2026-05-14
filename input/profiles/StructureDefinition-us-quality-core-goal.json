@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-goal",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreGoal",
   "title": "US Quality Core Goal",
   "status": "active",

@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-simple-observation",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreSimpleObservation",
   "title": "US Quality Core Simple Observation",
   "status": "active",

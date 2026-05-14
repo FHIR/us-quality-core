@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-condition-encounter-diagnosis",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreConditionEncounterDiagnosis",
   "title": "US Quality Core Condition Encounter Diagnosis",
   "status": "active",
