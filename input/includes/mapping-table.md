@@ -1938,39 +1938,11 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
+        <a href="StructureDefinition-us-quality-core-careplan.html">US Quality Core CarePlan</a>
+    </li>
+
+    <li>
         <a href="StructureDefinition-us-quality-core-careteam.html">US Quality Core CareTeam</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-practitioner.html">US Quality Core Practitioner</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-practitionerrole.html">US Quality Core PractitionerRole</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-relatedperson.html">US Quality Core RelatedPerson</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-diagnosticreport-note.html">US Quality Core DiagnosticReport Profile for Report and Note Exchange</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-observation-clinical-result.html">US Quality Core Observation Clinical Result</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-diagnosticreport-lab.html">US Quality Core DiagnosticReport Profile for Laboratory Results Reporting</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a>
     </li>
 
     <li>
@@ -1978,7 +1950,31 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-location.html">US Quality Core Location</a>
+        <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-coverage.html">US Quality Core Coverage</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-devicenotrequested.html">US Quality Core Device Not Requested</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-devicerequest.html">US Quality Core DeviceRequest</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-diagnosticreport-lab.html">US Quality Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-diagnosticreport-note.html">US Quality Core DiagnosticReport Profile for Report and Note Exchange</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a>
     </li>
 
     <li>
@@ -1990,27 +1986,7 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-coverage.html">US Quality Core Coverage</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-organization.html">US Quality Core Organization</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-simple-observation.html">US Quality Core Simple Observation</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-observation-screening-assessment.html">US Quality Core Observation Screening Assessment</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-observationcancelled.html">US Quality Core Observation Cancelled</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a>
+        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
     </li>
 
     <li>
@@ -2026,39 +2002,7 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-devicerequest.html">US Quality Core DeviceRequest</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-servicerequest.html">US Quality Core ServiceRequest</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-devicenotrequested.html">US Quality Core Device Not Requested</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-servicenotrequested.html">US Quality Core Service Not Requested</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-medicationadministration.html">US Quality Core MedicationAdministration</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-medicationrequest.html">US Quality Core MedicationRequest</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-medicationdispense.html">US Quality Core MedicationDispense</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-medicationdispensedeclined.html">US Quality Core MedicationDispense Declined</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-medicationadministrationnotdone.html">US Quality Core MedicationAdministration Not Done</a>
+        <a href="StructureDefinition-us-quality-core-location.html">US Quality Core Location</a>
     </li>
 
     <li>
@@ -2070,11 +2014,51 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
+        <a href="StructureDefinition-us-quality-core-medicationadministration.html">US Quality Core MedicationAdministration</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-medicationadministrationnotdone.html">US Quality Core MedicationAdministration Not Done</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-medicationdispense.html">US Quality Core MedicationDispense</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-medicationdispensedeclined.html">US Quality Core MedicationDispense Declined</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-medicationrequest.html">US Quality Core MedicationRequest</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-observationcancelled.html">US Quality Core Observation Cancelled</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-observation-clinical-result.html">US Quality Core Observation Clinical Result</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-observation-screening-assessment.html">US Quality Core Observation Screening Assessment</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-organization.html">US Quality Core Organization</a>
+    </li>
+
+    <li>
         <a href="StructureDefinition-us-quality-core-patient.html">US Quality Core Patient</a>
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-careplan.html">US Quality Core CarePlan</a>
+        <a href="StructureDefinition-us-quality-core-practitioner.html">US Quality Core Practitioner</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-practitionerrole.html">US Quality Core PractitionerRole</a>
     </li>
 
     <li>
@@ -2083,6 +2067,22 @@ The following profiles include at least one USCDI+ Quality–flagged element and
 
     <li>
         <a href="StructureDefinition-us-quality-core-procedurenotdone.html">US Quality Core Procedure Not Done</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-relatedperson.html">US Quality Core RelatedPerson</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-servicenotrequested.html">US Quality Core Service Not Requested</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-servicerequest.html">US Quality Core ServiceRequest</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-simple-observation.html">US Quality Core Simple Observation</a>
     </li>
 
     <li>
