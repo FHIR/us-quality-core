@@ -50,8 +50,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For ServiceRequest, US Quality Core includes <code>_id</code>, <code>patient</code>, <code>category</code>, <code>code</code>, <code>authored</code>, and <code>do-not-perform</code> search parameters, with required support for the <code>patient+category</code>, <code>patient+category+authored</code>, <code>patient+code</code>, and <code>patient+do-not-perform</code> combinations. The <code>do-not-perform</code> search supports retrieval of Service Not Requested records.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For ServiceRequest, US Quality Core includes <code>_id</code>, <code>patient</code>, <code>category</code>, <code>code</code>, <code>authored</code>, and <code>do-not-perform</code> search parameters, with required support for the <code>patient+category</code>, <code>patient+category+authored</code>, <code>patient+code</code>, and <code>patient+do-not-perform</code> combinations. These searches support patient-scoped retrieval, direct retrieval when an identifier is already known, status-sensitive or negation workflows, date-sensitive retrieval, and filtering by clinical concept or quality logic code path for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

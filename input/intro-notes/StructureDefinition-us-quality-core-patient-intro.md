@@ -25,8 +25,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For Patient, US Quality Core includes <code>_id</code> to support direct retrieval when the patient context is already known. Other US Core Patient search expectations, such as <code>identifier</code>, <code>name</code>, <code>birthdate+name</code>, and <code>gender+name</code>, are not re-stated as US Quality Core-specific search requirements because USCDI+ Quality retrieval is generally scoped to an identified patient. Implementations still need to satisfy applicable US Core conformance independently.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For Patient, US Quality Core includes <code>_id</code> search parameter. These searches support direct retrieval when an identifier is already known for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

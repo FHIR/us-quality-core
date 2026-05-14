@@ -29,8 +29,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For Procedure, US Quality Core includes <code>patient</code>, <code>status</code>, and <code>date</code> search parameters, with required support for the <code>patient+status</code> and <code>patient+date</code> combinations. The <code>patient+date</code> search aligns with US Core Procedure retrieval. The <code>status</code> search supports quality workflows that need to distinguish completed procedures from not-done or entered-in-error records.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For Procedure, US Quality Core includes <code>patient</code>, <code>status</code>, and <code>date</code> search parameters, with required support for the <code>patient+status</code> and <code>patient+date</code> combinations. These searches support patient-scoped retrieval, status-sensitive or negation workflows, and date-sensitive retrieval for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

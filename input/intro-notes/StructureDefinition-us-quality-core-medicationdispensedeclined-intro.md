@@ -32,8 +32,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For MedicationDispense, US Quality Core includes <code>patient</code> and <code>status</code> search parameters, with required support for the <code>patient+status</code> combination. The <code>status</code> search supports retrieval of MedicationDispense Declined records and other status-sensitive quality workflows.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For MedicationDispense, US Quality Core includes <code>patient</code> and <code>status</code> search parameters, with required support for the <code>patient+status</code> combination. These searches support patient-scoped retrieval and status-sensitive or negation workflows for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

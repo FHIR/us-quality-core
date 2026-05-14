@@ -19,8 +19,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For ImagingStudy, US Quality Core includes <code>patient</code> and <code>procedure-code</code> search parameters, with required support for the <code>patient+procedure-code</code> combination. These searches support patient-scoped retrieval of imaging studies filtered by the imaging procedure concept. US Core 6.1.0 does not define an ImagingStudy profile, so these search expectations are defined directly by US Quality Core.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For ImagingStudy, US Quality Core includes <code>patient</code> and <code>procedure-code</code> search parameters, with required support for the <code>patient+procedure-code</code> combination. These searches support patient-scoped retrieval and filtering by clinical concept or quality logic code path for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

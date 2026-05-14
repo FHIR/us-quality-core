@@ -19,8 +19,8 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For Observation, US Quality Core includes <code>patient</code>, <code>category</code>, <code>status</code>, <code>code</code>, and <code>date</code> search parameters, with required support for the <code>patient+category</code>, <code>patient+category+date</code>, <code>patient+category+status</code>, and <code>patient+code</code> combinations. These searches align with US Core observation retrieval where applicable, support filtering by the observation code used by quality logic, and support status-sensitive retrieval such as cancelled observations.</p>
-  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
+  <p>For Observation, US Quality Core includes <code>patient</code>, <code>category</code>, <code>status</code>, <code>code</code>, and <code>date</code> search parameters, with required support for the <code>patient+category+status</code>, <code>patient+category</code>, <code>patient+category+date</code>, and <code>patient+code</code> combinations. These searches support patient-scoped retrieval, status-sensitive or negation workflows, date-sensitive retrieval, and filtering by clinical concept or quality logic code path for in-scope USCDI+ Quality data.</p>
+  <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules. Applicable US Core 6.1.0 search expectations not repeated here still apply independently when an implementation claims US Core conformance.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
 

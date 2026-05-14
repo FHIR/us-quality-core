@@ -19,7 +19,7 @@
 
   <!-- START SEARCH EXPECTATIONS -->
   <a name="search-expectations"><b>Search Expectations</b></a>
-  <p>For PractitionerRole, the US Quality Core CapabilityStatement does not add US Quality Core-specific search requirements. US Core search expectations such as <code>specialty</code> and <code>practitioner</code> are not re-stated here because PractitionerRole is generally reached through references from in-scope quality resources rather than used as a primary USCDI+ Quality retrieval entry point. Implementations still need to satisfy applicable US Core conformance independently.</p>
+  <p>For PractitionerRole, the US Quality Core CapabilityStatement does not add US Quality Core-specific search requirements. Applicable US Core 6.1.0 search expectations are not repeated here unless they are specifically relevant to in-scope USCDI+ Quality retrieval.</p>
   <p>See the <a href="CapabilityStatement-us-quality-core-server.html">US Quality Core Server CapabilityStatement</a> for the computable conformance expectations and the <a href="relationship-with-uscore-qicore.html#search-expectations-and-us-core">Relationship with US Core and QI-Core</a> page for the search selection rules.</p>
   <!-- END SEARCH EXPECTATIONS -->
 </div>
