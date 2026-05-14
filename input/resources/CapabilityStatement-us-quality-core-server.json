@@ -390,68 +390,6 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
               "valueCode": "SHALL"
-            }
-          ],
-          "type": "Claim",
-          "supportedProfile": [
-            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"
-          ],
-          "interaction": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "read"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "search-type"
-            }
-          ],
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchRevInclude": [
-            "Provenance:target"
-          ],
-          "_searchRevInclude": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-claim-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide an id value for the reference."
-            }
-          ]
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
             },
             {
               "extension": [
