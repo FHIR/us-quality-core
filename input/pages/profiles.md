@@ -6,7 +6,7 @@ The following table lists the US Quality Core profiles that are part of the IG, 
 <br>
 
 
-|US Quality Core (0.1.0) Profile|US Core (6.1.0) Profile|Base Resource|
+|US Quality Core (0.5.0) Profile|US Core (6.1.0) Profile|Base Resource|
 |----|:----:|----:|
 |**2.1.1 AdverseEvent**|
 |&emsp; [US Quality Core AdverseEvent](StructureDefinition-us-quality-core-adverseevent.html)| &mdash; |&emsp; [ AdverseEvent]({{site.data.fhir.path}}adverseevent.html)|

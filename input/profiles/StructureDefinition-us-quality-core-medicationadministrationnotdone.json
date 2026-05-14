@@ -1,12 +1,12 @@
 {
   "id": "us-quality-core-medicationadministrationnotdone",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreMedicationAdministrationNotDone",
   "title": "US Quality Core MedicationAdministration Not Done",
   "status": "active",
   "experimental": false,
-  "date": "2026-03-31",
+  "date": "2026-05-15",
   "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
   "contact": [
     {

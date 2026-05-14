@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-communicationnotdone",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationnotdone",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreCommunicationNotDone",
   "title": "US Quality Core Communication Not Done",
   "status": "active",

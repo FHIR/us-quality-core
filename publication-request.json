@@ -1,10 +1,10 @@
 {
   "package-id" : "fhir.onc.us-quality-core",
-  "version" : "0.1.0",
+  "version" : "0.5.0",
   "path" : "http://fhir.org/guides/onc/us-quality-core",
   "mode": "milestone",
   "status" : "release",
-  "sequence" : "0.1.0",
+  "sequence" : "0.5.0",
   "desc" : "US Quality Core",
  	"title": "US Quality Core",
   "descmd" : "This version establishes the US Quality Core Implementation Guide",

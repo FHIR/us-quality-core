@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-devicerequest",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreDeviceRequest",
   "title": "US Quality Core DeviceRequest",
   "status": "active",

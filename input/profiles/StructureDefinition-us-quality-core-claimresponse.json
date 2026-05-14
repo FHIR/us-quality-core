@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-claimresponse",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claimresponse",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreClaimResponse",
   "title": "US Quality Core ClaimResponse",
   "status": "draft",

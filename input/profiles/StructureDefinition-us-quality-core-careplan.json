@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-careplan",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreCarePlan",
   "title": "US Quality Core CarePlan",
   "status": "active",

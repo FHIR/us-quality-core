@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-diagnosticreport-lab",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreDiagnosticReportLab",
   "title": "US Quality Core DiagnosticReport Profile for Laboratory Results Reporting",
   "status": "active",

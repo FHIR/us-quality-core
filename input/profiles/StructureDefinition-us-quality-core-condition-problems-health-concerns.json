@@ -1,7 +1,7 @@
 {
   "id": "us-quality-core-condition-problems-health-concerns",
   "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "name": "USQualityCoreConditionProblemsHealthConcerns",
   "title": "US Quality Core Condition Problems Health Concerns",
   "status": "active",
