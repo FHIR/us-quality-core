@@ -2833,19 +2833,6 @@
           "referencePolicy": [
             "resolves"
           ],
-          "searchRevInclude": [
-            "Provenance:target"
-          ],
-          "_searchRevInclude": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
           "searchParam": [
             {
               "extension": [
