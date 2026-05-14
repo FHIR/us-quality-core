@@ -748,7 +748,7 @@ An example of an encounter can be found [here](Encounter-encounter-ed-example.ht
 
 #### Encounter-Related Diagnoses and Procedures
 
-Previous versions of US Quality Core have used the [Encounter.diagnosis](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.diagnosis) element to reference to the list of diagnosis/diagnoses and procedures relevant to the encounter.
+Versions of QI-Core prior to 6.0.0 have used the [Encounter.diagnosis](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.diagnosis) element to reference to the list of diagnosis/diagnoses and procedures relevant to the encounter.
 The [Encounter.diagnosis.usevalue](http://hl7.org/fhir/R4/valueset-diagnosis-role.html)
 helped to differentiates if the diagnosis or procedure role with respect to the encounter,
 e.g., the admission diagnosis (AD), the discharge diagnosis (DD), the chief complaint (CC),
