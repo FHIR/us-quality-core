@@ -7,7 +7,8 @@ In addition to adherence to core FHIR requirements, conformance to this US Quali
 
 - Implementations **SHALL** support all profile types that contain at least one USCDI+ Quality flagged data element, as described in the [USCDI+ Quality](uscdiquality.html) page.
 - Implementations **SHALL** support all USCDI+ Quality flagged data elements, and those flagged as MustSupport from underlying US Core profiles.
-- Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](capabilityStatement-us-quality-core-server.html).
+- Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](CapabilityStatement-us-quality-core-server.html).
+- Server implementations **SHALL** support all interactions, search parameters, and combined search parameters that have `SHALL` conformance expectations in the US Quality Core Server CapabilityStatement.
 - Server implementations **SHALL** declare their support of the US Quality Core profiles in a FHIR CapabilityStatement.
 - Quality improvement applications **SHALL** recognize and process all MustSupport elements in US Quality Core.
 - Modifier elements **SHALL** be treated as MustSupport, even if not explicitly declared.
@@ -15,6 +16,12 @@ In addition to adherence to core FHIR requirements, conformance to this US Quali
 - The resources in "Any" references **SHALL** conform to US Quality Core profiles if the base resource has a US Quality Core profile.
 - Quality improvement applications **SHALL** be simultaneously compliant with US Quality Core profiles and US Core profiles. Because US Quality Core profiles are derived from US Core, the more restrictive US Quality Core bindings SHALL be applied where they exist. 
 - Applications **SHOULD** use the preferred value sets as defined by US Quality Core profiles.
+
+### Search Capability Requirements
+
+US Quality Core search conformance is defined by the [US Quality Core Server CapabilityStatement](CapabilityStatement-us-quality-core-server.html). The CapabilityStatement identifies individual search parameters and combined search parameters that servers **SHALL** or **MAY** support for retrieving in-scope USCDI+ Quality V1 data.
+
+US Quality Core servers are also expected to conform to applicable US Core search requirements. A US Core search expectation that is not repeated in the US Quality Core CapabilityStatement is not removed from US Core conformance; it is simply not identified as an additional US Quality Core-specific search requirement for USCDI+ Quality V1 retrieval. For additional guidance on how search expectations were selected, see [Relationship with US Core and QI-Core](relationship-with-uscore-qicore.html#search-expectations-and-us-core).
 
 ### Modifier Elements
 
