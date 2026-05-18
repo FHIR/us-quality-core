@@ -1496,6 +1496,7 @@
         <element name="condition" elementType="FHIR.Reference"/>
         <element name="use" elementType="FHIR.CodeableConcept"/>
         <element name="rank" elementType="FHIR.positiveInt"/>
+        <element name="diagnosisPresentOnAdmission" elementType="USQualityCore.DiagnosisPresentOnAdmission" target="FHIRHelpers.ToConcept(%parent.diagnosis.extension[url='http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter-diagnosisPresentOnAdmission'].value)" description="onAdmission" definition="Indicator of whether the Encounter diagnosis was present at the time of admission." />
     </typeInfo>
     <typeInfo xsi:type="ClassInfo" namespace="USQualityCore" name="Encounter.Hospitalization" retrievable="false" baseType="USCore.Encounter.Hospitalization">
         <element name="preAdmissionIdentifier" elementType="FHIR.Identifier"/>
