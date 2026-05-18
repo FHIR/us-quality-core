@@ -7,18 +7,6 @@
   "status": "active",
   "experimental": false,
   "date": "2022-04-20",
-  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
-  "contact": [
-    {
-      "name": "Clinical Quality Information WG",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi"
-        }
-      ]
-    }
-  ],
   "description": "The US Quality Core Condition Encounter Diagnosis Profile is based upon the US Core Condition Encounter Diagnosis Profile.   In version 5.0.0, The US Quality Core Condition Profile has been split into the US Quality Core Condition Encounter Diagnosis Profile and US Quality Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It Defines the core set of elements and extensions for quality rule and measure authors.",
   "jurisdiction": [
     {

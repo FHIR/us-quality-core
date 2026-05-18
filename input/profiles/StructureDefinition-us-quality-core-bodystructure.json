@@ -7,18 +7,6 @@
   "status": "active",
   "experimental": false,
   "date": "2026-05-15",
-  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
-  "contact": [
-    {
-      "name": "Clinical Quality Information WG",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi"
-        }
-      ]
-    }
-  ],
   "description": "Profile of BodyStructure for decision support/quality metrics. Defines the core set of elements and extensions for quality rule and measure authors.",
   "jurisdiction": [
     {

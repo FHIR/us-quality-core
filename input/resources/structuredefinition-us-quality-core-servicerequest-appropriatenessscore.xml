@@ -6,13 +6,6 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2026-05-15"/>
-  <publisher value="HL7 International - Clinical Quality Improvement Work Group"/>
-  <contact>
-    <telecom>
-      <system value="url"/>
-      <value value="http://hl7.org/special/committees/CQI"/>
-    </telecom>
-  </contact>
   <description value="The appropriateness score for the requested action."/>
   <fhirVersion value="3.0.1"/>
   <mapping>

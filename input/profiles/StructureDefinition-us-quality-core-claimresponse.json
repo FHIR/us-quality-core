@@ -7,18 +7,6 @@
   "status": "draft",
   "experimental": false,
   "date": "2022-04-20",
-  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
-  "contact": [
-    {
-      "name": "Clinical Quality Information WG",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi"
-        }
-      ]
-    }
-  ],
   "description": "The US Quality Core ClaimResponse profile is used to provide the results of the adjudication and/or authorization of a set of healthcare-related products and services for a patient against the patient's insurance coverages, or to respond with what the adjudication would be for a supplied set of products or services should they be actually supplied to the patient. It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the ClaimResponse resource when using this profile",
   "jurisdiction": [
     {

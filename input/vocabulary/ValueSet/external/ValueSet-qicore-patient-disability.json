@@ -17,17 +17,6 @@
   "status": "active",
   "experimental": false,
   "date": "2026-05-15T00:00:00+00:00",
-  "publisher": "Health Level Seven, Inc. - CQI WG",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://hl7.org/special/committees/CQI"
-        }
-      ]
-    }
-  ],
   "description": "Disability is broadly defined as a physical or mental condition that limits a person's movements, senses, or activities. This includes  items such as handicap, impairment, invalidism, functional dependency, and incompetence.",
   "jurisdiction": [
     {

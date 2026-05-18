@@ -6,18 +6,6 @@
   "title": "US Quality Core Observation Clinical Result",
   "status": "active",
   "date": "2022-04-20",
-  "publisher": "http://www.hl7.org/Special/committees/cqi/index.cfm",
-  "contact": [
-    {
-      "name": "Clinical Quality Information WG",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi"
-        }
-      ]
-    }
-  ],
   "description": "The US Quality Core Observation Clinical Result Profile is based upon the US Core Observation Clinical Result Profile. Clinical results includes non-imaging and non-laboratory tests performed on a patient that results in structured or unstructured (narrative) findings specific to the patient, such as electrocardiogram (ECG), visual acuity exam, macular exam, or graded exercise testing (GXT), to facilitate the diagnosis and management of conditions. The US Quality Core Observation Clinical Result Profile profile defines the core set of elements and extensions for quality rule and measure authors.",
   "jurisdiction": [
     {

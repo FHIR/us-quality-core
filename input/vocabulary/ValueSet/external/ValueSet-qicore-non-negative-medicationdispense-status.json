@@ -8,7 +8,6 @@
   "status": "active",
   "experimental": false,
   "date": "2018-12-05T00:00:00+00:00",
-  "publisher": "Health Level Seven, Inc. - CQI WG",
   "description": "This value set defines the set of codes that indicate a non-negated medication dispense status (i.e. codes that are not `declined`)",
   "jurisdiction": [
     {

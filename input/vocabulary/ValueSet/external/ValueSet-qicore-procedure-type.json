@@ -12,7 +12,6 @@
   "status": "active",
   "experimental": false,
   "date": "2019-12-05T01:00:00+00:00",
-  "publisher": "Health Level Seven, Inc. - CQI WG",
   "description": "This value set includes example Procedure Type codes",
   "jurisdiction": [
     {
