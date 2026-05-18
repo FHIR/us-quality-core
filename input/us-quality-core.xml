@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="us-quality-core"/>
+  <id value="fhir.onc.us-quality-core"/>
   <url value="http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/us-quality-core"/>
   <version value="0.5.0"/>
   <name value="USQualityCore"/>
