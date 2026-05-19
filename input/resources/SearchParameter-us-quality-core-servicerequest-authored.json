@@ -9,10 +9,12 @@
   "contact": [
     {
       "name": "Office of the National Coordinator for Health Information Technology (ONC)",
-      "telecom": {
-        "system": "url",
-        "value": "https://www.healthit.gov/feedback"
-      }
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.healthit.gov/feedback"
+        }
+      ]
     }
   ],
   "description": "US Quality Core ServiceRequest authored Search Parameter",
