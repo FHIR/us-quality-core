@@ -7,25 +7,25 @@ In addition to adherence to core FHIR requirements, conformance to this US Quali
 
 - Implementations **SHALL** support all profile types that contain at least one USCDI+ Quality flagged data element, as described in the [USCDI+ Quality](uscdiquality.html) page.
 - Implementations **SHALL** support all USCDI+ Quality flagged data elements, and those flagged as MustSupport from underlying US Core profiles.
-- Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](capabilityStatement-us-quality-core-server.html).
+- Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](CapabilityStatement-us-quality-core-server.html).
 - Server implementations **SHALL** declare their support of the US Quality Core profiles in a FHIR CapabilityStatement.
 - Quality improvement applications **SHALL** recognize and process all MustSupport elements in US Quality Core.
 - Modifier elements **SHALL** be treated as MustSupport, even if not explicitly declared.
     - Applications **SHALL NOT** process resource instances that include unknown modifier elements.
 - The resources in "Any" references **SHALL** conform to US Quality Core profiles if the base resource has a US Quality Core profile.
-- Quality improvement applications **SHALL** be simultaneously compliant with US Quality Core profiles and US Core profiles. Because US Quality Core profiles are derived from US Core, the more restrictive US Quality Core bindings SHALL be applied where they exist. 
+- Quality improvement applications **SHALL** be simultaneously compliant with US Quality Core profiles and US Core profiles. Because US Quality Core profiles are derived from US Core, the more restrictive US Quality Core bindings SHALL be applied where they exist.
 - Applications **SHOULD** use the preferred value sets as defined by US Quality Core profiles.
 
 ### Modifier Elements
 
-Within FHIR resources, some elements are considered [Modifier Elements]({{site.data.fhir.path}}conformance-rules.html#isModifier), indicating that the value of that element may change the interpretation of the resource. Typical examples of modifier elements are elements such as `status` that exists in many resources and `doNotPerform` element in MedicationRequest. For example, `Procedure.status` with a value of not-done indicating that the procedure was not performed. 
+Within FHIR resources, some elements are considered [Modifier Elements]({{site.data.fhir.path}}conformance-rules.html#isModifier), indicating that the value of that element may change the interpretation of the resource. Typical examples of modifier elements are elements such as `status` that exists in many resources and `doNotPerform` element in MedicationRequest. For example, `Procedure.status` with a value of not-done indicating that the procedure was not performed.
 
 Decision support and quality implementations MUST always check the values of modifier elements. For example, in processing a Procedure resource, the application must inspect the `status` element to determine whether the procedure was performed or not performed to the patient. For this reason, modifier elements SHALL be treated as MustSupport, even if not declared.
 
 ### Negation in US Quality Core
 {: #negation-in-us-quality-core}
 
-US Quality Core adopts QI-Core’s concept of negation and its approach to constraining negated concepts, which follows the informative publication established by HL7.[^2] 
+US Quality Core adopts QI-Core’s concept of negation and its approach to constraining negated concepts, which follows the informative publication established by HL7.[^2]
 
 US Quality Core constrains these negated concepts as follows:
 
