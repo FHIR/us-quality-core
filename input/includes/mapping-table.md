@@ -190,7 +190,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -198,7 +198,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -206,7 +206,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -222,7 +222,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (6.1.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -625,8 +625,8 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile (6.1.0)</a><br />
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -645,7 +645,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile (6.1.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -749,7 +749,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-specimen.html">US Core Specimen Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-specimen.html">US Core Specimen Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1067,7 +1067,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1075,7 +1075,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1425,7 +1425,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1433,7 +1433,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (6.1.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1487,7 +1487,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1495,7 +1495,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-bmi.html">US Core BMI Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-bmi.html">US Core BMI Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1503,7 +1503,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1511,7 +1511,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-height.html">US Core Body Height Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-height.html">US Core Body Height Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1519,7 +1519,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1527,7 +1527,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1535,7 +1535,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1543,7 +1543,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1551,7 +1551,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1559,7 +1559,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1575,7 +1575,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1583,7 +1583,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1591,7 +1591,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile (6.1.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1599,7 +1599,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile (6.1.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile (6.1.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1638,8 +1638,8 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1655,7 +1655,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Adverse Event Degree of Harm</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-adverseevent.html">QICore AdverseEvent (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-adverseevent.html">QICore AdverseEvent (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1673,7 +1673,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Non-Medication Allergy Intolerance</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-allergyintolerance.html">QICore AllergyIntolerance (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-allergyintolerance.html">QICore AllergyIntolerance (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1708,7 +1708,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Facility Identifier</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-location.html">QICore Location (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-location.html">QICore Location (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1728,7 +1728,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile (7.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile (7.0.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1736,7 +1736,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile (7.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile (7.0.0)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1744,7 +1744,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile (7.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile (7.0.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1760,9 +1760,9 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Alcohol Use</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1770,9 +1770,9 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Physical Activity</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1780,9 +1780,9 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Substance Use</td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/qicore/STU7.0.1/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-simple-observation.html">QICore Simple Observation (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-observation-screening-assessment.html">QICore Observation Screening Assessment (7.0.2)</a><br />
+                            <a href="https://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-problems-health-concerns.html">QICore Condition Problems Health Concerns (7.0.2)</a><br />
                     </td>
                     <td>
                     </td>
@@ -1819,7 +1819,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU9.0.0-ballot/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1837,8 +1837,8 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1856,7 +1856,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
                     </td>
                 </tr>
                 <tr>
@@ -1864,7 +1864,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="http://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU8.0.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile (8.0.1)</a><br />
                     </td>
                 </tr>
         </tbody>
