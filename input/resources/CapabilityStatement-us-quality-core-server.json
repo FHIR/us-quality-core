@@ -26,7 +26,7 @@
     "json"
   ],
   "implementationGuide": [
-    "http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/us-quality-core"
+    "http://fhir.org/guides/onc/us-quality-core/ImplementationGuide/fhir.onc.us-quality-core"
   ],
   "rest": [
     {
