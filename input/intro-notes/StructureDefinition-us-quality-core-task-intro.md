@@ -10,7 +10,7 @@ The [Formal Views](#profile) section also provides the formal summary, definitio
 <b>USCDI+ Quality Elements:</b>
 <ul>
 <li>basedOn: (USCDI+ Quality) Request fulfilled by this task</li>
-<li>status: (USCDI+ Quality) draft | requested | received | accepted | ready | cancelled | in-progress | on-hold | failed | completed | entered-in-error</li>
+<li>status: (USCDI+ Quality) draft​ | requested​ | received​ | accepted​ | ready​ | cancelled​ | in-progress​ | on-hold​ | failed​ | completed | entered-in-error</li>
 <li>statusReason: (USCDI+ Quality) Reason for current status</li>
 <li>code: (USCDI+ Quality) Task Type</li>
 <li>focus: (USCDI+ Quality) What task is acting on</li>

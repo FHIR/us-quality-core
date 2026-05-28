@@ -11,7 +11,7 @@ Because this profile is derived from US Core, systems are also expected to suppo
 <ul>
 <li>extension:recorded: (USCDI+ Quality) When the procedure was first captured in the subject's record</li>
 <li>partOf: (USCDI+ Quality) Part of referenced event</li>
-<li>status: (USCDI+ Quality) (USCDI) preparation | in-progress | on-hold | stopped | completed | entered-in-error | unknown</li>
+<li>status: (USCDI+ Quality) (USCDI) preparation | in-progress | ​on-hold​ | stopped​ | completed | entered-in-error​ | unknown​</li>
 <li>statusReason: (USCDI+ Quality) Reason for current status</li>
 <li>code: (USCDI+ Quality) (USCDI) Identification of the procedure</li>
 <li>performed[x]: (USCDI+ Quality) (USCDI) When the procedure was performed</li>
