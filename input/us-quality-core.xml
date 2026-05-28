@@ -89,6 +89,7 @@
       <name value="AdverseEvent example"/>
       <description value="Example of an allergic reaction adverse event"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent"/>
     </resource>
     <resource>
       <reference>
@@ -97,6 +98,7 @@
       <name value="AllergyIntolerance example"/>
       <description value="Example of a clinical assessment record of an allergy"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"/>
     </resource>
     <resource>
       <reference>
@@ -105,6 +107,7 @@
       <name value="AllergyIntolerance refuted example"/>
       <description value="Example of a clinical assessment record of an allergy that has been refuted"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"/>
     </resource>
     <resource>
       <reference>
@@ -113,6 +116,7 @@
       <name value="BodyStructure example"/>
       <description value="Example of a BodyStructure resource to identify a mass in the spleen"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-bodystructure"/>
     </resource>
     <resource>
       <reference>
@@ -138,6 +142,7 @@
       <name value="Claim example"/>
       <description value="Example of a vision claim"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"/>
     </resource>
     <resource>
       <reference>
@@ -146,6 +151,7 @@
       <name value="ClaimResponse example"/>
       <description value="Example of a vision claim response"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claimresponse"/>
     </resource>
     <resource>
       <reference>
@@ -154,6 +160,7 @@
       <name value="Communication example"/>
       <description value="Example of a notification sent to a patient about an abnormal test result"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communication"/>
     </resource>
     <resource>
       <reference>
@@ -170,6 +177,7 @@
       <name value="CommunicationRequest example"/>
       <description value="Example of a record of request to provide additional information for a claim"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-communicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -178,6 +186,7 @@
       <name value="Condition Encounter Diagnosis example"/>
       <description value="Example of a condition encounter diagnosis resource used to record information about a burn of the left ear"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis"/>
     </resource>
     <resource>
       <reference>
@@ -186,6 +195,7 @@
       <name value="Condition Problems Health Concerns example"/>
       <description value="Example of a patient with a condition encounter health concern regarding obesity"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"/>
     </resource>
     <resource>
       <reference>
@@ -201,6 +211,7 @@
       <name value="Coverage example"/>
       <description value="Example of a coverage resource used to provide information about an individual's specific plan"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-coverage"/>
     </resource>
     <resource>
       <reference>
@@ -209,6 +220,7 @@
       <name value="Device example"/>
       <description value="Device example for an ECG"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-device"/>
     </resource>
     <resource>
       <reference>
@@ -241,6 +253,7 @@
       <name value="DeviceUseStatement example"/>
       <description value="Example of a record of device use by a patient"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-deviceusestatement"/>
     </resource>
     <resource>
       <reference>
@@ -265,6 +278,7 @@
       <name value="Encounter example"/>
       <description value="Example of an Encounter"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"/>
     </resource>
     <resource>
       <reference>
@@ -273,6 +287,7 @@
       <name value="FamilyMemberHistory example"/>
       <description value="Example of Family Member History for a patient"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory"/>
     </resource>
     <resource>
       <reference>
@@ -281,6 +296,7 @@
       <name value="Flag example"/>
       <description value="Warning/Notification when providing care example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-flag"/>
     </resource>
     <resource>
       <reference>
@@ -289,6 +305,7 @@
       <name value="Goal example"/>
       <description value="Example of weight loss goal/objective for a patient"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal"/>
     </resource>
     <resource>
       <reference>
@@ -305,6 +322,7 @@
       <name value="Immunization example"/>
       <description value="Immunization example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization"/>
     </resource>
     <resource>
       <reference>
@@ -337,6 +355,7 @@
       <name value="ImmunizationEvaluaion example"/>
       <description value="Example of ImmunizationEvaluation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationevaluation"/>
     </resource>
     <resource>
       <reference>
@@ -345,6 +364,7 @@
       <name value="ImmunizationRecommendation example"/>
       <description value="Example of ImmunizationRecommendation for Hepatitis A vaccine"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationrecommendation"/>
     </resource>
     <resource>
       <reference>
@@ -353,6 +373,7 @@
       <name value="Location example"/>
       <description value="Example of Location of a provider - south wing of Mean Joe Greene University Medical Center"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"/>
     </resource>
     <resource>
       <reference>
@@ -361,6 +382,7 @@
       <name value="Medication example"/>
       <description value="Example of Alemtuzumab Medication"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication"/>
     </resource>
     <resource>
       <reference>
@@ -369,6 +391,7 @@
       <name value="MedicationAdministration example"/>
       <description value="Intravenous example of MedicationAdministration"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration"/>
     </resource>
     <resource>
       <reference>
@@ -377,6 +400,7 @@
       <name value="MedicationAdministration Cumulative Duration example"/>
       <description value="Cumulative Medication example of MedicationAdministration"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration"/>
     </resource>
     <resource>
       <reference>
@@ -401,6 +425,7 @@
       <name value="MedicationDispense example"/>
       <description value="Penicillin MedicationDispense Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense"/>
     </resource>
     <resource>
       <reference>
@@ -409,6 +434,7 @@
       <name value="MedicationDispense cumulative dose example"/>
       <description value="Cumulative Medication Dispense Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense"/>
     </resource>
     <resource>
       <reference>
@@ -433,6 +459,7 @@
       <name value="MedicationRequest Cumulative Duration"/>
       <description value="Cumulative Medication Duration Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -441,6 +468,7 @@
       <name value="MedicationRequest example"/>
       <description value="Penicillin MedicationRequest Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -449,6 +477,7 @@
       <name value="MedicationRequest Patient Reported Example"/>
       <description value="Patient Reported Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -457,6 +486,7 @@
       <name value="MedicationRequest Patient Requester Example"/>
       <description value="Patient Requester Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -465,6 +495,7 @@
       <name value="MedicationRequest Practitioner Ordered Example"/>
       <description value="Practitioner Ordered Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest"/>
     </resource>
     <resource>
       <reference>
@@ -489,6 +520,7 @@
       <name value="MedicationStatment example"/>
       <description value="Penicillin MedicationStatement Example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationstatement"/>
     </resource>
     <resource>
       <reference>
@@ -505,6 +537,7 @@
       <name value="Observation example"/>
       <description value="Example of Decreased Hemoglobin Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -513,6 +546,7 @@
       <name value="ODH Observation example"/>
       <description value="Example of occupational data added to observation measure"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -521,6 +555,7 @@
       <name value="Frailty observation example"/>
       <description value="Example of a frailty observation measure"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -529,6 +564,7 @@
       <name value="Gestation age at birth observation example"/>
       <description value="Example of a gestation age at birth observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -537,6 +573,7 @@
       <name value="Date and time of obstetric delivery example"/>
       <description value="Example of a obstetric delivery datetime Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -545,6 +582,7 @@
       <name value="Delivery date estimated example"/>
       <description value="Example of a delivery date estimate Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -553,6 +591,7 @@
       <name value="Number of preterm births obeservation example"/>
       <description value="Example number of preterm births Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -561,6 +600,7 @@
       <name value="Number of full-term births obeservation example"/>
       <description value="Example number of full-term births Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -569,6 +609,7 @@
       <name value="Number of parity obeservation example"/>
       <description value="Example number of parity Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -577,6 +618,7 @@
       <name value="Number of pregnancies obeservation example"/>
       <description value="Example number of pregnancies Observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-simple-observation"/>
     </resource>
     <resource>
       <reference>
@@ -601,6 +643,7 @@
       <name value="Heart rate rhythm clinical result observation example"/>
       <description value="Example of a Heart rate rhythm clinical result observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-clinical-result"/>
     </resource>
     <resource>
       <reference>
@@ -609,6 +652,7 @@
       <name value="10 minute Apgar Heart Rate Observation Screening Assessment Example"/>
       <description value="Example of a 10 minute Apgar Heart Rate Observation Screening Assessment"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment"/>
     </resource>
     <resource>
       <reference>
@@ -617,6 +661,7 @@
       <name value="Glucose Laboratory Result Observation Example"/>
       <description value="Example of a glucose laboratory result observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-lab"/>
     </resource>
     <resource>
       <reference>
@@ -625,6 +670,7 @@
       <name value="Mechanical Ventilator Availability (physical object) Observation Example"/>
       <description value="Example of mechanical ventilator availability nonpatient observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation"/>
     </resource>
     <resource>
       <reference>
@@ -633,6 +679,7 @@
       <name value="Hospital Bed Availability (physical object) Observation Example"/>
       <description value="Example of hospital bed availability nonpatient observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation"/>
     </resource>
     <resource>
       <reference>
@@ -641,6 +688,7 @@
       <name value="Hemodialysis Machine Availability (physical object) Observation Example"/>
       <description value="Example of hempdialysis machine availability nonpatient observation"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-nonpatient-observation"/>
     </resource>
     <resource>
       <reference>
@@ -649,6 +697,7 @@
       <name value="Organization example"/>
       <description value="HL7 Organization example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"/>
     </resource>
     <resource>
       <reference>
@@ -657,6 +706,7 @@
       <name value="Hospital Organization example"/>
       <description value="Hendricks County Hospital example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"/>
     </resource>
     <resource>
       <reference>
@@ -665,6 +715,7 @@
       <name value="Patient example"/>
       <description value="Basic Patient example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"/>
     </resource>
     <resource>
       <reference>
@@ -673,6 +724,7 @@
       <name value="65+ Female patient example"/>
       <description value="65+ Female patient example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"/>
     </resource>
     <resource>
       <reference>
@@ -681,6 +733,7 @@
       <name value="Infant patient example"/>
       <description value="Infant patient example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"/>
     </resource>
     <resource>
       <reference>
@@ -689,6 +742,7 @@
       <name value="Practitioner example"/>
       <description value="Referring Practitioner example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner"/>
     </resource>
     <resource>
       <reference>
@@ -697,6 +751,7 @@
       <name value="PractitionerRole example"/>
       <description value="PractitionerRole example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"/>
     </resource>
     <resource>
       <reference>
@@ -705,6 +760,7 @@
       <name value="Procedure example"/>
       <description value="Appendectomy Procedure example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure"/>
     </resource>
     <resource>
       <reference>
@@ -737,6 +793,7 @@
       <name value="ServiceRequest example"/>
       <description value="Request for Appendectomy ServiceRequest example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"/>
     </resource>
     <resource>
       <reference>
@@ -745,6 +802,7 @@
       <name value="ServiceRequest appropriateness example"/>
       <description value="ServiceRequest appropriateness example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"/>
     </resource>
     <resource>
       <reference>
@@ -769,6 +827,7 @@
       <name value="ServiceRequest Myringotomy Procedure example"/>
       <description value="ServiceRequest for Myringotomy Procedure example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"/>
     </resource>
     <resource>
       <reference>
@@ -777,6 +836,7 @@
       <name value="ServiceRequest elective example"/>
       <description value="Elective procedure ServiceRequest example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest"/>
     </resource>
     <resource>
       <reference>
@@ -785,6 +845,7 @@
       <name value="RelatedPerson example"/>
       <description value="Emergency contact example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"/>
     </resource>
     <resource>
       <reference>
@@ -793,6 +854,7 @@
       <name value="Substance example"/>
       <description value="Honey Bee venom (apitoxin) Substance example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-substance"/>
     </resource>
     <resource>
       <reference>
@@ -801,6 +863,7 @@
       <name value="Task example"/>
       <description value="Task example"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task"/>
     </resource>
     <resource>
       <reference>
@@ -825,6 +888,7 @@
       <name value="Encounter example of emergency visit that escalated into inpatient patient"/>
       <description value="Encounter example of emergency visit that escalated into inpatient patient"/>
       <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"/>
     </resource>
     <resource>
       <reference>
