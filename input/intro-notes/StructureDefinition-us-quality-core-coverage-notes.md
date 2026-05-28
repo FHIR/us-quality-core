@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <pre>
 <code>define "SDE Payer":

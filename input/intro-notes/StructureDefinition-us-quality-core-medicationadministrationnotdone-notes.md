@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>The following illustrative CQL shows an exclusion pattern for medication administrations not performed:</p>
 

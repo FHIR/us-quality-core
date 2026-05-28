@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>The Immunization and ImmunizationNotDone profiles represent the positive and
 negative statements for an immunization event.</p>

@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>To create an expression specifically requesting information that a procedure intentionally did not occur for
 a medical, patient or system reason, use the profile <a href="StructureDefinition-us-quality-core-procedurenotdone.html">USQualityCore-Procedurenotdone</a>.</p>

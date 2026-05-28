@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>The Simple Observation and ObservationCancelled profiles represent the positive and
 negative statements for an observation. To ensure instances retrieved meet

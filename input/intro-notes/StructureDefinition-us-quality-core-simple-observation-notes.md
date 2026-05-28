@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>US Core and US Quality Core define precise profiles for specific observations, as well as a general profile for LOINC-code laboratory result observations. When creating expressions for eCQMs or CDS artifacts with US Quality Core, use the applicable specific profile directly rather than the generic US Quality Core Observation profile when one applies.</p>
 

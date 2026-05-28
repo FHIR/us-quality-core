@@ -1,4 +1,4 @@
-<h4>CQL Authoring Usage (Informational)</h4>
+<h4 id="cql-authoring-usage-informational">CQL Authoring Usage (Informational)</h4>
 
 <p>The FHIR R4 DeviceRequest resource and the US Quality Core DeviceRequest profile describe a request for a patient to use a device. The device
 may be any pertinent device specified in the Device resource. Examples of devices that may be requested include a
