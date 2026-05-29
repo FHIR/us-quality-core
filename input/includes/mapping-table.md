@@ -301,9 +301,8 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
         </thead>
         <tbody>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis Rank</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis Rank&nbsp;<a href="#encounterinformation-diagnosisrank">(see note)</a></td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
                     </td>
                     <td>
                     </td>
@@ -376,7 +375,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission</td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
+                            <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a><br />
                     </td>
                     <td>
                     </td>
@@ -1378,7 +1377,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedures</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedures&nbsp;<a href="#procedures-procedures">(see note)</a></td>
                     <td>
                             <a href="StructureDefinition-us-quality-core-procedure.html">US Quality Core Procedure</a><br />
                             <a href="StructureDefinition-us-quality-core-procedurenotdone.html">US Quality Core Procedure Not Done</a><br />
@@ -1604,6 +1603,17 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                 </tr>
         </tbody>
 </table>
+
+#### Notes
+
+            ##### Encounter Information: Diagnosis Rank
+            <p id="encounterinformation-diagnosisrank">
+                In QI-Core 6.0.0, information about principal diagnosis is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
+            </p>
+            ##### Procedures: Procedures
+            <p id="procedures-procedures">
+                In QI-Core 6.0.0, information about principal procedure is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
+            </p>
 
 ### Out-of-Scope USCDI+ Quality V1 Data Elements
 
@@ -1946,10 +1956,6 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
-    </li>
-
-    <li>
         <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html">US Quality Core Condition Encounter Diagnosis</a>
     </li>
 
@@ -2108,6 +2114,10 @@ The following profiles do not include any USCDI+ Quality–flagged elements and 
 
     <li>
         <a href="StructureDefinition-us-quality-core-bodystructure.html">US Quality Core BodyStructure</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
     </li>
 
     <li>
