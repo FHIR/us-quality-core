@@ -78,6 +78,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-adverseevent"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `subject` | No corresponding US Core profile. | Supports subject-scoped retrieval of AdverseEvent resources for quality reporting. This US Quality Core-specific search is needed because AdverseEvent is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |\n| `subject` + `event` | No corresponding US Core profile. | Supports subject-scoped retrieval filtered by adverse event concept. This US Quality Core-specific combination makes the adverse event concept available as a primary retrieval path for quality logic. |\n| `subject` + `recorded-date` | No corresponding US Core profile. | Supports subject-scoped retrieval filtered by recorded date so quality workflows can constrain adverse events to relevant reporting periods. |",
           "interaction": [
             {
               "extension": [
@@ -164,6 +165,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-allergyintolerance"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core AllergyIntolerance. | Supports patient-scoped retrieval of allergy and intolerance data needed for in-scope USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -243,6 +245,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careplan"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` + `category` | Directly re-stated from US Core CarePlan. | Supports patient-scoped retrieval of care plans filtered to the category relevant for USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -334,6 +337,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-careteam"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` + `status` | Directly re-stated from US Core CareTeam. | Supports patient-scoped retrieval of care teams filtered by status for quality workflows. |",
           "interaction": [
             {
               "extension": [
@@ -408,6 +412,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of claims data for quality reporting. This US Quality Core-specific search is needed because Claim is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |",
           "interaction": [
             {
               "extension": [
@@ -505,6 +510,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core Condition. | Supports patient-scoped retrieval of conditions needed for in-scope USCDI+ Quality data access. |\n| `patient` + `category` | Directly re-stated from US Core Condition. | Supports patient-scoped retrieval filtered by condition category, including problem, health concern, and encounter diagnosis use cases. |\n| `patient` + `code` | Adapted from US Core Condition. | Supports patient-scoped retrieval filtered by condition code. US Quality Core makes this combination explicit as a primary retrieval path for quality logic that filters by diagnosis, problem, or health concern code. |",
           "interaction": [
             {
               "extension": [
@@ -591,6 +597,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-coverage"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core Coverage. | Supports patient-scoped retrieval of coverage data needed for in-scope USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -688,6 +695,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicerequest",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-devicenotrequested"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of device requests for quality reporting. This US Quality Core-specific search is needed because DeviceRequest is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |\n| `patient` + `code` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by requested device code. This US Quality Core-specific combination makes the device code available as a primary retrieval path for quality logic. |\n| `patient` + `do-not-perform` | No corresponding US Core profile. | Supports negation workflows by enabling retrieval of device requests that indicate the requested action should not be performed. |",
           "interaction": [
             {
               "extension": [
@@ -830,6 +838,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-note",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-diagnosticreport-lab"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core DiagnosticReport. | Supports patient-scoped retrieval of diagnostic reports needed for in-scope USCDI+ Quality data access. |\n| `patient` + `category` | Directly re-stated from US Core DiagnosticReport. | Supports patient-scoped retrieval filtered by report category, including laboratory and clinical-note report categories. |\n| `patient` + `category` + `date` | Directly re-stated from US Core DiagnosticReport. | Supports patient-scoped retrieval filtered by report category and date so quality workflows can constrain reports to relevant reporting periods. |\n| `patient` + `code` | Directly re-stated from US Core DiagnosticReport. | Supports patient-scoped retrieval filtered by report code, including code-oriented retrieval paths used by quality logic. |",
           "interaction": [
             {
               "extension": [
@@ -983,6 +992,7 @@
           "supportedProfile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core DocumentReference. | Supports search retrieval of a known DocumentReference by resource id. |\n| `patient` | Directly re-stated from US Core DocumentReference. | Supports patient-scoped retrieval of document references needed for in-scope USCDI+ Quality data access. |\n| `patient` + `type` | Directly re-stated from US Core DocumentReference. | Supports patient-scoped retrieval filtered by document type, including clinical note type retrieval. |\n| `patient` + `category` | Directly re-stated from US Core DocumentReference. | Supports patient-scoped retrieval filtered by document category. |\n| `patient` + `category` + `date` | Directly re-stated from US Core DocumentReference. | Supports patient-scoped retrieval filtered by document category and date so quality workflows can constrain documents to relevant reporting periods. |",
           "interaction": [
             {
               "extension": [
@@ -1127,6 +1137,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-encounter"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core Encounter. | Supports search retrieval of a known Encounter by resource id. |\n| `patient` | Directly re-stated from US Core Encounter. | Supports patient-scoped retrieval of encounters needed for in-scope USCDI+ Quality data access. |\n| `patient` + `type` | Adapted from US Core Encounter. | Supports patient-scoped retrieval filtered by encounter type. US Quality Core makes this combination explicit as a primary retrieval path for quality logic that filters by visit or service type. |\n| `patient` + `date` | Directly re-stated from US Core Encounter. | Supports patient-scoped retrieval filtered by encounter date so quality workflows can constrain encounters to relevant reporting periods. |",
           "interaction": [
             {
               "extension": [
@@ -1225,6 +1236,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-familymemberhistory"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of family member history for quality reporting. This US Quality Core-specific search is needed because FamilyMemberHistory is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |",
           "interaction": [
             {
               "extension": [
@@ -1287,6 +1299,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-goal"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core Goal. | Supports patient-scoped retrieval of goals needed for in-scope USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -1366,6 +1379,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-imagingstudy"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of imaging studies for quality reporting. This US Quality Core-specific search is needed because ImagingStudy is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |\n| `patient` + `procedure-code` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by imaging procedure code. This US Quality Core-specific combination makes the procedure code available as a primary retrieval path for quality logic. |",
           "interaction": [
             {
               "extension": [
@@ -1458,6 +1472,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunization",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-immunizationnotdone"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core Immunization. | Supports patient-scoped retrieval of immunizations needed for in-scope USCDI+ Quality data access. |\n| `patient` + `status` | Adapted from US Core Immunization. | Supports patient-scoped retrieval filtered by immunization status. US Quality Core makes this combination explicit for status-sensitive quality workflows, including not-done immunization cases. |",
           "interaction": [
             {
               "extension": [
@@ -1532,6 +1547,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-location"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). US Quality Core does not define additional required individual search parameters or required search parameter combinations for this resource. Implementations still support the required interactions in this CapabilityStatement and any applicable US Core requirements independently.",
           "interaction": [
             {
               "extension": [
@@ -1567,6 +1583,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medication"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `code` | US Quality Core-specific. | Supports retrieval of Medication resources by clinical code. This search is included as a primary code path for quality logic when Medication is represented as a referenced resource. |",
           "interaction": [
             {
               "extension": [
@@ -1668,6 +1685,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministration",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationadministrationnotdone"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of medication administrations for quality reporting. This US Quality Core-specific search is needed because MedicationAdministration is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |\n| `patient` + `status` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by administration status for status-sensitive quality workflows. |\n| `patient` + `code` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by medication code. This US Quality Core-specific combination makes the medication code available as a primary retrieval path for quality logic. |\n| `patient` + `effective-time` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by administration time so quality workflows can constrain administrations to relevant reporting periods. |",
           "interaction": [
             {
               "extension": [
@@ -1784,6 +1802,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispense",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationdispensedeclined"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core MedicationDispense. | Supports patient-scoped retrieval of medication dispenses needed for in-scope USCDI+ Quality data access. |\n| `patient` + `status` | Adapted from US Core MedicationDispense. | Supports patient-scoped retrieval filtered by dispense status. US Quality Core makes this combination explicit for status-sensitive quality workflows, including declined dispense cases. |",
           "interaction": [
             {
               "extension": [
@@ -1897,6 +1916,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationrequest",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-medicationnotrequested"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` + `intent` + `do-not-perform` | US Quality Core-specific. | Supports negation workflows by enabling retrieval of medication requests that indicate the requested medication should not be performed, while preserving the patient and intent context. |\n| `patient` + `intent` | Directly re-stated from US Core MedicationRequest. | Supports patient-scoped retrieval of medication requests filtered by intent, including medication orders relevant to quality reporting. |",
           "interaction": [
             {
               "extension": [
@@ -2078,6 +2098,7 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|6.1.0",
             "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|6.1.0"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` + `category` + `status` | Adapted from US Core Observation. | Supports patient-scoped retrieval filtered by observation category and status. US Quality Core makes this combination explicit for status-sensitive quality workflows, including cancelled or otherwise not-final observations. |\n| `patient` + `category` | Directly re-stated from US Core Observation. | Supports patient-scoped retrieval filtered by observation category for in-scope USCDI+ Quality data access. |\n| `patient` + `category` + `date` | Directly re-stated from US Core Observation. | Supports patient-scoped retrieval filtered by category and date so quality workflows can constrain observations to relevant reporting periods. |\n| `patient` + `code` | Directly re-stated from US Core Observation. | Supports patient-scoped retrieval filtered by observation code, including primary code paths used by quality logic. |",
           "interaction": [
             {
               "extension": [
@@ -2188,6 +2209,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-organization"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). US Quality Core does not define additional required individual search parameters or required search parameter combinations for this resource. Implementations still support the required interactions in this CapabilityStatement and any applicable US Core requirements independently.",
           "interaction": [
             {
               "extension": [
@@ -2223,6 +2245,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-patient"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core Patient. | Supports retrieval of a known Patient by resource id, which is the normal starting point for patient-scoped USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -2285,6 +2308,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitioner"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). US Quality Core does not define additional required individual search parameters or required search parameter combinations for this resource. Implementations still support the required interactions in this CapabilityStatement and any applicable US Core requirements independently.",
           "interaction": [
             {
               "extension": [
@@ -2320,6 +2344,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-practitionerrole"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). US Quality Core does not define additional required individual search parameters or required search parameter combinations for this resource. Implementations still support the required interactions in this CapabilityStatement and any applicable US Core requirements independently.",
           "interaction": [
             {
               "extension": [
@@ -2390,6 +2415,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedure",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-procedurenotdone"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | Directly re-stated from US Core Procedure. | Supports patient-scoped retrieval of procedures needed for in-scope USCDI+ Quality data access. |\n| `patient` + `status` | Adapted from US Core Procedure. | Supports patient-scoped retrieval filtered by procedure status. US Quality Core makes this combination explicit for status-sensitive quality workflows, including not-done procedure cases. |\n| `patient` + `date` | Directly re-stated from US Core Procedure. | Supports patient-scoped retrieval filtered by procedure date so quality workflows can constrain procedures to relevant reporting periods. |",
           "interaction": [
             {
               "extension": [
@@ -2476,6 +2502,7 @@
           "supportedProfile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|6.1.0"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). US Quality Core does not define additional required individual search parameters or required search parameter combinations for this resource. Implementations still support the required interactions in this CapabilityStatement and any applicable US Core requirements independently.",
           "interaction": [
             {
               "extension": [
@@ -2511,6 +2538,7 @@
           "supportedProfile": [
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-relatedperson"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core RelatedPerson. | Supports search retrieval of a known RelatedPerson by resource id. |\n| `patient` | Adapted from US Core RelatedPerson. | Supports retrieval of related persons associated with a patient for in-scope USCDI+ Quality data access. |",
           "interaction": [
             {
               "extension": [
@@ -2658,6 +2686,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicerequest",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core ServiceRequest. | Supports search retrieval of a known ServiceRequest by resource id. |\n| `patient` | Directly re-stated from US Core ServiceRequest. | Supports patient-scoped retrieval of service requests needed for in-scope USCDI+ Quality data access. |\n| `patient` + `category` | Directly re-stated from US Core ServiceRequest. | Supports patient-scoped retrieval filtered by service request category. |\n| `patient` + `category` + `authored` | Directly re-stated from US Core ServiceRequest. | Supports patient-scoped retrieval filtered by category and authored date so quality workflows can constrain service requests to relevant reporting periods. |\n| `patient` + `code` | Directly re-stated from US Core ServiceRequest. | Supports patient-scoped retrieval filtered by service request code, including primary code paths used by quality logic. |\n| `patient` + `do-not-perform` | US Quality Core-specific. | Supports negation workflows by enabling retrieval of service requests that indicate the requested action should not be performed. |",
           "interaction": [
             {
               "extension": [
@@ -2780,6 +2809,7 @@
           "supportedProfile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|6.1.0"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `_id` | Directly re-stated from US Core Specimen. | Supports search retrieval of a known Specimen by resource id, including specimens referenced by quality-relevant observations and diagnostic reports. |",
           "interaction": [
             {
               "extension": [
@@ -2876,6 +2906,7 @@
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-task",
             "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-taskrejected"
           ],
+          "documentation": "Search requirements are selected according to the rules described in [Search Requirement Selection](capability-statements.html#search-requirement-selection). The table below summarizes why each required individual search or required search parameter combination is included for this resource.\n\n| Required search | US Core alignment | Rationale |\n|---|---|---|\n| `patient` | No corresponding US Core profile. | Supports patient-scoped retrieval of tasks for quality reporting. This US Quality Core-specific search is needed because Task is in scope for USCDI+ Quality but is not profiled by US Core 6.1.0. |\n| `patient` + `status` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by task status for status-sensitive quality workflows. |\n| `patient` + `code` | No corresponding US Core profile. | Supports patient-scoped retrieval filtered by task code. This US Quality Core-specific combination makes the task code available as a primary retrieval path for quality logic. |",
           "interaction": [
             {
               "extension": [
