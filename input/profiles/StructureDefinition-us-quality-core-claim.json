@@ -169,25 +169,13 @@
       },
       {
         "id": "Claim.diagnosis",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Claim.diagnosis",
-        "short": "(USCDI+ Quality) Pertinent diagnosis information"
+        "short": "Pertinent diagnosis information"
       },
       {
         "id": "Claim.diagnosis.sequence",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Claim.diagnosis.sequence",
-        "short": "(USCDI+ Quality) Diagnosis instance identifier",
+        "short": "Diagnosis instance identifier",
         "type": [
           {
             "code": "positiveInt"
@@ -196,14 +184,8 @@
       },
       {
         "id": "Claim.diagnosis.diagnosis[x]",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Claim.diagnosis.diagnosis[x]",
-        "short": "(USCDI+ Quality) Nature of illness or problem",
+        "short": "Nature of illness or problem",
         "type": [
           {
             "code": "CodeableConcept"
@@ -229,14 +211,8 @@
       },
       {
         "id": "Claim.diagnosis.onAdmission",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "Claim.diagnosis.onAdmission",
-        "short": "(USCDI+ Quality) Present on admission",
+        "short": "Present on admission",
         "type": [
           {
             "code": "CodeableConcept"
