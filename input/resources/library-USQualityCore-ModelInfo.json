@@ -12,10 +12,10 @@
       "code": "model-definition"
     } ]
   },
-  "date": "2026-05-15",
+  "date": "2026-06-05",
   "description": "Model definition for the US Quality Core IG Model",
-  "approvalDate": "2026-05-15",
-  "lastReviewDate": "2026-05-15",
+  "approvalDate": "2026-06-05",
+  "lastReviewDate": "2026-06-05",
   "topic": [ {
     "text": "USQualityCore"
   }, {

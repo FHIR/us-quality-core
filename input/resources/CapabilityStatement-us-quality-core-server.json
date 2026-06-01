@@ -6,7 +6,7 @@
   "title": "US Quality Core Server CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2026-05-15",
+  "date": "2026-06-05",
   "publisher": "Office of the National Coordinator for Health Information Technology (ONC)",
   "contact": [
     {
@@ -394,68 +394,6 @@
               "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-careteam-status",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
-            }
-          ]
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
-            }
-          ],
-          "type": "Claim",
-          "supportedProfile": [
-            "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-claim"
-          ],
-          "interaction": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "read"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "search-type"
-            }
-          ],
-          "referencePolicy": [
-            "resolves"
-          ],
-          "searchRevInclude": [
-            "Provenance:target"
-          ],
-          "_searchRevInclude": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-claim-patient",
-              "type": "reference",
-              "documentation": "The client **SHALL** provide an id value for the reference."
             }
           ]
         },

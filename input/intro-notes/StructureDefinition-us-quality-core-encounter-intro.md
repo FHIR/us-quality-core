@@ -14,6 +14,7 @@ The following elements are specifically relevant to USCDI+ Quality V1 data class
 <li>type: (USCDI+ Quality) (USCDI) Specific type of encounter</li>
 <li>period: (USCDI+ Quality) (USCDI) The start and end time of the encounter</li>
 <li>diagnosis: (USCDI+ Quality) The list of diagnosis relevant to this encounter</li>
+<li>diagnosis.extension:diagnosisPresentOnAdmission: (USCDI+ Quality) onAdmission</li>
 <li>hospitalization: (USCDI+ Quality) (USCDI) Details about the admission to a healthcare service</li>
 <li>hospitalization.dischargeDisposition: (USCDI+ Quality) (USCDI) Category or kind of location after discharge</li>
 <li>location: (USCDI+ Quality) (USCDI) List of locations where the patient has been</li>

@@ -6,7 +6,7 @@ be implemented for conformance to this guide are included in this mapping table.
 - In scope elements are determined by their support in the current USCDI+ Quality V1 baseline, which includes USCDI v3.1, US Core 6.1.0, and/or QI-Core 6.0.0.
 - In scope elements also include data elements that are used by 2026 draft CMS eCQMs, which are based on QI-Core 6.0.0.
 
-The mapping table lists how USCDI+ Quality V1 data classes and elements map to the US Quality Core profiles defined in this guide, where applicable; otherwise, US Core 6.1.0 profiles apply.
+The mapping table identifies any US Quality Core profiles defined in this guide and any US Core 6.1.0 profiles that apply to each USCDI+ Quality V1 data class or element. If neither column references a profile, this guide does not identify a specific profile for representing that element in this version; implementers may determine the appropriate implementation approach to support the data element.
 
 <table class="table table-condensed">
     <thead>
@@ -301,9 +301,8 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
         </thead>
         <tbody>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis Rank</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis Rank&nbsp;<a href="#encounter-information-diagnosis-rank">(see note)</a></td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
                     </td>
                     <td>
                     </td>
@@ -374,9 +373,9 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission&nbsp;<a href="#encounter-information-present-on-admission">(see note)</a></td>
                     <td>
-                            <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a><br />
+                            <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a><br />
                     </td>
                     <td>
                     </td>
@@ -1305,6 +1304,8 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Onset</td>
                     <td>
+                            <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a><br />
+                            <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html">US Quality Core Condition Encounter Diagnosis</a><br />
                     </td>
                     <td>
                     </td>
@@ -1378,7 +1379,7 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedures</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedures&nbsp;<a href="#procedures-procedures">(see note)</a></td>
                     <td>
                             <a href="StructureDefinition-us-quality-core-procedure.html">US Quality Core Procedure</a><br />
                             <a href="StructureDefinition-us-quality-core-procedurenotdone.html">US Quality Core Procedure Not Done</a><br />
@@ -1605,6 +1606,15 @@ The mapping table lists how USCDI+ Quality V1 data classes and elements map to t
         </tbody>
 </table>
 
+#### Notes
+
+##### Encounter Information: Diagnosis Rank
+In QI-Core 6.0.0, information about principal diagnosis is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
+##### Encounter Information: Present on Admission
+In QI-Core 6.0.0, information about present on admission is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. We have reintroduced the Present on Admission extension for Encounter.diagnosis in US Quality Core v0.5.0 and it is (USCDI+ Quality) tagged.
+##### Procedures: Procedures
+In QI-Core 6.0.0, information about principal procedure is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
+
 ### Out-of-Scope USCDI+ Quality V1 Data Elements
 
 The following data elements in USCDI+ Quality V1 are out of scope for the
@@ -1614,7 +1624,7 @@ here may map to newer published versions of QI-Core or US Core, and the applicab
 USCDI+ Quality V1 elements that do not have a
 mapping in the table below indicate those elements are not identified as mandatory or Must Support, or tagged
 (QI), (QI-Core), or "Additional USCDI" in any of the newer versions of QI-Core or
-US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0.0-ballot.
+US Core, including QI-Core 7.0.2 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0.0.
 
 <table class="table table-condensed">
     <thead>
@@ -1819,7 +1829,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="https://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU9/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
                     </td>
                 </tr>
         </tbody>
@@ -1943,10 +1953,6 @@ The following profiles include at least one USCDI+ Quality–flagged element and
 
     <li>
         <a href="StructureDefinition-us-quality-core-careteam.html">US Quality Core CareTeam</a>
-    </li>
-
-    <li>
-        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
     </li>
 
     <li>
@@ -2108,6 +2114,10 @@ The following profiles do not include any USCDI+ Quality–flagged elements and 
 
     <li>
         <a href="StructureDefinition-us-quality-core-bodystructure.html">US Quality Core BodyStructure</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-claim.html">US Quality Core Claim</a>
     </li>
 
     <li>

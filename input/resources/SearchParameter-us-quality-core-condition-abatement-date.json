@@ -4,7 +4,7 @@
   "version": "0.5.0",
   "name": "UsQualityCoreConditionAbatementDate",
   "status": "active",
-  "date": "2026-05-15",
+  "date": "2026-06-05",
   "description": "US Quality Core Condition abatement-date Search Parameter",
   "code": "abatement-date",
   "base": [

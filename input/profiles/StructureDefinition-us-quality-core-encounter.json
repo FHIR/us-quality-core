@@ -6,7 +6,7 @@
   "title": "US Quality Core Encounter",
   "status": "active",
   "experimental": false,
-  "date": "2026-05-15",
+  "date": "2026-06-05",
   "publisher": "Office of the National Coordinator for Health Information Technology (ONC)",
   "contact": [
     {
@@ -293,9 +293,15 @@
       },
       {
         "id": "Encounter.diagnosis.extension:diagnosisPresentOnAdmission",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
+          }
+        ],
         "path": "Encounter.diagnosis.extension",
         "sliceName": "diagnosisPresentOnAdmission",
-        "short": "onAdmission",
+        "short": "(USCDI+ Quality) onAdmission",
         "definition": "Indicator of whether the Encounter diagnosis was present at the time of admission.",
         "min": 0,
         "max": "1",

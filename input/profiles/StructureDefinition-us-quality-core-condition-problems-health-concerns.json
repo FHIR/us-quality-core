@@ -6,7 +6,7 @@
   "title": "US Quality Core Condition Problems Health Concerns",
   "status": "active",
   "experimental": false,
-  "date": "2026-05-15",
+  "date": "2026-06-05",
   "publisher": "Office of the National Coordinator for Health Information Technology (ONC)",
   "contact": [
     {
@@ -141,10 +141,14 @@
           {
             "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
             "valueBoolean": true
+          },
+          {
+            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
+            "valueBoolean": true
           }
         ],
         "path": "Condition.onset[x]",
-        "short": "(USCDI) Estimated or actual date, date-time, or age",
+        "short": "(USCDI+ Quality) (USCDI) Estimated or actual date, date-time, or age",
         "type": [
           {
             "code": "dateTime"
