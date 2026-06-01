@@ -21,7 +21,7 @@ US Quality Core inherits all profiles from QI-Core 6.0.0, but not all profiles i
 |**2.1.5 CareTeam**|
 |&emsp; [US Quality Core CareTeam](StructureDefinition-us-quality-core-careteam.html)| [US Core CareTeam]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careteam.html) |&emsp; [ CareTeam]({{site.data.fhir.path}}careteam.html)|
 |**2.1.6 Claim**|
-|&emsp; [US Quality Core Claim](StructureDefinition-us-quality-core-claim.html)| &mdash; |&emsp; [ Claim]({{site.data.fhir.path}}claim.html)|
+|&emsp; [US Quality Core Claim](StructureDefinition-us-quality-core-claim.html)*| &mdash; |&emsp; [ Claim]({{site.data.fhir.path}}claim.html)|
 |**2.1.7 ClaimResponse**|
 |&emsp; [US Quality Core ClaimResponse](StructureDefinition-us-quality-core-claimresponse.html)*| &mdash; |&emsp; [ ClaimResponse]({{site.data.fhir.path}}claimresponse.html)|
 |**2.1.8 Communication**|
