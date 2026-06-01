@@ -8,6 +8,7 @@ In addition to adherence to core FHIR requirements, conformance to this US Quali
 - Implementations **SHALL** support all profile types that contain at least one USCDI+ Quality flagged data element, as described in the [USCDI+ Quality](uscdiquality.html) page.
 - Implementations **SHALL** support all USCDI+ Quality flagged data elements, and those flagged as MustSupport from underlying US Core profiles.
 - Server implementations **SHALL** support the requirements described in the [US Quality Core Server CapabilityStatement](CapabilityStatement-us-quality-core-server.html).
+- Server implementations **SHALL** support all interactions, search parameters, and combined search parameters that have `SHALL` conformance expectations in the US Quality Core Server CapabilityStatement.
 - Server implementations **SHALL** declare their support of the US Quality Core profiles in a FHIR CapabilityStatement.
 - Quality improvement applications **SHALL** recognize and process all MustSupport elements in US Quality Core.
 - Modifier elements **SHALL** be treated as MustSupport, even if not explicitly declared.
@@ -15,6 +16,28 @@ In addition to adherence to core FHIR requirements, conformance to this US Quali
 - The resources in "Any" references **SHALL** conform to US Quality Core profiles if the base resource has a US Quality Core profile.
 - Quality improvement applications **SHALL** be simultaneously compliant with US Quality Core profiles and US Core profiles. Because US Quality Core profiles are derived from US Core, the more restrictive US Quality Core bindings SHALL be applied where they exist.
 - Applications **SHOULD** use the preferred value sets as defined by US Quality Core profiles.
+
+### API Requirements
+
+US Quality Core RESTful API conformance is defined by the [US Quality Core CapabilityStatements](capability-statements.html). The CapabilityStatements identify required and optional RESTful interactions, including `read` and `search-type`, as well as individual search parameters and combined search parameters used to retrieve in-scope USCDI+ Quality V1 data.
+
+US Quality Core implementations are also expected to conform to applicable US Core RESTful API requirements. US Quality Core may restate US Core requirements to highlight those that are relevant to USCDI+ Quality data access. US Core requirements not restated in US Quality Core remain part of applicable US Core conformance.
+
+#### Search Requirement Selection
+
+Like US Core, many US Quality Core RESTful API requirements are search requirements. US Quality Core defines a focused set of searches needed to retrieve in-scope USCDI+ Quality V1 data for quality measurement and reporting.
+
+US Quality Core CapabilityStatements may restate US Core search requirements when the search is directly relevant to USCDI+ Quality data access. Restating a US Core search in this guide highlights its relevance for US Quality Core; not restating a US Core search does not remove the underlying US Core requirement.
+
+US Quality Core adds search requirements when retrieval support is needed for quality workflows. This includes searches for resources without a corresponding US Core profile, filters needed to retrieve or distinguish negated or status-sensitive records such as `status` or `do-not-perform`, and code-oriented filters such as `code` or `type` when they support quality retrieval patterns or QI-Core primary code path guidance.
+
+Individual search parameters with `MAY` expectations identify filters that can participate in required combined searches or support relevant optional filtering. Combined search parameter expectations identify the multi-parameter searches required for US Quality Core conformance.
+
+#### SearchParameter Artifacts
+
+Some US Quality Core and US Core SearchParameter artifacts referenced by these CapabilityStatements are derived from standard FHIR SearchParameters. These artifacts are included to document server and client expectations, such as comparator support, and to support generation tooling. They do not create new search parameter names when a standard FHIR search parameter already exists; actual searches use the standard FHIR search parameter names.
+
+The presence of a SearchParameter artifact in this guide does not, by itself, create a US Quality Core conformance expectation. Conformance expectations for search are established by the CapabilityStatements and their `SHALL` or `MAY` expectation extensions.
 
 ### Modifier Elements
 
