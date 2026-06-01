@@ -12,6 +12,7 @@ The following elements are specifically relevant to USCDI+ Quality V1 data class
 <li>category:us-core: (USCDI+ Quality) (USCDI) problem-list-item | health-concern</li>
 <li>severity: (USCDI+ Quality) Subjective severity of condition</li>
 <li>code: (USCDI+ Quality) (USCDI) Identification of the condition, problem or diagnosis</li>
+<li>onset[x]: (USCDI+ Quality) (USCDI) Estimated or actual date, date-time, or age</li>
 <li>abatement[x]: (USCDI+ Quality) (USCDI) When in resolution/remission</li>
 <li>recordedDate: (USCDI+ Quality) (USCDI) Date record was first recorded</li>
 </ul>

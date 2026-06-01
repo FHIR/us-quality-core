@@ -1304,6 +1304,8 @@ The mapping table identifies any US Quality Core profiles defined in this guide 
                 <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Onset</td>
                     <td>
+                            <a href="StructureDefinition-us-quality-core-condition-problems-health-concerns.html">US Quality Core Condition Problems Health Concerns</a><br />
+                            <a href="StructureDefinition-us-quality-core-condition-encounter-diagnosis.html">US Quality Core Condition Encounter Diagnosis</a><br />
                     </td>
                     <td>
                     </td>
