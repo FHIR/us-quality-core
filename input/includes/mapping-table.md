@@ -373,7 +373,7 @@ The mapping table identifies any US Quality Core profiles defined in this guide 
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;•Present on Admission&nbsp;<a href="#encounter-information-present-on-admission">(see note)</a></td>
                     <td>
                             <a href="StructureDefinition-us-quality-core-encounter.html">US Quality Core Encounter</a><br />
                     </td>
@@ -1608,6 +1608,8 @@ The mapping table identifies any US Quality Core profiles defined in this guide 
 
 ##### Encounter Information: Diagnosis Rank
 In QI-Core 6.0.0, information about principal diagnosis is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
+##### Encounter Information: Present on Admission
+In QI-Core 6.0.0, information about present on admission is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. We have reintroduced the Present on Admission extension for Encounter.diagnosis in US Quality Core v0.5.0 and it is (USCDI+ Quality) tagged.
 ##### Procedures: Procedures
 In QI-Core 6.0.0, information about principal procedure is represented using the Claim profile. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. Implementers may determine the appropriate implementation approach to support this USCDI+ Quality data element. We encourage the quality community to provide additional input on information needed to support quality measurement use cases through the HL7 ballot process for US Quality Core.
 
@@ -1620,7 +1622,7 @@ here may map to newer published versions of QI-Core or US Core, and the applicab
 USCDI+ Quality V1 elements that do not have a
 mapping in the table below indicate those elements are not identified as mandatory or Must Support, or tagged
 (QI), (QI-Core), or "Additional USCDI" in any of the newer versions of QI-Core or
-US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0.0-ballot.
+US Core, including QI-Core 7.0.2 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0.0.
 
 <table class="table table-condensed">
     <thead>
@@ -1825,7 +1827,7 @@ US Core, including QI-Core 7.0.1 and 8.0.0-ballot, US Core 7.0.0, 8.0.1, and 9.0
                     <td>
                     </td>
                     <td>
-                            <a href="https://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
+                            <a href="https://hl7.org/fhir/us/core/STU9/StructureDefinition-us-core-device.html">US Core Device Profile (9.0.0)</a><br />
                     </td>
                 </tr>
         </tbody>
