@@ -67,7 +67,7 @@ This guide retains all artifacts provided by QI-Core 6.0.0, with limited alterat
 These limited FHIR artifact changes made in this guide include:
 * Updated the prefix of FHIR profile names from QI-Core to US Quality Core.
 * Updated logical id of the resources from 'qicore' to 'us-quality-core'.
-* Reintroduces the Present on Admission extension for Encounter.diagnosis
+* Reintroduced the Present on Admission extension for Encounter.diagnosis.
 * Removed 'QI-Core' flags on FHIR elements. This guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](general-requirements.html#summary-of-conformance-requirements).
   * In cases where a 'QI-Core' flagged FHIR element within a QI-Core 6.0.0 profile does not map to a USCDI+ Quality data element, the FHIR element is not flagged and is therefore not part of the conformance requirements of this guide.
 
