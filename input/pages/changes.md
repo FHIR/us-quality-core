@@ -39,3 +39,4 @@ content.  This includes:
    * Canonical URL updated to match the ID
    * Removal of (QI-Core) flags
 * Updates the ID prefix of all computable artifacts from QICore to USQualityCore
+* Reintroduces the Present on Admission extension for Encounter.diagnosis

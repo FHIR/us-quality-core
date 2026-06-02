@@ -17,7 +17,7 @@ defines profiles that derive from and extend the base [FHIR version R4](http://h
 This guide reflects a coordinated federal effort to enable
 standardized FHIR-based exchange of data for digital quality measurement and
 reporting. [ONC](http://www.healthit.gov/newsroom/about-onc) has established the [USCDI+ Quality data element list](https://uscdiplus.healthit.gov/uscdiplus?id=uscdi_record&table=x_g_sshh_uscdi_domain&sys_id=7ddf78228745b95098e5edb90cbb3525&view=sp) as a common, reusable foundation that can support quality measurement across programs
-and settings over time, with a transparent process for proposing and considering additional data elements in future versions. This guide specifies how to represent and exchange the USCDI+ Quality data elements as needed to support reporting of [electronic clinical quality measures (eCQMs)](https://ecqi.healthit.gov/glossary/electronic-clinical-quality-measure-ecqm) used in certain CMS
+and settings over time, with a transparent process for proposing and considering additional data elements in future versions. This guide specifies how to represent and exchange the USCDI+ Quality data elements as needed to support digital quality measurement and reporting programs, including [electronic clinical quality measures (eCQMs)](https://ecqi.healthit.gov/glossary/electronic-clinical-quality-measure-ecqm) used in certain CMS
 quality reporting programs, as well as providing guidance on additional data elements used in other quality reporting programs. For more detail on USCDI+ Quality and its scope, see the [USCDI+ Quality](uscdiquality.html) page in this guide.
 
 This guide descends directly from the [Quality Improvement Core (QI-Core) Implementation Guide](https://hl7.org/fhir/us/qicore/STU6/), which aligns with the standards adopted for the ONC Health IT Certification Program, including FHIR, US Core, and USCDI. The initial version of this guide targets [USCDI+ Quality V1](https://uscdiplus.healthit.gov/uscdiplus?id=uscdi_record&table=x_g_sshh_uscdi_sub_domain&sys_id=07ff90701b72f25049edc957624bcbf8&view=sp) data elements. It is based on the [QI-Core Implementation Guide v6.0.0](https://hl7.org/fhir/us/qicore/STU6/) (QI-Core 6.0.0), which aligns with the [US Core Implementation Guide v6.1.0](https://hl7.org/fhir/us/core/STU6.1/) (US Core 6.1.0) and [USCDI v3.1](https://isp.healthit.gov/united-states-core-data-interoperability-uscdi#uscdi-v3-1).[^1]
@@ -26,34 +26,35 @@ This guide descends directly from the [Quality Improvement Core (QI-Core) Implem
 
 This guide extends QI-Core by providing USCDI+ Quality guidance within profiles through the use of flags for [USCDI+ Quality relevant elements](uscdiquality.html). It also introduces [CapabilityStatements](capability-statements.html) that define specific expectations for actors exchanging US Quality Core data over standard RESTful FHIR interfaces. The technical content in this initial version of US Quality Core is intended to be backward compatible with QI-Core 6.0.0. Details of the specific changes made from QI-Core 6.0.0 are provided in the [Change Log](changes.html).
 
+{% include img-portrait.html img="architecture.png" caption="Architecture showing how USCDI+ Quality requirements are specified in FHIR through US Quality Core and implemented by FHIR clients and servers." %}
+
 ### How to read this Guide
 {: #contents}
 
 This guide is divided into several pages, which are listed at the top of each page in the menu bar.
 
-* [Home](index.html): This page provides a summary, background, and scope of US Quality Core.
-* [Conformance](conformance.html): These pages describe the set of rules to claim conformance to this guide.
-    * [General Requirements](general-requirements.html): This page defines requirements common to all profiles used in this guide.
-    * [Must Support](must-support.html): This page defines the expectations for mandatory, Must Support, and USCDI+Quality flagged elements in the US Quality Core Profiles.
-    * [Security](security.html): This page documents the general security requirements.
-* [Guidance](guidance.html): These pages document best practices and how to use the profiles defined in this guide.
-    * [USCDI+ Quality](uscdiquality.html): This page provides additional information about the relationship between USCDI+ Quality and US Quality Core. It maps the US Quality Core Profiles to the USCDI+ Quality data classes and data elements.
-    * [General Requirements](general-requirements.html): This page provides guidance and requirements common to all profiles used in this guide.
-    * [US Quality Core Negation](negation.html): This page provides guidance on using US Quality Core negation profiles.
-    * [Provenance](provenance.html): This page describes the use of Provenance for this guide.
-    * [Relationship with USCore and QI-Core](relationship-with-uscore-qicore.html): This page describes the US Quality Core relationship with US-Core and QI-Core.
-    * [QDM-to-US Quality Core Mapping](qdm-to-us-quality-core.html): This page provides a detailed description of mapping from the Quality Data Model (QDM) to US Quality Core.
-* [FHIR Artifacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR objects defined in this guide.
-    * [Capability Statements](capability-statements.html): This page defines the expected FHIR capabilities of the US Quality Core Servers and Clients.
-    * [Profiles](profiles.html): This page lists all profiles defined in or used by US Quality Core.
-    * [Extensions](extensions.html): This page lists all extensions defined as part of US Quality Core.
-    * [Terminology](terminology.html): This page lists the US Quality Core ValueSets and Code Systems defined for the profiles.
-    * [Examples](examples.html): This page lists all the examples used in this guide.
-* [CQL Artifacts and Patterns (Informational)](cql-artifacts.html): These pages provide the US Quality Core model information (ModelInfo) and document patterns for use with US Quality Core. This content is informational and is not part of the conformance requirements of this guide.
-    * [US Quality Core ModelInfo](modelinfo.html): This page provides the US Quality Core model information to support implementation using Clinical Quality Language (CQL).
-    * [US Quality Core Patterns](patterns.html): This page describes patterns of usage for US Quality Core applications.
-* [Downloads](downloads.html): This page provides links to downloadable artifacts.
-* [Change Log](changes.html): This Change Log lists changes from QI-Core 6.0.0 to this guide.
+* [Home](index.html): Overview of US Quality Core, including its background and scope
+* [Conformance](conformance.html): The set of rules to claim conformance to this implementation guide
+    * [General Requirements](general-requirements.html): Requirements common to all profiles used in this guide
+    * [Must Support](must-support.html): Expectations for Must Support and USCDI+ Quality flagged elements
+    * [Security](security.html): General security requirements
+* [Guidance](guidance.html): Best practices and how to use the profiles defined in this guide
+    * [USCDI+ Quality](uscdiquality.html): Description of the relationship between USCDI+ Quality and US Quality Core, including profile mappings and conformance scope
+    * [US Quality Core Negation](negation.html): Guidance on using US Quality Core negation profiles
+    * [Provenance](provenance.html): Description of the use of Provenance in US Quality Core
+    * [Relationship with US Core and QI-Core](relationship-with-uscore-qicore.html): Relationship between US Quality Core with US Core and QI-Core
+    * [QDM-to-US Quality Core Mapping](qdm-to-us-quality-core.html): Mapping from the Quality Data Model (QDM) to US Quality Core
+* [FHIR Artifacts](artifacts.html): Detailed descriptions and formal definitions for all the FHIR artifacts defined in this guide
+    * [Capability Statements](capability-statements.html): Expected FHIR capabilities of the US Quality Core Servers and Clients
+    * [Profiles](profiles.html): All profiles defined in or used by US Quality Core
+    * [Extensions](extensions.html): Extensions defined as part of US Quality Core
+    * [Terminology](terminology.html): US Quality Core ValueSets and Code Systems defined for the profiles
+    * [Examples](examples.html): Examples used in this guide
+* [CQL Artifacts and Patterns (Informational)](cql-artifacts.html): The US Quality Core model information (ModelInfo) and document patterns for use with US Quality Core. This content is informational and is not part of the conformance requirements of this guide.
+    * [US Quality Core ModelInfo](modelinfo.html): US Quality Core model information to support implementation using Clinical Quality Language (CQL)
+    * [US Quality Core Patterns](patterns.html): Patterns of usage for US Quality Core applications.
+* [Downloads](downloads.html): Downloadable artifacts
+* [Change Log](changes.html): Change Log that lists changes from QI-Core 6.0.0 to this guide. 
 
 ### Scope
 
@@ -68,7 +69,8 @@ This guide retains all artifacts provided by QI-Core 6.0.0, with limited alterat
 These limited FHIR artifact changes made in this guide include:
 * Updated the prefix of FHIR profile names from QI-Core to US Quality Core.
 * Updated logical id of the resources from 'qicore' to 'us-quality-core'.
-* Removed 'QI-Core' flags on FHIR elements, this guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](general-requirements.html#summary-of-conformance-requirements).
+* Reintroduces the Present on Admission extension for Encounter.diagnosis
+* Removed 'QI-Core' flags on FHIR elements. This guide uses 'USCDI+ Quality' flags to indicate which elements must be supported to meet [USCDI+ Quality conformance requirements](general-requirements.html#summary-of-conformance-requirements).
   * In cases where a 'QI-Core' flagged FHIR element within a QI-Core 6.0.0 profile does not map to a USCDI+ Quality data element, the FHIR element is not flagged and is therefore not part of the conformance requirements of this guide.
 
 Note that the informational ModelInfo file that supports implementations using CQL has been updated to reflect the changes made to US Quality Core. See [CQL Artifacts and Patterns (Informational)](cql-artifacts.html) for details; this content is not part of the conformance requirements of this guide.

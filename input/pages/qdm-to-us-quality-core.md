@@ -4,7 +4,7 @@ from QI-Core v6.0.0, with minor edits and
 [errata](https://jira.hl7.org/browse/FHIR-53324) as well as updated mappings to US Quality Core profiles and elements, as a reference to support the
 transition from Quality Data Model (QDM)-based eCQMs to FHIR-based digital
 quality measures (dQMs). QDM version 5.6 is the current version used by eCQMs
-since 2024 and thus forms the basis for this mapping.   
+since 2024 and thus forms the basis for this mapping.
 
 ### Introduction
 
@@ -61,7 +61,7 @@ QDM does not include an attribute to address the additional elements available i
 QDM version 5.6 (and earlier versions) only address one of these elements, the event.
 Therefore, QDM AdverseEvent code maps to AdverseEvent.event. Measure developers seeking to retrieve data about the cause of an AdverseEvent may be able to relate the occurrence timing of a potential causative event and the AdverseEvent.event timing. Further detail about the AdverseEvent will require use of FHIR or potentially a subsequent version of QDM after QDM 5.6.
 
-| **QDM Context**    | **US Quality Core V1**       | **Comments**                                               |
+| **QDM Context**    | **US Quality Core v0.5.0**       | **Comments**                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
 | Adverse Event      | [AdverseEvent](StructureDefinition-us-quality-core-adverseevent.html)        |                                                            |
 |                    | [AdverseEvent.actuality](StructureDefinition-us-quality-core-adverseevent-definitions.html#key_AdverseEvent.actuality)                          |    Although not specified in QDM, US Quality Core provides the ability to differentiate between potential versus actual events                                                        |
@@ -89,7 +89,7 @@ potential risk to an individual, to have a non-immune mediated adverse
 reaction on future exposure to the specified substance, or class of
 substance.
 
-| **QDM Context**  | **US Quality Core V1** | **Comments** |
+| **QDM Context**  | **US Quality Core v0.5.0** | **Comments** |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Allergy/Intolerance | [AllergyIntolerance](StructureDefinition-us-quality-core-allergyintolerance.html)    |       |
 |                     | [AllergyIntolerance.clinicalStatus](StructureDefinition-us-quality-core-allergyintolerance-definitions.html#key_AllergyIntolerance.clinicalStatus)      | Identifies if active, inactive, resolved; while not a QDM attribute, this is an important element for retrieving active allergies or intolerances.    |
@@ -125,7 +125,7 @@ US Quality Core derives from QI-Core, which adds additional constraints to the U
 
 Assessment, Order uses the ServiceRequest resource. The codes for ordering specific observations should reference the code element specified in the respective profiles: US Quality Core Observation Screening Assessment, US Quality Core Simple Observation; US Core Observation Occupation, US Core Observation Pregnancy Intent, US Core Pregnancy Status, US Core Observation Sexual Orientation, or US Core Smoking Status Observation.
 
-| **QDM Context**   | **US Quality Core V1**   | **Comments**    |
+| **QDM Context**   | **US Quality Core v0.5.0**   | **Comments**    |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Assessment, Order**      | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)    |              |
 |                            | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)     | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Assessment, Order” and “Assessment, Recommended” datatypes. 	   |
@@ -168,7 +168,7 @@ single observable entity that is part of such a collection of questions.
 
 
 
-| **QDM Context**     | **US Quality Core V1**  | **Comments**        |
+| **QDM Context**     | **US Quality Core v0.5.0**  | **Comments**        |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Assessment, Performed: General Use Case**   | [Observation](StructureDefinition-us-quality-core-simple-observation.html)           |       |
 |                            | [Observation.category](StructureDefinition-us-quality-core-simple-observation-definitions.html#Observation.category)   | Category helps to narrow the request to the class of observation required to meet measure intent. Each US Quality Core or US Core profile has a specific binding to concepts appropriate to the respective profile. Note that QDM does not have an attribute comparable to category, the element may be helpful in expressing a quality measure.        |
@@ -211,7 +211,7 @@ Assessment, Recommended uses the ServiceRequest resource. The codes for recommen
 *	[US Core Observation Sexual Orientation Profile]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-observation-sexual-orientation.html)
 *	[US Core Smoking Status Observation Profile]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-smokingstatus.html)
 
-| **QDM Context**    | **US Quality Core V1**  | **Comments**  |
+| **QDM Context**    | **US Quality Core v0.5.0**  | **Comments**  |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Assessment, Recommended**   | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)     |             |
 |                               | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Assessment, Order” and “Assessment, Recommended” datatypes.    |
@@ -249,7 +249,7 @@ QDM’s “Care Experience” maps to either one of two US Quality Core profiles
 QDM “Patient Care Experience” maps to [US Quality Core Observation Screening Assessment Profile](StructureDefinition-us-quality-core-observation-screening-assessment.html) or [US Quality Core Simple Observation](StructureDefinition-us-quality-core-simple-observation.html), as applicable, for the information desired:
 
 
-| **QDM Context**  | **US Quality Core V1**  | **Comments**  |
+| **QDM Context**  | **US Quality Core v0.5.0**  | **Comments**  |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | **Patient Care Experience**  | [Observation](StructureDefinition-us-quality-core-simple-observation.html)  |      |
 |                              | [Observation.status](StructureDefinition-us-quality-core-simple-observation-definitions.html#Observation.status)  | Constrain status to -  final, amended, corrected. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Assessment, Performed” datatype.  |
@@ -266,7 +266,7 @@ QDM “Patient Care Experience” maps to [US Quality Core Observation Screening
 
 QDM “Provider Care Experience” maps to [US Quality Core Observation Screening Assessment Profile](StructureDefinition-us-quality-core-observation-screening-assessment.html) or [US Quality Core Simple Observation](StructureDefinition-us-quality-core-simple-observation.html), as applicable, for the information desired:
 
-| **QDM Context**    | **US Quality Core V1**    | **Comments**         |
+| **QDM Context**    | **US Quality Core v0.5.0**    | **Comments**         |
 | ---------------------------- | -------------------------------------------------------------- | ------------------------------------------- |
 | **Provider Care Experience** | [Observation.code](StructureDefinition-us-quality-core-simple-observation-definitions.html#Observation.code)     |   Note specific bindings based on the US Quality Core or US Core profile used   |
 | **QDM Attributes**  |             |                    |
@@ -294,7 +294,7 @@ processes can be organized, planned, communicated, and checked for
 completion, is represented in QDM as a Record Artifact in which Care
 Goal is found.
 
-| **QDM Context**    | **US Quality Core V1**  | **Comments** |
+| **QDM Context**    | **US Quality Core v0.5.0**  | **Comments** |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | **Care Goal**      | [Goal](StructureDefinition-us-quality-core-goal.html)           |   Describes the intended objective(s) for a patient, group or organization  |
 |                    | [Goal.achievementStatus](StructureDefinition-us-quality-core-goal-definitions.html#Goal.achievementStatus) |  QDM does not include an attribute to determine the status of a goal. US Quality Core inherits US Core and USCDI requirements to include this element that indicates concepts such as proposed, planned, accepted, active, on-hold, completed, cancelled, rejected, entered in error with a required binding to [value set GoalLifecyleStatus](http://hl7.org/fhir/R4/valueset-goal-status.html).  |
@@ -372,7 +372,7 @@ Encounter**
 #### Communication, Performed
 
 
-| **QDM Context**    | **US Quality Core V1**  | **Comments**   |
+| **QDM Context**    | **US Quality Core v0.5.0**  | **Comments**   |
 | ---------------------------- |-----------------------------------------------------|--------------------------------------------------------- |
 | **Communication, Performed** | [Communication](StructureDefinition-us-quality-core-communication.html)    |                       |
 |                              | [Communication.status](StructureDefinition-us-quality-core-communication-definitions.html#Communication.status)   | QDM is a conceptual data model and it does not include a status attribute since it is incorporated in the name of the QDM datatype. US Quality Core requires specific detail about status. Constrain to completed.   |
@@ -411,7 +411,7 @@ history.
 Based on changes in US Core STU5, US Quality Core now has two methods for expressing conditions, [US Quality Core Condition Problems and Health Concerns Profile](StructureDefinition-us-quality-core-condition-problems-health-concerns.html), and [US Quality Core Condition Encounter Diagnosis Profile](StructureDefinition-us-quality-core-condition-encounter-diagnosis.html). Please reference the respective profile pages for explanation of the rationale for using each of these profiles. Briefly, the Condition Problems and Health Concerns Profile meets the US Core Data for Interoperability (USCDI) version 2 ‘Problems’ and ‘Health Concerns’ and SDOH Problems/Health Concerns requirements. The Condition Encounter Diagnosis Profile further meets the USCDI v2 requirement to define Encounter Diagnosis.
 
 
-| **QDM Context** | **US Quality Core V1**  | **Comments**  |
+| **QDM Context** | **US Quality Core v0.5.0**  | **Comments**  |
 | ----------------------------------- | ------------------------ | ---------------------------------------------------------------------------- |
 | **Condition - Diagnosis - Problem** | [Condition Problems and Health Concerns](StructureDefinition-us-quality-core-condition-problems-health-concerns.html)    |     |
 |                                     | [ConditionProblemsHealthConcerns.clinicalStatus](StructureDefinition-us-quality-core-condition-problems-health-concerns-definitions.html#Condition.clinicalStatus)         | QDM is a conceptual data model and it does not include a status attribute since it is incorporated in the name of the QDM datatype. US Quality Core requires specific detail about status. Clinical status defines active, recurrence, relapse, inactive, remission, resolved with required binding to [ConditionClinicalStatusCodes](http://hl7.org/fhir/R4/valueset-condition-clinical.html)  |
@@ -476,7 +476,7 @@ Procedure, Performed, i.e., placement of or adjustment to a device.
 
 #### Device, Order – Non-Patient-use Devices
 
-| **QDM Context**         | **US Quality Core V1**     | **Comments**  |
+| **QDM Context**         | **US Quality Core v0.5.0**     | **Comments**  |
 | ----------------------- | ------------------------------------------------ | ---------------------------------------------------- |
 | **Device Request**      | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)   |                                    |
 |                         | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)   | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Device, Order” and “Device, Recommended” datatypes.  |
@@ -501,7 +501,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Device, Order – Personal Use Devices
 
-| **QDM Context**         | **US Quality Core V1**    | **Comments**      |
+| **QDM Context**         | **US Quality Core v0.5.0**    | **Comments**      |
 | ----------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Device Request**      | [DeviceRequest](StructureDefinition-us-quality-core-devicerequest.html)  |                   |
 |                         | [DeviceRequest.status](StructureDefinition-us-quality-core-devicerequest-definitions.html#DeviceRequest.status)     | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Device, Order” and “Device, Recommended” datatypes.  |
@@ -530,7 +530,7 @@ Use [US Quality Core DeviceNotRequested](StructureDefinition-us-quality-core-dev
 
 #### Device, Recommended – Non-Patient-use Devices
 
-| **QDM Context**       | **US Quality Core V1**  | **Comments**      |
+| **QDM Context**       | **US Quality Core v0.5.0**  | **Comments**      |
 | --------------------- | ----------------- | ----------------- |
 | **Device Request**    | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)   |            |
 |                       | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)    | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Device, Order” and “Device, Recommended” datatypes. |
@@ -555,7 +555,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Device, Recommended – Personal Use Devices
 
-| **QDM Context**      | **US Quality Core V1**  | **Comments**     |
+| **QDM Context**      | **US Quality Core v0.5.0**  | **Comments**     |
 | -------------------- | ----------------- | ---------------- |
 | **Device Request**   | [DeviceRequest](StructureDefinition-us-quality-core-devicerequest.html)                                                 |                    |
 |                      | [DeviceRequest.status](StructureDefinition-us-quality-core-devicerequest-definitions.html#DeviceRequest.status)         |  Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Device, Order” and “Device, Recommended” datatypes.   |
@@ -596,7 +596,7 @@ US Quality Core derives from QI-Core, which has added specific constraints on th
 “Diagnostic Study, Order” should reference orders for studies that will generate results for activities that meet criteria for Observation Clinical Result.
 
 
-| **QDM Context**                | **US Quality Core V1**      | **Comments**     |
+| **QDM Context**                | **US Quality Core v0.5.0**      | **Comments**     |
 | ------------------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
 | **Diagnostic Study, Order**    | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)                                                  |     |
 |                                | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)         | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Diagnostic Study, Order” and “Diagnostic Study, Recommended” datatypes. |
@@ -625,7 +625,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 Individual studies may use [US Quality Core DiagnosticReport Profile for Report and Note Exchange](StructureDefinition-us-quality-core-diagnosticreport-note.html) to provide information about an individual study (e.g., a cardiac ultrasound, MRI, etc.) although some have considered use of other reporting resources and artifacts. Since new studies regularly become available and the nature of existing studies change over time, a complete list of studies to reference a desired result cannot be assured. Therefore, a quality measure or clinical decision support (CDS) artifacts seeking a specific result value should use [US Quality Core Observation Clinical Result](StructureDefinition-us-quality-core-observation-clinical-result.html) to request a retrieve of the result value desired. This practice will enable implementers to determine which is the best source for the desired observation. LOINC observable entities may indicate specific methods for determination of results. Measure and CDS developers can reference direct reference codes or value sets using such LOINC codes to specify the type of testing considered acceptable to provide sufficient fidelity to their requests.
 
 
-| **QDM Context**                 | **US Quality Core  V1**      | **Comments**    |
+| **QDM Context**                 | **US Quality Core  v0.5.0**      | **Comments**    |
 | ------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------- |
 | **Diagnostic Study, Performed** | [Observation Clinical Result Profile](StructureDefinition-us-quality-core-observation-clinical-result.html) |           |
 |                                 | [ObservationClinicalResult.category](StructureDefinition-us-quality-core-observation-clinical-result-definitions.html#key_Observation.category) | Category helps to narrow the request to the class of observation required to meet measure intent. Each US Quality Core or US Core profile has a specific binding to concepts appropriate to the respective profile. ClinicalTestResult has a required binding to  [US Core Clinical Result Observation Category.]({{site.data.fhir.ver.uscore}}/ValueSet-us-core-clinical-result-observation-category.html)   Note that QDM does not have an attribute comparable to category, the element may be helpful in expressing a quality measure.|
@@ -663,7 +663,7 @@ Use [US Quality Core Observation Cancelled](StructureDefinition-us-quality-core-
 “Diagnostic Study, Recommended” should reference recommendations for studies that will generate results for activities that meet criteria for Observation Clinical Result.
 
 
-| **QDM Context**     | **US Quality Core V1**   | **Comments**     |
+| **QDM Context**     | **US Quality Core v0.5.0**   | **Comments**     |
 | ------------------- | ------------------------------------- | ------------------------------------------------------------ |
 | **Diagnostic Study, Recommended** | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)    |                  |
 |                                   | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Diagnostic Study, Order” and “Diagnostic Study, Recommended” datatypes.  |
@@ -748,6 +748,8 @@ An example of an encounter can be found [here](Encounter-encounter-ed-example.ht
 
 #### Encounter-Related Diagnoses and Procedures
 
+**US Quality Core v0.5.0 note**: The content below details information that was present in QI-Core 6.0.0 for Encounter-Related Diagnoses and Procedures. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. See the [USCDI+ Quality page](uscdiquality.html) for additional information about mappings to USCDI+ Quality V1 elements in US Quality Core v0.5.0.
+
 Versions of QI-Core prior to 6.0.0 have used the [Encounter.diagnosis](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.diagnosis) element to reference to the list of diagnosis/diagnoses and procedures relevant to the encounter.
 The [Encounter.diagnosis.usevalue](http://hl7.org/fhir/R4/valueset-diagnosis-role.html)
 helped to differentiates if the diagnosis or procedure role with respect to the encounter,
@@ -767,7 +769,7 @@ _present on admission_ flag for each diagnosis. Therefore, the [Claim.diagnosis.
 [Claim.diagnosis.diagnosis\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.diagnosis[x]) defines which diagnoses are _present on admission_. The [Claim.procedure.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.sequence) = 1
 plus [Claim.procedure.procedure\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.procedure[x]) defines a _principal procedure_.
 
-For this reason, QI-Core 6.0.0 (and hence US Quality Core V1) no longer includes Encounter.diagnosis in the Key Elements Table of
+For this reason, QI-Core 6.0.0 (and hence US Quality Core v0.5.0) no longer includes Encounter.diagnosis in the Key Elements Table of
 the profile. This also aligns with the US Core 6.1.0 that use [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) and
 [Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference)
 for diagnoses or procedures managed during an encounter. Note the [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode)
@@ -776,7 +778,7 @@ procedures, context-dependent categories, and events; [Encounter.reasonReference
 
 #### Encounter, Order
 
-| **QDM Context**      | **US Quality Core V1**  | **Comments**   |
+| **QDM Context**      | **US Quality Core v0.5.0**  | **Comments**   |
 | -------------------- | -------------------------------------- | ------------------------------------------------------------ |
 | **Encounter, Order** | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)   |                                                              |
 |                      | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  |  Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Encounter, Order” and “Encounter, Recommended” datatypes.  |
@@ -803,7 +805,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Encounter, Performed
 
-| **QDM Context**           | **US Quality Core V1**  | **Comments**  |
+| **QDM Context**           | **US Quality Core v0.5.0**  | **Comments**  |
 | ------------------------- | ----------------- | ------------- |
 | **Encounter, Performed**  | [Encounter](StructureDefinition-us-quality-core-encounter.html)     |         |
 |                           | [Encounter.status](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.status)   | Constrain to - arrived, triaged, in-progress, on-leave, finished Note: most retrospective eCQMs will constrain Encounter.status to “finished”. Measures designed to monitor active encounters should consider using “in-progress”. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Encounter, Performed”. |
@@ -816,11 +818,11 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 | diagnoses                 |                 |                                                     |
 | diagnosis (code)          | [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) <br> or <br>[Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference)  | [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) has preferred binding to [Encounter Reason Code value set](http://hl7.org/fhir/R4/valueset-encounter-reason.html). [Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference) allows reference to [US Quality Core ConditionProblemsHeatlhConcerns](StructureDefinition-us-quality-core-condition-problems-health-concerns.html), [US Quality Core ConditionEncounterDiagnosis](StructureDefinition-us-quality-core-condition-encounter-diagnosis.html), [US Quality Core Procedure](StructureDefinition-us-quality-core-procedure.html), [US Quality Core SimpleObservation](StructureDefinition-us-quality-core-simple-observation.html), and [US Quality Core ImmunzationRecommendation](StructureDefinition-us-quality-core-immunizationrecommendation.html). |
 | presentOnAdmissionIndicator (code) | [Claim.diagnosis.onAdmission](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.onAdmission) <br> plus <br> [Claim.diagnosis.diagnosis\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.diagnosis[x]) defines which diagnoses are _present on admission_. | Indicator of whether the Encounter diagnosis was present at the time of admission. Note: this element uses the value set (required) diagnosis-on-admission (the same value set as used with the claim resource)  |
-| rank (Integer)            | * _principal diagnosis_ is <br> [Claim.diagnosis.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.sequence) = 1 <br> plus <br> [Claim.diagnosis.diagnosis\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.diagnosis[x]) <br> * _principal procedure_ is <br> [Claim.procedure.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.sequence) = 1 <br> plus <br>  [Claim.procedure.procedure\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.procedure[x])   | Note that US Quality Core V1 reflects changes made in QI-Core 6.0.0 for representing rank, compared to prior QI-Core versions.  |  
+| rank (Integer)            | * _principal diagnosis_ is <br> [Claim.diagnosis.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.sequence) = 1 <br> plus <br> [Claim.diagnosis.diagnosis\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.diagnosis[x]) <br> * _principal procedure_ is <br> [Claim.procedure.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.sequence) = 1 <br> plus <br>  [Claim.procedure.procedure\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.procedure[x])   | Note change in QI-Core STU6  |  
 | procedures                | [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) <br> or <br>[Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference)   | [[Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) has preferred binding to [Encounter Reason Code value set](http://hl7.org/fhir/R4/valueset-encounter-reason.html). [Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference) allows reference to [US Quality Core ConditionProblemsHeatlhConcerns](StructureDefinition-us-quality-core-condition-problems-health-concerns.html), [US Quality Core ConditionEncounterDiagnosis](StructureDefinition-us-quality-core-condition-encounter-diagnosis.html), [US Quality Core Procedure](StructureDefinition-us-quality-core-procedure.html), [US Quality Core SimpleObservation](StructureDefinition-us-quality-core-simple-observation.html), and [US Quality Core ImmunzationRecommendation](StructureDefinition-us-quality-core-immunizationrecommendation.html). |
 | lengthOfStay              | [Encounter.length](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.length)           |    The QDM concept length of stay is expressed using CQL expressions rather than a specific Encounter profile element. Therefore, this element is no longer included in the Encounter profile Key Element Table.      |
 | authorDatetime            | Not Addressed      |    This QDM attribute is not addressed in the FHIR resource. And encounter occurs or it does not.    |
-| admissionSource           | [Encounter.hospitalization.admitSource](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.hospitalization.admitSource)  |  The QDM concept hospital admission source has not been used in CMS measures to-date. In an effort to streamline US Quality Core V1, this element is no longer included in the Encounter profile Key Element Table.  It is available from the Snapshot Table but it is not clear that the information is available in clinical records even though it may be in administrative records.   |
+| admissionSource           | [Encounter.hospitalization.admitSource](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.hospitalization.admitSource)  |  The QDM concept hospital admission source has not been used in CMS measures to-date. In an effort to streamline US Quality Core v0.5.0, this element is no longer included in the Encounter profile Key Element Table.  It is available from the Snapshot Table but it is not clear that the information is available in clinical records even though it may be in administrative records.   |
 | dischargeDisposition      | [Encounter.hospitalization.dischargeDisposition](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.hospitalization.dischargeDisposition) | Category or kind of location to which the patient is discharged. E.g., home, hospice, long-term care, etc.   |
 | facilityLocations         |                     |                          |
 | code                      | [Encounter.location.location](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.location.location)   |   The location the encounter takes place.    |
@@ -831,7 +833,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Encounter, Recommended
 
-| **QDM Context**             | **US Quality Core V1**    | **Comments**                  |
+| **QDM Context**             | **US Quality Core v0.5.0**    | **Comments**                  |
 | --------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Encounter, Recommended**  | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)   |                                                              |
 |                             | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Encounter, Order” and “Encounter, Recommended” datatypes.	 |
@@ -867,7 +869,7 @@ or problem in the patient’s family history may be relevant to the care
 of the patient.
 
 
-| **QDM Context**    | **US Quality Core V1**        | **Comments**                    |
+| **QDM Context**    | **US Quality Core v0.5.0**        | **Comments**                    |
 | ------------------ | ----------------------------------------------------------------- | ------------------------------- |
 | **Family History** | [FamilyMemberHistory](StructureDefinition-us-quality-core-familymemberhistory.html)                                               |              |
 |                    | [FamilyMemberHistory.status](StructureDefinition-us-quality-core-familymemberhistory-definitions.html#FamilyMemberHistory.status) | While QDM does not have an attribute comparable to status, as a conceptual model, status is required for us of most US Quality Core profiles. Constrain to partial, completed |
@@ -910,7 +912,7 @@ or clinical decision support (CDS) artifacts.
 
 #### Immunization, Administered
 
-| **QDM Context**     | **US Quality Core V1**        | **Comments**                                       |
+| **QDM Context**     | **US Quality Core v0.5.0**        | **Comments**                                       |
 | ------------------------------ | --------------------------- | -------------------------------------------------- |
 | **Immunization, Administered** | [Immunization](StructureDefinition-us-quality-core-immunization.html)                                          |                         |
 |                                | [Immunization.status](StructureDefinition-us-quality-core-immunization-definitions.html#Immunization.status)   | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Immunization, Administered”. Constrain to “completed”     |
@@ -949,7 +951,7 @@ intended meaning of the quality measure or clinical decision support
 
 
 
-| **QDM Context**         | **US Quality Core V1**   | **Comments**    |
+| **QDM Context**         | **US Quality Core v0.5.0**   | **Comments**    |
 | ----------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | **Immunization, Order** | [MedicationRequest](StructureDefinition-us-quality-core-medicationrequest.html)                                               |           |
 |                         | [MedicationRequest.status](StructureDefinition-us-quality-core-medicationrequest-definitions.html#MedicationRequest.status)   |    While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Immunization, Order”. Constrain to active, completed.  |
@@ -1057,7 +1059,7 @@ to the index patient. 
 
 #### QDM Entities
 
-| **QDM Entities & Attributes** | **US Quality Core V1**  | **Comment**    |
+| **QDM Entities & Attributes** | **US Quality Core v0.5.0**  | **Comment**    |
 | ----------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------- |
 | **Patient**                   | [Patient](StructureDefinition-us-quality-core-patient.html)       |                |
 | identifier                    | [Patient.identifier.value](StructureDefinition-us-quality-core-patient-definitions.html#Patient.identifier.value)        |                |
@@ -1084,7 +1086,7 @@ to the index patient. 
 
 #### Patient Characteristics
 
-| **QDM Attribute**  | **US Quality Core V1**        | **Comments**    |
+| **QDM Attribute**  | **US Quality Core v0.5.0**        | **Comments**    |
 | ------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------- |
 | **Race**      |                                                                                                                    |  See US CoreRaceExtension for details   |
 | code          | [Patient.extension:race](StructureDefinition-us-quality-core-patient-definitions.html#Patient.extension:race)               |  URL: <http://hl7.org/fhir/us/core/StructureDefinition/us-core-race>        |
@@ -1116,7 +1118,7 @@ to the index patient. 
 
 #### QDM *datatype* - Related Person
 
-| **QDM Attribute**   | **US Quality Core V1**     | **Comments** |
+| **QDM Attribute**   | **US Quality Core v0.5.0**     | **Comments** |
 | ------------------- | -------------------------------------------------------- | ------------ |
 | **Related Person**  | [RelatedPerson](StructureDefinition-us-quality-core-relatedperson.html)    |              |
 | identifier          | [RelatedPerson.identifier](StructureDefinition-us-quality-core-relatedperson-definitions.html#RelatedPerson.identifier)     |              |
@@ -1146,7 +1148,7 @@ identical.
 
 #### Intervention, Performed
 
-| **QDM Context**             | **US Quality Core V1**                                            | **Comments**                   |
+| **QDM Context**             | **US Quality Core v0.5.0**                                            | **Comments**                   |
 | --------------------------- | ----------------------------------------------------------- | ------------------------------ |
 | **Intervention, Performed** | [Procedure](StructureDefinition-us-quality-core-procedure.html)      |                                |
 | **QDM Attributes**      |                                             |                                                 |
@@ -1186,7 +1188,7 @@ Use [US Quality Core ProcedureNotDone](StructureDefinition-us-quality-core-proce
 
 #### Intervention, Order
 
-| **QDM Context**     | **US Quality Core V1**         | **Comments**                                                 |
+| **QDM Context**     | **US Quality Core v0.5.0**         | **Comments**                                                 |
 | --------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Intervention, Order**     | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)                                             |                |
 |                             | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)    | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Intervention, Order” and “Intervention, Recommended” datatypes.  |
@@ -1213,7 +1215,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Intervention, Recommended
 
-| **QDM Context**                 | **US Quality Core V1**          | **Comments**        |
+| **QDM Context**                 | **US Quality Core v0.5.0**          | **Comments**        |
 | ------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Intervention, Recommended**   | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)    |                                                              |
 |                                 | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)    | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Intervention, Order” and “Intervention, Recommended” datatypes.    |
@@ -1254,7 +1256,7 @@ Each laboratory test may be ordered individually or in a panel. Many use panels 
 “Laboratory Test, Order” should reference orders for studies that will generate results for activities that meet criteria for Observation Lab Result.
 
 
-| **QDM Context**      | **US Quality Core V1**               | **Comments**                                                 |
+| **QDM Context**      | **US Quality Core v0.5.0**               | **Comments**                                                 |
 | --------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Laboratory Test, Order**  | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)       |                                                              |
 |                             | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Laboratory Test, Order” and “Laboratory Test, Recommended” datatypes. |
@@ -1281,7 +1283,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 #### Laboratory Test, Performed
 
 
-| **QDM Context**    | **US Quality Core V1**         |**Comments**                           |
+| **QDM Context**    | **US Quality Core v0.5.0**         |**Comments**                           |
 | ------------------ | -----------------------  | ------------------------------------- |
 | **Laboratory Test, Performed** | [Laboratory Result Observation](StructureDefinition-us-quality-core-observation-lab.html)               |                            |
 | **QDM Attribute**  |             |                            |
@@ -1319,7 +1321,7 @@ Use [US Quality Core Observation Cancelled](StructureDefinition-us-quality-core-
 
 #### Laboratory Test, Recommended
 
-| **QDM Context**      | **US Quality Core V1**               | **Comments**                                                 |
+| **QDM Context**      | **US Quality Core v0.5.0**               | **Comments**                                                 |
 | ------------------------------------------ | ----------------------------------------------------------------------- | -------------------------------------------- |
 | **Laboratory Test, Recommended**  | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)      |                                                              |
 |                                   | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)       | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, _status_ is implied by the name “Laboratory Test, Order” and “Laboratory Test, Recommended” datatypes.   |
@@ -1373,7 +1375,7 @@ The MedicationRequest **SHALL** include all practitioner-reported and "self-repo
 * When recording "self-prescribed" orders, **SHOULD** use the requester to indicate the Patient or RelatedPerson as the prescriber
 
 
-| **QDM Context**  | **US Quality Core V1**     | **Comments**          |
+| **QDM Context**  | **US Quality Core v0.5.0**     | **Comments**          |
 | ----------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | **Medication, Active**  | [MedicationRequest](StructureDefinition-us-quality-core-medicationrequest.html)              |      |
 |                         | [MedicationRequest.status](StructureDefinition-us-quality-core-medicationrequest-definitions.html#MedicationRequest.status)    | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Medication, Order”. Constrain to active, completed  |
@@ -1402,7 +1404,7 @@ frequency of administration. Note that a separate QDM and US Core
 profile address Immunization, Administered.
 
 
-| **QDM Context**   | **US Quality Core V1**    | **Comments**      |
+| **QDM Context**   | **US Quality Core v0.5.0**    | **Comments**      |
 | ---------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | **Medication, Administered** | [MedicationAdministration](StructureDefinition-us-quality-core-medicationadministration.html)    |                          |
 |                              | [MedicationAdministration.status](StructureDefinition-us-quality-core-medicationadministration-definitions.html#MedicationAdministration.status)  |    While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Medication, Administered”. Constrain status to “In-progress” or “completed” Note: Measures that look for evidence of potential adverse events might use MedicationAdministration.status = on-hold, or stopped as possible indicators of such events. |
@@ -1458,7 +1460,7 @@ Order which can address order or recommended.
 
 
 
-| **QDM Context**              | **US Quality Core V1**       | **Comments**          |
+| **QDM Context**              | **US Quality Core v0.5.0**       | **Comments**          |
 | ---------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------- |
 | **Medication, Discharge**    | [MedicationRequest](StructureDefinition-us-quality-core-medicationrequest.html)    |             |
 | Medication, Discharge active | [MedicationRequest.status](StructureDefinition-us-quality-core-medicationrequest-definitions.html#MedicationRequest.status)  | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Medication, Order”. Constrain to active, completed  |
@@ -1497,7 +1499,7 @@ This QDM context maps to the US Quality Core MedicationDispense profile,
 indicating information about medications that have been dispensed.
 
 
-| **QDM Context**           | **US Quality Core V1**             | **Comments**                         |
+| **QDM Context**           | **US Quality Core v0.5.0**             | **Comments**                         |
 | ------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- |
 | **Medication, Dispensed** | [MedicationDispense](StructureDefinition-us-quality-core-medicationdispense.html)       |        |
 |                           | [MedicationDispense.status](StructureDefinition-us-quality-core-medicationdispense-definitions.html#MedicationDispense.status)  | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Medication, Dispensed”. Constrain MedicationDispense.status to completed |
@@ -1541,7 +1543,7 @@ as the most appropriate for the intended meaning of the quality
 measure or clinical decision support (CDS) expression.
 
 
-| **QDM Context**          | **US Quality Core V1**    | **Comments**      |
+| **QDM Context**          | **US Quality Core v0.5.0**    | **Comments**      |
 | ------------------------ | -------------------------------------------------------------------------- | --------------------------------------------------------- |
 | **Medication, Order**    | [MedicationRequest](StructureDefinition-us-quality-core-medicationrequest.html)    |    |
 | Medication, Order active | [MedicationRequest.status](StructureDefinition-us-quality-core-medicationrequest-definitions.html#MedicationRequest.status) | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Medication, Order”. Constrain to active, completed   |
@@ -1588,7 +1590,7 @@ Definitions modeled similar to the FHIR R4
 [Coverage](http://hl7.org/fhir/R4/coverage.html) resource.
 
 
-| **QDM Context**         | **US Quality Core V1**    | **Comments**          |
+| **QDM Context**         | **US Quality Core v0.5.0**    | **Comments**          |
 | ----------------------- | ---------------------------------------------------------- | --------------------- |
 | **Participation**       | [Coverage](StructureDefinition-us-quality-core-coverage.html)                                        |                             |
 |                         | [Coverage.status](StructureDefinition-us-quality-core-coverage-definitions.html#key_Coverage.status) | While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name ”Participation”. Constrain to “active” |
@@ -1637,7 +1639,7 @@ US Core STU6 added twelve observation profiles that address specific elements of
 QDM “Physical Exam, Order” should use ServiceRequest with *intent* = order for the specific examination requested.
 
 
-| **QDM Context**   | **US Quality Core V1**        | **Comments**            |
+| **QDM Context**   | **US Quality Core v0.5.0**        | **Comments**            |
 | -------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Physical Exam, Order**   | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)         |          |
 |                            | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)   | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Physical Exam, Order” and “Physical Exam, Recommended” datatypes.  |
@@ -1667,7 +1669,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 QDM “Physical Exam, Performed” should reference the specific US Core vital signs profiles directly as appropriate. Some results may also be identified using the US Quality Core Observation Clinical Result profile. The US Quality Core Simple Observation profile may be appropriate for other physical examination observations not covered by the Observation Clinical Result profile.
 
-| **QDM Context**   | **US Quality Core V1**    | **Comments**     |
+| **QDM Context**   | **US Quality Core v0.5.0**    | **Comments**     |
 | -------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------- |
 | **Physical Exam, Performed - General** | [US Quality Core Simple Observation](StructureDefinition-us-quality-core-simple-observation.html) <br> [US Quality Core Observation Clinical Result](StructureDefinition-us-quality-core-observation-clinical-result.html)  |        |
 |                                        | [Observation.status](StructureDefinition-us-quality-core-simple-observation-definitions.html#Observation.status)   | Constrain status to -  final, amended, corrected. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Physical Exam, Performed” datatype. |
@@ -1704,7 +1706,7 @@ Use [US Quality Core Observation Cancelled](StructureDefinition-us-quality-core-
 
 QDM “Physical Exam, Recommended” should use ServiceRequest with *intent* = plan for the specific examination recommended.
 
-| **QDM Context**                | **US Quality Core V1**            | **Comments**                                                 |
+| **QDM Context**                | **US Quality Core v0.5.0**            | **Comments**                                                 |
 | ------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Physical Exam, Recommended** | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)  |             |
 |                                | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, _status_ is implied by the name “Physical Exam” and “Physical Exam, Recommended” datatypes.  |
@@ -1826,7 +1828,7 @@ and, as a result, there is no direct mapping from the QDM Procedure priority att
 #### Procedure, Performed
 
 
-| **QDM Context**         | **US Quality Core V1**                                            | **Comments**                   |
+| **QDM Context**         | **US Quality Core v0.5.0**                                            | **Comments**                   |
 | ----------------------- | ----------------------------------------------------------- | ------------------------------ |
 | **Procedure, Performed**| [Procedure](StructureDefinition-us-quality-core-procedure.html)                                   |                                  |
 | **QDM Attributes**  |                                                                                              |                                  |
@@ -1862,7 +1864,7 @@ Use [US Quality Core ProcedureNotDone](StructureDefinition-us-quality-core-proce
 
 #### Procedure, Order
 
-| **QDM Context**      | **US Quality Core V1**    | **Comments**          |
+| **QDM Context**      | **US Quality Core v0.5.0**    | **Comments**          |
 | -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Procedure, Order** | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)        |                                                              |
 |                      | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, _status_ is implied by the name “Procedure, Order” and “Procedure, Recommended” datatypes.   |
@@ -1888,7 +1890,7 @@ Use [US Quality Core Service Not Requested](StructureDefinition-us-quality-core-
 
 #### Procedure, Recommended
 
-| **QDM Context**            | **US Quality Core V1**          | **Comments**                                                 |
+| **QDM Context**            | **US Quality Core v0.5.0**          | **Comments**                                                 |
 | -------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Procedure, Recommended** | [ServiceRequest](StructureDefinition-us-quality-core-servicerequest.html)   |                                                              |
 |                            | [ServiceRequest.status](StructureDefinition-us-quality-core-servicerequest-definitions.html#ServiceRequest.status)  | Constrain to active, completed. While QDM does not have an attribute comparable to status, as a conceptual model, _status_ is implied by the name “Procedure, Order” and “Procedure, Recommended” datatypes. |
@@ -1971,7 +1973,7 @@ Since no current eCQM uses this profile, determination of key elements is challe
 may help measure developers determine what to use for potential use cases:
 
 
-| **Nutrition Order**                                    | **US Quality Core V1**                 | **Comments**                                          |
+| **Nutrition Order**                                    | **US Quality Core v0.5.0**                 | **Comments**                                          |
 | -------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------- |
 | **Substance, Order/Recommended - For Diet Orders** | [NutritionOrder](StructureDefinition-us-quality-core-nutritionorder-definitions.html#NutritionOrder)  | Limited to orders for diets or diets with supplements |
 | Substance Order/Recommended Activity               | [NutritionOrder.status](StructureDefinition-us-quality-core-nutritionorder-definitions.html#NutritionOrder.status) | Determination of which order status is appropriate to retrieve, specifically  constrain to active, completed. Profile has required binding to [RequestStatus](http://hl7.org/fhir/R4/valueset-request-status.html).  |
@@ -2027,7 +2029,7 @@ not yet determined.
 Based on the FHIR referenced provided above, the QDM *datatype* Symptom
 maps to the FHIR Observation resource.
 
-| **QDM Context**    | **US Quality Core V1**         | **Comments**                                                                     |
+| **QDM Context**    | **US Quality Core v0.5.0**         | **Comments**                                                                     |
 | ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | **Symptom**        | [Simple Observation](StructureDefinition-us-quality-core-simple-observation.html)     |                  |
 |                    | [Observation.status](StructureDefinition-us-quality-core-simple-observation-definitions.html#Observation.status)  | Constrain status to - preliminary, final, amended, corrected. While QDM does not have an attribute comparable to status, as a conceptual model, status is implied by the name “Symptom” datatype.  |
