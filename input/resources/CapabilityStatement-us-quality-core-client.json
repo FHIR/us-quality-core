@@ -975,7 +975,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|6.1.0",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -987,7 +987,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|6.1.0",
               "type": "token",
               "documentation": "The client **SHALL** provide a token value."
             },
@@ -999,7 +999,7 @@
                 }
               ],
               "name": "category",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|6.1.0",
               "type": "token",
               "documentation": "The client **MAY** provide a token value."
             },
@@ -1011,7 +1011,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|6.1.0",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
             },
@@ -1023,7 +1023,7 @@
                 }
               ],
               "name": "type",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|6.1.0",
               "type": "token",
               "documentation": "The client **MAY** provide a token value."
             }
@@ -2752,7 +2752,7 @@
                 }
               ],
               "name": "patient",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|6.1.0",
               "type": "reference",
               "documentation": "The client **SHALL** provide an id value for the reference."
             },
@@ -2764,7 +2764,7 @@
                 }
               ],
               "name": "_id",
-              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id",
+              "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|6.1.0",
               "type": "token",
               "documentation": "The client **SHALL** provide a token value."
             }
