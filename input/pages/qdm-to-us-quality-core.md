@@ -4,7 +4,7 @@ from QI-Core v6.0.0, with minor edits and
 [errata](https://jira.hl7.org/browse/FHIR-53324) as well as updated mappings to US Quality Core profiles and elements, as a reference to support the
 transition from Quality Data Model (QDM)-based eCQMs to FHIR-based digital
 quality measures (dQMs). QDM version 5.6 is the current version used by eCQMs
-since 2024 and thus forms the basis for this mapping.   
+since 2024 and thus forms the basis for this mapping.
 
 ### Introduction
 
@@ -747,6 +747,8 @@ presented for care at the location which is prior to the formal completion of th
 An example of an encounter can be found [here](Encounter-encounter-ed-example.html)
 
 #### Encounter-Related Diagnoses and Procedures
+
+**US Quality Core v0.5.0 note**: The content below details information that was present in QI-Core 6.0.0 for Encounter-Related Diagnoses and Procedures. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. See the [USCDI+ Quality page](uscdiquality.html) for additional information about mappings to USCDI+ Quality V1 elements in US Quality Core v0.5.0.
 
 Versions of QI-Core prior to 6.0.0 have used the [Encounter.diagnosis](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.diagnosis) element to reference to the list of diagnosis/diagnoses and procedures relevant to the encounter.
 The [Encounter.diagnosis.usevalue](http://hl7.org/fhir/R4/valueset-diagnosis-role.html)
