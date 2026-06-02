@@ -769,7 +769,7 @@ _present on admission_ flag for each diagnosis. Therefore, the [Claim.diagnosis.
 [Claim.diagnosis.diagnosis\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.diagnosis.diagnosis[x]) defines which diagnoses are _present on admission_. The [Claim.procedure.sequence](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.sequence) = 1
 plus [Claim.procedure.procedure\[x\]](StructureDefinition-us-quality-core-claim-definitions.html#Claim.procedure.procedure[x]) defines a _principal procedure_.
 
-For this reason, QI-Core 6.0.0 (and hence US Quality Core v0.5.0) no longer includes Encounter.diagnosis in the Key Elements Table of
+For this reason, QI-Core 6.0.0 no longer includes Encounter.diagnosis in the Key Elements Table of
 the profile. This also aligns with the US Core 6.1.0 that use [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode) and
 [Encounter.reasonReference](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonReference)
 for diagnoses or procedures managed during an encounter. Note the [Encounter.reasonCode](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.reasonCode)
