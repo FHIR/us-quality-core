@@ -54,7 +54,7 @@ US Quality Core inherits all profiles from QI-Core 6.0.0, but not all profiles i
 |**2.1.19 Goal**|
 |&emsp; [US Quality Core Goal](StructureDefinition-us-quality-core-goal.html)| [US Core Goal]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-goal.html) |&emsp; [ Goal]({{site.data.fhir.path}}goal.html)|
 |**2.1.20 ImagingStudy**|
-|&emsp; [US Quality Core ImagingStudy](StructureDefinition-us-quality-core-imagingstudy.html)| &mdash; |&emsp; [ ImagingStudy]({{site.data.fhir.path}}imagingstudy.html)|
+|&emsp; [US Quality Core ImagingStudy](StructureDefinition-us-quality-core-imagingstudy.html)*| &mdash; |&emsp; [ ImagingStudy]({{site.data.fhir.path}}imagingstudy.html)|
 |**2.1.21 Immunization**|
 |&emsp; [US Quality Core Immunization](StructureDefinition-us-quality-core-immunization.html)| [US Core Immunization]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-immunization.html) |&emsp; [ Immunization]({{site.data.fhir.path}}immunization.html)|
 |&emsp; [US Quality Core Immunization Not Done](StructureDefinition-us-quality-core-immunizationnotdone.html)| [US Core Immunization]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-immunization.html) |&emsp; [ Immunization]({{site.data.fhir.path}}immunization.html)|
