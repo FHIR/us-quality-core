@@ -11,5 +11,5 @@
  	"introduction": "The United States Core Data for Interoperability (USCDI) Plus Quality (USCDI+ Quality)",
  	"ci-build": " http://build.fhir.org/guides/onc/us-quality-core",
   "first" : true,
-	"category": "Quality Improvement"
+	"category": "Quality / CDS"
 }
