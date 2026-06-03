@@ -151,14 +151,8 @@
       },
       {
         "id": "ImagingStudy.endpoint",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "ImagingStudy.endpoint",
-        "short": "(USCDI+ Quality) Study access endpoint"
+        "short": "Study access endpoint"
       },
       {
         "id": "ImagingStudy.procedureReference",

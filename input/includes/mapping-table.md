@@ -1988,10 +1988,6 @@ The following profiles include at least one USCDI+ Quality–flagged element and
     </li>
 
     <li>
-        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
-    </li>
-
-    <li>
         <a href="StructureDefinition-us-quality-core-immunization.html">US Quality Core Immunization</a>
     </li>
 
@@ -2138,6 +2134,10 @@ The following profiles do not include any USCDI+ Quality–flagged elements and 
 
     <li>
         <a href="StructureDefinition-us-quality-core-flag.html">US Quality Core Flag</a>
+    </li>
+
+    <li>
+        <a href="StructureDefinition-us-quality-core-imagingstudy.html">US Quality Core ImagingStudy</a>
     </li>
 
     <li>
