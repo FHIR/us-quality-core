@@ -256,14 +256,8 @@
       },
       {
         "id": "DiagnosticReport.imagingStudy",
-        "extension": [
-          {
-            "url": "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/uscdiplusquality",
-            "valueBoolean": true
-          }
-        ],
         "path": "DiagnosticReport.imagingStudy",
-        "short": "(USCDI+ Quality) Reference to full details of imaging associated with the diagnostic report",
+        "short": "Reference to full details of imaging associated with the diagnostic report",
         "type": [
           {
             "code": "Reference",
