@@ -1,10 +1,9 @@
 {:toc}
 The US Quality Core Implementation Guide includes the QDM-to–QI-Core mappings
 from QI-Core v6.0.0, with minor edits and
-[errata](https://jira.hl7.org/browse/FHIR-53324) as well as updates to reflect US Quality Core profiles and elements, as a reference to support the
-transition from Quality Data Model (QDM)-based eCQMs to FHIR-based digital
-quality measures (dQMs). QDM version 5.6 is the current version used by eCQMs
-since 2024 and thus forms the basis for this mapping.
+[errata](https://jira.hl7.org/browse/FHIR-53324).The tables have been updated to reference the corresponding US Quality Core profile and elements. While US Quality Core v0.5.0 has incorporated all QI-Core profiles, not all are required to be implemented as part of the conformance criteria of this guide, as described in the [Summary of Conformance Requirements](general-requirements.html#summary-of-conformance-requirements) and the [USCDI+ Quality in-scope](uscdiquality.html#summary-list-of-in-scope-profiles-for-conformance) and [out-of-scope](uscdiquality.html#summary-list-of-out-of-scope-profiles-for-conformance) profile summaries.
+
+QDM version 5.6 is the current version used by eCQMs since 2024 and thus forms the basis for this mapping.
 
 ### Introduction
 
@@ -747,8 +746,6 @@ presented for care at the location which is prior to the formal completion of th
 An example of an encounter can be found [here](Encounter-encounter-ed-example.html)
 
 #### Encounter-Related Diagnoses and Procedures
-
-**US Quality Core v0.5.0 note**: The content below details information that was present in QI-Core 6.0.0 for Encounter-Related Diagnoses and Procedures. In US Quality Core v0.5.0, support for the Claim profile is not required for conformance. See the [USCDI+ Quality page](uscdiquality.html) for additional information about mappings to USCDI+ Quality V1 elements in US Quality Core v0.5.0.
 
 Versions of QI-Core prior to 6.0.0 have used the [Encounter.diagnosis](StructureDefinition-us-quality-core-encounter-definitions.html#Encounter.diagnosis) element to reference to the list of diagnosis/diagnoses and procedures relevant to the encounter.
 The [Encounter.diagnosis.usevalue](http://hl7.org/fhir/R4/valueset-diagnosis-role.html)
