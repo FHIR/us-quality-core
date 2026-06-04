@@ -32,7 +32,7 @@
 	<seriousness>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/adverse-event-seriousness"/>
-			<code value="non-serious"/>
+			<code value="Non-serious"/>
 			<display value="Non-serious"/>
 		</coding>
 	</seriousness>
@@ -48,7 +48,7 @@
 			<assessment>
 				<coding>
 					<system value="http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess"/>
-					<code value="possible"/>
+					<code value="Possible"/>
 					<display value="Possible"/>
 				</coding>
 			</assessment>
