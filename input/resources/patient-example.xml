@@ -33,10 +33,10 @@
       <valueCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS"/>
-          <code value="187"/>
-          <display value="Paiute-Shoshone Tribe of the Fallon Reservation and Colony, Nevada"/>
+          <code value="239"/>
+          <display value="Reno-Sparks Indian Colony, Nevada"/>
         </coding>
-        <text value="Paiute-Shoshone Tribe of the Fallon Reservation and Colony, Nevada"/>
+        <text value="Reno-Sparks Indian Colony, Nevada"/>
       </valueCodeableConcept>
     </extension>
     <extension url="isEnrolled">
