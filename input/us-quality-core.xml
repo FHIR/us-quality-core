@@ -40,8 +40,8 @@
   </dependsOn>
   <dependsOn id="terminology">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
-    <packageId value="hl7.terminology"/>
-    <version value="5.4.0"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
   </dependsOn>
   <dependsOn id="cqluv">
     <uri value="http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql"/>
@@ -1052,16 +1052,12 @@
       <value value="true"/>
     </parameter>
     <parameter>
-      <code value="path-expansion-params"/>
-      <value value="exp-params.json"/>
-    </parameter>
-    <parameter>
       <code value="pin-canonicals"/>
       <value value="pin-multiples"/>
     </parameter>
     <parameter>
-      <code value="pin-manifest"/>
-      <value value="manifest"/>
+      <code value="path-expansion-params"/>
+      <value value="exp-params.json"/>
     </parameter>
     <parameter>
       <code value="find-other-resources"/>
