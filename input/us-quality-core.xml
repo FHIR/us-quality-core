@@ -1029,7 +1029,7 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-      <value value="cibuild"/>
+      <value value="release"/>
     </parameter>
     <parameter>
       <code value="copyrightyear"/>
